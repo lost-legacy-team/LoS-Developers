@@ -1,8 +1,8 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "dtd/shadow/a",
-  mission_terrain = "stage/dtd/a/",
-  mission_set_default = "scripts/mission/5005/set_dtd_a_omega.XML",
+  mission_area = "dtd/shadow/b",
+  mission_terrain = "stage/dtd/b/",
+  mission_set_default = "scripts/mission/5005/set_dtd_b_omega.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
