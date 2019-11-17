@@ -77,46 +77,6 @@ c_table_single_act_trial = {
     stage_type = 22,
     mission_type = 0,
     act_id = 201
-  },
-  {
-    mission_file = "scripts/mission/5001/mission.lua",
-    episode = 27,
-    act_type = 9,
-    stage_type = 2,
-    mission_type = 2,
-    act_id = 3
-  },
-  {
-    mission_file = "scripts/mission/5112/mission.lua",
-    episode = 27,
-    act_type = 9,
-    stage_type = 7,
-    mission_type = 2,
-    act_id = 8
-  },
-  {
-    mission_file = "scripts/mission/5114/mission.lua",
-    episode = 27,
-    act_type = 9,
-    stage_type = 3,
-    mission_type = 2,
-    act_id = 18
-  },
-  {
-    mission_file = "scripts/mission/5115/mission.lua",
-    episode = 27,
-    act_type = 9,
-    stage_type = 4,
-    mission_type = 2,
-    act_id = 23
-  },
-  {
-    mission_file = "scripts/mission/5117/mission.lua",
-    episode = 27,
-    act_type = 9,
-    stage_type = 1,
-    mission_type = 2,
-    act_id = 33
   }
 }
 c_table_single_town_trial = {}
