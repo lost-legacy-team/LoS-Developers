@@ -78,6 +78,6 @@ Bloom = {
   Scale = 5
 }
 LOD = {
-  Main = {FarDistance = 50000, ClipDistance = 80000}
+  Main = {FarDistance = 20000, ClipDistance = 50000}
 }
 script.reload("scripts/stage/rct/rct_lensflare.lua")
