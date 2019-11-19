@@ -70,7 +70,7 @@ OLS = {
   G = 0.97
 }
 EnvMap = {
-    FileName = "stage/kdv/a/kdv_envmap.dds"
+  FileName = "stage/kdv/a/kdv_envmap.dds"
 }
 Bloom = {
   MinThreshold = 0.28,
@@ -79,7 +79,7 @@ Bloom = {
 }  
 ReflectionAreas = {
   FileName = "stage/kdv/a/kdv_mapA_rfzone",
-  ClumpCutoffCoverage = 2.5,
+  ClumpCutoffCoverage = 1,
   SectorCutoffCoverage = 0.2
 }
 LightPresets = {
@@ -93,3 +93,19 @@ LightPresets = {
   }
 }
 script.reload("scripts/stage/kdv/kdv_lensflare.lua")
+LOD = {
+  Main = {
+    FarDistance = 10000,
+    ClumpClipDistance = 20000,
+    TerrainClipDistance = 70000
+  },
+  Reflection = {FarDistance = 0, ClipDistance = 5000}
+}
+ShadowMap = {
+  BaseSize = 2000,
+  CenterOffset = {
+    0,
+    0,
+    2000 * 0.5
+  }
+}
