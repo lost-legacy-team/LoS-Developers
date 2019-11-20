@@ -75,21 +75,17 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.42,
   MaxThreshold = 3,
-  Scale = 5.85
+  Scale = 3.85
 }
 LOD = {
-  Main = {
-    FarDistance = 1000,
-    ClumpClipDistance = 10000,
-    TerrainClipDistance = 60000
-  }
+  Main = {FarDistance = 0, TerrainClipDistance = 60000}
 }
-script.reload("scripts/stage/wvo/wvo_lensflare.lua")
 ShadowMap = {
-  BaseSize = 2000,
+  BaseSize = 2300,
   CenterOffset = {
     0,
     0,
-    2000 * 0.5
+    2300 * 0.5
   }
 }
+script.reload("scripts/stage/wvo/wvo_lensflare.lua")

@@ -75,15 +75,22 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.38,
   MaxThreshold = 2.85,
-  Scale = 5
+  Scale = 4
 }
 LOD = {
   Main = {
-    FarDistance = 10000,
-    ClumpClipDistance = 20000,
-    TerrainClipDistance = 60000
-  },
-  Reflection = {FarDistance = 0, ClipDistance = 5000}
+    FarDistance = 7000,
+    ClipDistance = 12000,
+    TerrainClipDistance = 11000
+  }
+}
+ShadowMap = {
+  BaseSize = 2000,
+  CenterOffset = {
+    0,
+    0,
+    2000 * 0.5
+  }
 }
 ReflectionAreas = {
   FileName = "stage/tpj/b/TPJ_mapB_rfzone",
@@ -91,11 +98,3 @@ ReflectionAreas = {
   SectorCutoffCoverage = 0.2
 }
 script.reload("scripts/stage/tpj/tpj_lensflare.lua")
-ShadowMap = {
-  BaseSize = 1500,
-  CenterOffset = {
-    0,
-    0,
-    1500 * 0.5
-  }
-}

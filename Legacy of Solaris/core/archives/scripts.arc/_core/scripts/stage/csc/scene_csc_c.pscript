@@ -67,7 +67,7 @@ OLS = {
     0.95,
     9.0E-6
   },
-  G = 0.97
+  G = 0.8
 }
 EnvMap = {
   FileName = "stage/csc/c/csc_envmap.dds"
@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.28,
   MaxThreshold = 2.8,
-  Scale = 4.5
+  Scale = 4.3
 }
 LOD = {
   Main = {

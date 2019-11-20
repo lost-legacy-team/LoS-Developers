@@ -67,7 +67,7 @@ OLS = {
     0.3,
     1.0E-4
   },
-  G = 50.00
+  G = 0.99
 }
 EnvMap = {
   FileName = "stage/aqa/a/aqa_envmap.dds"
@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.28,
   MaxThreshold = 2.8,
-  Scale = 5.5
+  Scale = 4
 }
 ReflectionAreas = {
   FileName = "stage/aqa/a/aqa_mapA_rfzone",

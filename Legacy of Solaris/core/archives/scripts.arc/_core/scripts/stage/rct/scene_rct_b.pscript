@@ -67,7 +67,7 @@ OLS = {
     0.3,
     1.0E-5
   },
-  G = 50.00
+  G = 0.89
 }
 EnvMap = {
   FileName = "stage/boss/charaboss2_rct/rct_envmap.dds"
@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.25,
   MaxThreshold = 2.8,
-  Scale = 5
+  Scale = 4
 }
 LOD = {
   Main = {

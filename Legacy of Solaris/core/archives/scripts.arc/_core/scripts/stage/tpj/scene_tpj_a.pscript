@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.3,
   MaxThreshold = 2.8,
-  Scale = 5
+  Scale = 4.15
 }
 LOD = {
   Main = {
