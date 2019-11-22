@@ -61,16 +61,16 @@ c_hair = {
   "MiddleHair"
 }
 c_gauge_max = 100 * point
-c_green = 10 * point
-c_red = 10 * point
-c_blue = 10 * point
-c_white = 10 * point
-c_sky = 10 * point
-c_yellow = 10 * point
-c_purple = 10 * point
-c_super = 10 * point
-c_gauge_heal = 10 * (point / sec)
-c_gauge_heal_delay = 0.2 * sec
+c_green = 50 * point
+c_red = 5 * point
+c_blue = 25 * point
+c_white = 15 * point
+c_sky = 25 * point
+c_yellow = 50 * point
+c_purple = 5 * point
+c_super = 100 * point
+c_gauge_heal = 5 * (point / sec)
+c_gauge_heal_delay = 0 * sec
 c_input_border = 0.1
 c_dclick_time = 0.16 * sec
 c_lclick_time = 0.3 * sec

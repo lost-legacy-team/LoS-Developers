@@ -30,7 +30,7 @@ c_hair = {
   "LowRightHair",
   "MiddleHair"
 }
-_gauge_max = 100 * point
+c_gauge_max = 100 * point
 c_input_border = 0.1
 c_dclick_time = 0.16 * sec
 c_lclick_time = 0.16 * sec
