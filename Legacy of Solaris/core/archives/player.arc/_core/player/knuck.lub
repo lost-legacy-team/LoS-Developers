@@ -1,0 +1,2 @@
+script.reload("player/knuckles.lua")
+c_model_package = "player/knuckles"
