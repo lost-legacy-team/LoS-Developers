@@ -2,7 +2,7 @@ g_mission_information = {
   mission_string = "msg_act12",
   mission_area = "kdv/sonic/a",
   mission_terrain = "stage/kdv/a/",
-  mission_set_default = "scripts/mission/4566/set_kdv_a_sonic.XML",
+  mission_set_default = "scripts/mission/4566/set_kdv_a_shadow_ex.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
@@ -48,9 +48,9 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "goto_c" then
     if g_mission_information.mission_area == "kdv/sonic/a" then
-      g_mission_information.mission_terrain = "stage/kdv/b/"
-      g_mission_information.mission_area = "kdv/shadow/b"
-      g_mission_information.mission_set_default = "scripts/mission/4566/set_kdv_b_shadow.xml"
+      g_mission_information.mission_terrain = "stage/kdv/d/"
+      g_mission_information.mission_area = "kdv/sonic/d"
+      g_mission_information.mission_set_default = "scripts/mission/4566/set_kdv_d_shadow_ex.xml"
       g_mission_information.mission_path_default = ""
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
