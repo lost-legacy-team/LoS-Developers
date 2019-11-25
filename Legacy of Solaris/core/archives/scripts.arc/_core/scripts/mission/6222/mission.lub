@@ -2,7 +2,7 @@ g_mission_information = {
   mission_string = "blaze_stg_tpj",
   mission_area = "tpj/sonic/a",
   mission_terrain = "stage/tpj/a/",
-  mission_set_default = "scripts/mission/6002/set_tpjA_sonic.XML",
+  mission_set_default = "scripts/mission/6002/set_tpjA_blaze.XML",
   mission_event_start = "e0206",
   mission_startup = "e0206_end",
   mission_text = "text/msg_twn_silver.mst",
@@ -61,8 +61,8 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
   if g_mission_information.mission_area == "tpj/sonic/a" then
     g_mission_information.mission_terrain = "stage/tpj/c/"
-    g_mission_information.mission_area = "tpj/shadow/c"
-    g_mission_information.mission_set_default = "scripts/mission/6002/set_tpjC_rouge.XML"
+    g_mission_information.mission_area = "tpj/silver/c"
+    g_mission_information.mission_set_default = "scripts/mission/6002/set_tpjC_blaze.XML"
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
 end
