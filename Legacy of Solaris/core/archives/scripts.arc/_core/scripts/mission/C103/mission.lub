@@ -91,8 +91,8 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_is_battle = false
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
     g_mission_information.mission_area_text = "msg_solleanna_c"
-  elseif _ARG_1_ == "e0114_end" then
-    SetNextMission(_ARG_0_, "scripts/mission/C104/mission.lua")
+  elseif _ARG_1_ == "e0119_end" then
+    SetNextMission(_ARG_0_, "scripts/mission/C105/mission.lua")
     MissionClear(_ARG_0_, "complete")
   elseif _ARG_1_ == "goto_a" then
     on_goto(_ARG_0_, _ARG_1_)
@@ -105,6 +105,9 @@ function on_event(_ARG_0_, _ARG_1_)
     PlayEvent(_ARG_0_, "e0113", "e0113_end")
   elseif _ARG_1_ == "result_tpj_end" then
     PlayEvent(_ARG_0_, "e0114", "e0114_end")
+  elseif _ARG_1_ == "e0114_end" then
+    PlayEvent(_ARG_0_, "e0119", "e0119_end")
+	
   end
 end
 function on_talk_setup(_ARG_0_, _ARG_1_)
