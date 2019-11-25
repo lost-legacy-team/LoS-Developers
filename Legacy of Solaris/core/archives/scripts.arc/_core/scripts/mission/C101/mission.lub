@@ -2,7 +2,7 @@ g_mission_information = {
   mission_string = "rouge_stg_wap",
   mission_area = "wap/shadow/b",
   mission_terrain = "stage/wap/b/",
-  mission_set_default = "scripts/mission/6018/set_wap_b_shadow.XML",
+  mission_set_default = "scripts/mission/6018/set_wap_b_rouge.XML",
   mission_movie_start = "event/e0100/e0100.sfd",
   mission_startup = "e0100_end",
   mission_text = "text/msg_twn_shadow.mst",
@@ -230,7 +230,7 @@ function on_goto(_ARG_0_, _ARG_1_)
   if g_mission_information.mission_area == "wap/shadow/a" then
     g_mission_information.mission_terrain = "stage/wap/b/"
     g_mission_information.mission_area = "wap/shadow/b"
-    g_mission_information.mission_set_default = "scripts/mission/6018/set_wap_b_shadow.XML"
+    g_mission_information.mission_set_default = "scripts/mission/6018/set_wap_b_rouge.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
