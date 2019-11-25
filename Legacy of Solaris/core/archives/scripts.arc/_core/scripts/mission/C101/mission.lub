@@ -295,7 +295,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0100_end" then
     g_mission_information.mission_terrain = "stage/wap/b/"
     g_mission_information.mission_area = "wap/shadow/b"
-    g_mission_information.mission_set_default = "scripts/mission/6018/set_wap_b_shadow.XML"
+    g_mission_information.mission_set_default = "scripts/mission/6018/set_wap_b_rouge.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
     g_mission_information.mission_movie_start = ""
