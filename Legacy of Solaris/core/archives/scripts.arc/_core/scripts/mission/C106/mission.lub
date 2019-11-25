@@ -206,7 +206,7 @@ function on_goto(_ARG_0_, _ARG_1_)
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
     elseif _ARG_1_ == "goto_mission_end" then
-      g_mission_information.mission_terrain = "sy7tage/twn/a/"
+      g_mission_information.mission_terrain = "stage/twn/a/"
       g_mission_information.mission_area = "twn/shadow/a"
       g_mission_information.mission_set_default = "scripts/mission/1131/set_mission_1131_04.XML"
       g_mission_information.mission_is_battle = false
@@ -275,7 +275,7 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_string = "msg_twn_shadow26"
     g_mission_information.mission_area = "twn/shadow/a"
     g_mission_information.mission_terrain = "stage/twn/a/"
-    g_mission_information.mission_set_default = "scripts/mission/5225/set_mission_5225a.XML"
+    g_mission_information.mission_set_default = "scripts/mission/C106/set_mission_5225a.XML"
     g_mission_information.mission_is_battle = false
     g_mission_information.mission_area_text = "msg_solleanna_a"
     g_mission_information.mission_disappear_people = false
