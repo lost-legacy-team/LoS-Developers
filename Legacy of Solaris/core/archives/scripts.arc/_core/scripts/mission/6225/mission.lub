@@ -2,7 +2,7 @@ g_mission_information = {
   mission_string = "silver_stg_kdv",
   mission_area = "kdv/silver/d",
   mission_terrain = "stage/kdv/d/",
-  mission_set_default = "scripts/mission/6005/set_kdv_d_silver.XML",
+  mission_set_default = "scripts/mission/6005/set_kdv_d_blaze.XML",
   mission_event_start = "e0224",
   mission_event_end = "e0224_end",
   mission_text = "text/msg_twn_silver.mst",
@@ -333,11 +333,11 @@ function on_goto(_ARG_0_, _ARG_1_)
     g_mission_information.mission_path_default = "scripts/mission/6006/path_flcB_silver"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif g_mission_information.mission_area == "kdv/sonic/d" then
+  elseif g_mission_information.mission_area == "kdv/silver/d" then
     g_mission_information.mission_terrain = "stage/kdv/b/"
     g_mission_information.mission_area = "kdv/silver/b"
-    g_mission_information.mission_set_default = "scripts/mission/6225/set_kdv_b_silver.XML"
-    g_mission_information.mission_path_default = ""
+    g_mission_information.mission_set_default = "scripts/mission/6005/set_kdv_b_blaze.XML"
+    g_mission_information.mission_path_default = "scripts/mission/6005/path_kdvB_sonic"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
@@ -359,7 +359,7 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_string = "silver_stg_kdv"
     g_mission_information.mission_terrain = "stage/kdv/d/"
     g_mission_information.mission_area = "kdv/silver/d"
-    g_mission_information.mission_set_default = "scripts/mission/6005/set_kdv_d_silver.XML"
+    g_mission_information.mission_set_default = "scripts/mission/6005/set_kdv_d_blaze.XML"
     g_mission_information.mission_path_default = "scripts/mission/6005/path_kdvD_silver"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -448,7 +448,7 @@ function on_goal(_ARG_0_)
     g_mission_information.mission_progress = 97
     SetGlobalFlag(_ARG_0_, 4132, 1)
     Result(_ARG_0_, "g_result_flc")
-  elseif g_mission_information.mission_area == "kdv/silver/d" then
+  elseif g_mission_information.mission_area == "kdv/silver/b" then
     g_mission_information.mission_progress = 93
     SetGlobalFlag(_ARG_0_, 4127, 1)
     Result(_ARG_0_, "g_result_kdv")
