@@ -7,7 +7,7 @@ g_mission_information = {
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = ""
+  mission_path_default = "scripts/mission/4002/path_wvoA_sonic_vh"
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -46,7 +46,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "AtoB" then
+  if _ARG_1_ == "goto_b" then
     g_mission_information.mission_terrain = "stage/wvo/b/"
     g_mission_information.mission_area = "wvo/sonic/b"
     g_mission_information.mission_set_default = "scripts/mission/4002/set_wvoB_sonic_vh.XML"
