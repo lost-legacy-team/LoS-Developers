@@ -7,7 +7,7 @@ g_mission_information = {
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = "scripts/mission/4088/path_dtdA_shadow_vh",
+  mission_path_default = "scripts/mission/4088/path_dtdA_shadow_vh"
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -49,7 +49,7 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_terrain = "stage/dtd/b/"
     g_mission_information.mission_area = "dtd/shadow/b"
     g_mission_information.mission_set_default = "scripts/mission/4088/set_dtd_b_shadow_vh.XML"
-    g_mission_information.mission_path_default = ""
+    g_mission_information.mission_path_default = "scripts/mission/4088/path_dtdB_shadow_vh"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "goto_b2" then
