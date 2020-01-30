@@ -61,16 +61,16 @@ c_hair = {
   "MiddleHair"
 }
 c_gauge_max = 100 * point
-c_green = 50 * point
-c_red = 5 * point
-c_blue = 25 * point
-c_white = 15 * point
-c_sky = 25 * point
-c_yellow = 50 * point
-c_purple = 5 * point
-c_super = 100 * point
+c_green = 10 * point
+c_red = 10 * point
+c_blue = 10 * point
+c_white = 10 * point
+c_sky = 10 * point
+c_yellow = 10 * point
+c_purple = 10 * point
+c_super = 10 * point
 c_gauge_heal = 5 * (point / sec)
-c_gauge_heal_delay = 0 * sec
+c_gauge_heal_delay = 0.1 * sec
 c_input_border = 0.1
 c_dclick_time = 0.16 * sec
 c_lclick_time = 0.3 * sec
@@ -118,7 +118,7 @@ c_sliding_collision = {
   }
 }
 c_boundattack_power = 500 * N
-c_boundattack_damage = 4 * point
+c_boundattack_damage = 2 * point
 c_boundattack_collision = {
   type = shape_sphere,
   radius = 1 * meter,
@@ -138,7 +138,7 @@ c_thunderguard_collision = {
   }
 }
 c_tornado_power = 800 * N
-c_tornado_damage = 5 * point
+c_tornado_damage = 3 * point
 c_tornado_collision = {
   type = shape_cylinder,
   radius = 16 * meter,
@@ -155,7 +155,7 @@ c_brake_acc = 40 * meter
 c_walk_border = 0.1
 c_run_border = 0.6
 c_walk_speed_max = 4 * (meter / sec)
-c_run_speed_max = 25 * (meter / sec)
+c_run_speed_max = 21 * (meter / sec)
 c_jump_time_min = 0.1 * sec
 c_jump_brake = 25 * (meter / sec)
 c_jump_speed_acc = 20 * meter
@@ -194,8 +194,8 @@ c_homing_dir = {
 }
 c_homing_spd = 40 * (meter / sec)
 c_homing_time = 0.5 * sec
-c_homing_damage = 2 * point
-c_homing_power = 300 * N
+c_homing_damage = 1 * point
+c_homing_power = 30 * N
 c_sliding_time = 3 * sec
 c_sliding_speed_min = 10 * (meter / sec)
 c_sliding_speed_max = 16 * (meter / sec)
