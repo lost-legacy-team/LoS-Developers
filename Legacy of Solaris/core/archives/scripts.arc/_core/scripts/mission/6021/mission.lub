@@ -1,13 +1,13 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "flc/sonic/a",
+  mission_area = "flc/shadow/a",
   mission_terrain = "stage/flc/a/",
   mission_set_default = "scripts/mission/6021/set_flc_a_rouge.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = "scripts/mission/6021/path_flcA_shadow_vh"
+  mission_path_default = "scripts/mission/6021/path_flcA_shadow"
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -48,7 +48,7 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "AtoB" then
     g_mission_information.mission_terrain = "stage/flc/b/"
-    g_mission_information.mission_area = "flc/sonic/b"
+    g_mission_information.mission_area = "flc/shadow/b"
     g_mission_information.mission_set_default = "scripts/mission/6021/set_flc_b_rouge.XML"
     g_mission_information.mission_path_default = "scripts/mission/6021/path_flcB_sonic_vh"
     g_mission_information.mission_is_battle = true

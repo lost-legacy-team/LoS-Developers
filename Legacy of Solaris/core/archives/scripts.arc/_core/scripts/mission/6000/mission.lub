@@ -7,7 +7,7 @@ g_mission_information = {
   mission_text = "text/msg_twn_sonic.mst",
   mission_movie_start = "",
   mission_startup = "",
-  mission_path_default = ""
+  mission_path_default = "scripts/mission/6000/path_cscF1_silver"
 }
 g_message_setuped = ""
 c_flag_start = 0
