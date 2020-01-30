@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wvo/sonic/a1",
+  mission_area = "wvo/sonic/a",
   mission_terrain = "stage/wvo/a/",
   mission_set_default = "placement/wvo/set_wvoA_sonic.XML",
   mission_event_start = "",
