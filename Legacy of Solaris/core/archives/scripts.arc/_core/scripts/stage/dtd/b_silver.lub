@@ -21,9 +21,9 @@ function DustyDesert.SilverB.Setup(_ARG_0_)
   Game.SetPlayer(23159, -600, -21909, -90, "silver.lua")
   Game.SetGenArea({
     size = {
-      300 * 100,
-      300 * 100,
-      300 * 100
+      280 * 100,
+      280 * 100,
+      280 * 100
     }
   })
 end
