@@ -81,7 +81,7 @@ function on_goto(_ARG_0_, _ARG_1_)
   else
     if g_mission_information.mission_area == "flc/shadow/a" then
       g_mission_information.mission_terrain = "stage/flc/b/"
-      g_mission_information.mission_area = "flc/sonic/b"
+      g_mission_information.mission_area = "flc/shadow/b"
       g_mission_information.mission_set_default = "scripts/mission/5003/set_flc_b_omega.XML"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -152,7 +152,7 @@ function on_goal(_ARG_0_)
     g_mission_information.mission_progress = 31
     SetGlobalFlag(_ARG_0_, 4061, 1)
     Result(_ARG_0_, "g_result_csc")
-  elseif g_mission_information.mission_area == "flc/sonic/b" then
+  elseif g_mission_information.mission_area == "flc/shadow/b" then
     g_mission_information.mission_progress = 37
     SetGlobalFlag(_ARG_0_, 4066, 1)
     Result(_ARG_0_, "g_result_flc")
