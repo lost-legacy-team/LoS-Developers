@@ -1,8 +1,8 @@
 g_mission_information = {
   mission_string = "msg_act12",
-  mission_area = "flc/sonic/a",
+  mission_area = "flc/silver/a",
   mission_terrain = "stage/flc/a/",
-  mission_set_default = "scripts/mission/V105/set_flc_a_silver.XML",
+  mission_set_default = "scripts/mission/V105/set_flcA_silver_ex.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
