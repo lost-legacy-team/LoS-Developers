@@ -57,14 +57,6 @@ c_table_single_act_trial = {
     act_id = 69
   },
   {
-    mission_file = "scripts/mission/S103/mission.lua",
-    episode = 1,
-    act_type = 3,
-    stage_type = 3,
-    mission_type = 4,
-    act_id = 69
-  },
-  {
     mission_file = "scripts/mission/4073/mission.lua",
     episode = 1,
     act_type = 4,
@@ -78,14 +70,6 @@ c_table_single_act_trial = {
     act_type = 5,
     stage_type = 5,
     mission_type = 3,
-    act_id = 79
-  },
-  {
-    mission_file = "scripts/mission/S105/mission.lua",
-    episode = 1,
-    act_type = 5,
-    stage_type = 5,
-    mission_type = 4,
     act_id = 79
   },
   {
