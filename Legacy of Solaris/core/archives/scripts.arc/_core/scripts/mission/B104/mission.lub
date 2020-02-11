@@ -74,7 +74,7 @@ function on_event(_ARG_0_, _ARG_1_)
     if GetTemporaryFlag(_ARG_0_, c_flag_0608) == 1 then
       g_mission_information.mission_string = "knuckles_stg_tpj"
       g_mission_information.mission_terrain = "stage/tpj/c/"
-      g_mission_information.mission_area = "tpj/sonic/c"
+      g_mission_information.mission_area = "tpj/shadow/c"
       g_mission_information.mission_set_default = "scripts/mission/8026/set_tpjC_rouge.XML"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)

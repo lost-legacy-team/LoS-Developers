@@ -44,7 +44,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "CtoF" then
     g_mission_information.mission_terrain = "stage/csc/f/"
     g_mission_information.mission_area = "csc/shadow/f"
-    g_mission_information.mission_set_default = "scripts/mission/0102/set_cscF_shadow.XML"
+    g_mission_information.mission_set_default = "scripts/mission/0102/set_cscF1_shadow.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "result_csc_end" then
