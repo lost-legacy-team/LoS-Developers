@@ -5,7 +5,7 @@ g_mission_information = {
   mission_set_default = "scripts/mission/5222/set_mission_0008c_01.XML",
   mission_event_start = "e0104",
   mission_startup = "e0104_end",
-  mission_text = "text/msg_twn_shadow.mst",
+  mission_text = "text/msg_twn_omega.mst",
   mission_is_battle = false,
   mission_area_text = "egggenesis",
   mission_progress = 62
@@ -72,7 +72,7 @@ function on_event(_ARG_0_, _ARG_1_)
     Result(_ARG_0_, "g_result_genesis")
   elseif _ARG_1_ == "goto_tpj" then
     if GetTemporaryFlag(_ARG_0_, c_flag_0608) == 1 then
-      g_mission_information.mission_string = "msg_twn_shadow31"
+      g_mission_information.mission_string = "omega_stg_tpj"
       g_mission_information.mission_terrain = "stage/tpj/c/"
       g_mission_information.mission_area = "tpj/shadow/c"
       g_mission_information.mission_set_default = "scripts/mission/5002/set_tpjC_rouge.XML"
