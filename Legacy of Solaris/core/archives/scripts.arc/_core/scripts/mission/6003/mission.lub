@@ -2,12 +2,12 @@ g_mission_information = {
   mission_string = "msg_act01",
   mission_area = "wap/silver/a",
   mission_terrain = "stage/wap/a",
-  mission_set_default = "scripts/mission/6003/set_wap_a_silver.XML",
+  mission_set_default = "scripts/mission/6003/set_wap_a_blaze.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_startup = "",
-  mission_path_default = "scripts/mission/6003/path_wapA_silver"
+  mission_path_default = "scripts/mission/6003/path_wapA_blaze"
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -47,8 +47,8 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "goto_b" then
     g_mission_information.mission_terrain = "stage/wap/b"
-    g_mission_information.mission_area = "wap/sonic/b"
-    g_mission_information.mission_set_default = "scripts/mission/6003/set_wap_b_sonic.XML"
+    g_mission_information.mission_area = "wap/silver/b"
+    g_mission_information.mission_set_default = "scripts/mission/6003/set_wap_b_blaze.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
