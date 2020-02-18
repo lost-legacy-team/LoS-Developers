@@ -9,7 +9,7 @@ Light = {
   },
   Main = {
     Color = {
-      0.8,
+      0.80,
       0.85,
       0.85,
       1
@@ -59,7 +59,7 @@ OLS = {
     0.09,
     0.13,
     0.16,
-    1.0E-4
+    1.1E-4
   },
   BMie = {
     0.12,
@@ -70,12 +70,12 @@ OLS = {
   G = 0.99
 }
 EnvMap = {
-  FileName = "stage/kdv/b/kdv_envmap.dds"
+  FileName = "stage/kdv/b/kdv_envmap1.dds"
 }
 Bloom = {
   MinThreshold = 0.28,
   MaxThreshold = 2.8,
-  Scale = 4
+  Scale = 3.2
 }
 ReflectionAreas = {
   FileName = "stage/kdv/b/kdv_mapB_rfzone",

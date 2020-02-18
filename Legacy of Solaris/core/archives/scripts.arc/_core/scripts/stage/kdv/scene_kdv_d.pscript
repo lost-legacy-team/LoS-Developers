@@ -70,7 +70,7 @@ OLS = {
   G = 0.99
 }
 EnvMap = {
-  FileName = "stage/kdv/d/kdv_envmap.dds"
+  FileName = "stage/kdv/d/kdv_envmap3.dds"
 }
 Bloom = {
   MinThreshold = 0.28,

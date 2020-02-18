@@ -41,9 +41,9 @@ Light = {
         -0.2427
       },
       Target = {
-        6.0,
-        8.0,
-        4.0
+        0,
+        0,
+        0
       }
     }
   }
@@ -70,7 +70,7 @@ OLS = {
   G = 0.99
 }
 EnvMap = {
-  FileName = "stage/kdv/c/kdv_envmap.dds"
+  FileName = "stage/kdv/c/kdv_envmap2.dds"
 }
 Bloom = {
   MinThreshold = 0.35,
