@@ -75,6 +75,7 @@ function DustyDesert.ShadowB.door09(_ARG_0_, _ARG_1_)
 end
 function DustyDesert.ShadowB.door10(_ARG_0_, _ARG_1_)
   Game.Debug()
+  Game.StartEntityByName("common_warphole01")
   Game.StartEntityByName("amigo_collision01")
   Game.Signal("dtd_door03")
 end

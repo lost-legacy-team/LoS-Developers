@@ -7,7 +7,7 @@ function KingdomValley.SonicA.Setup(_ARG_0_)
   ActionArea.Setup(_ARG_0_)
   _ARG_0_:AddComponent({
     Game.LoadParticle("particle/map_kdv.plc"),
-    Game.LoadRenderScript("scripts/render/stage/render_kdv_a.lua"),
+    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
     Game.LoadTerrain("stage/kdv/a/"),
     Game.LoadStageSet("placement/kdv/set_kdv_a_sonic.XML"),
     Game.LoadStageSet("placement/kdv/kdv_mapA_effects.xml", "particle"),
