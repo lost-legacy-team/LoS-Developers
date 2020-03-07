@@ -237,7 +237,7 @@ function on_event(_ARG_0_, _ARG_1_)
     if GetTemporaryFlag(_ARG_0_, c_flag_0316) == 1 and GetTemporaryFlag(_ARG_0_, c_flag_0318) == 0 then
       PlayMovie(_ARG_0_, "event/e0008/e0008.wmv", "e0008_end")
     end
-  elseif _ARG_1_ == "e0210_end" then
+  elseif _ARG_1_ == "1027_complete" then
     SetTemporaryFlag(_ARG_0_, c_flag_0318, 1)
     g_mission_information.mission_string = "msg_twn_amy2"
     g_mission_information.mission_set_default = "scripts/mission/D102/set_mission_0004b_01.XML"
@@ -245,7 +245,7 @@ function on_event(_ARG_0_, _ARG_1_)
     if GetTemporaryFlag(_ARG_0_, c_flag_0318) == 1 and GetTemporaryFlag(_ARG_0_, c_flag_0322) == 0 then
       CallMission(_ARG_0_, "scripts/mission/D027/mission.lua", "1027_complete")
     end
-  elseif _ARG_1_ == "1027_complete" then
+  elseif _ARG_1_ == "e0210_end" then
     SetTemporaryFlag(_ARG_0_, c_flag_0322, 1)
     g_mission_information.mission_set_default = "scripts/mission/D102/set_mission_0004b_02.XML"
   elseif _ARG_1_ == "goto_wap" then

@@ -37,6 +37,14 @@ function CrisisCity.SonicB.Setup(_ARG_0_)
   })
   Game.SetPlayer(-15500, 22600, 59725, 90, "sonic_new.lua")
 end
+function CrisisCity.SonicB.cage01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("common_cage01")
+end
+function CrisisCity.SonicB.cage02(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("common_cage02")
+end
 function CrisisCity.SonicB.glassbreak001(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("impulsesphere201")
