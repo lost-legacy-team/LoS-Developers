@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act12",
-  mission_area = "dtd/shadow/b",
+  mission_area = "dtd/sonic/b",
   mission_terrain = "stage/dtd/b/",
   mission_set_default = "scripts/mission/E302/set_dtd_b_sonic_ex.XML",
   mission_is_battle = true,
