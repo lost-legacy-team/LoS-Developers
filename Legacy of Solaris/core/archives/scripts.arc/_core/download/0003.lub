@@ -24,7 +24,6 @@ c_table_single_act_trial = {
     mission_type = 3,
     act_id = 13
   },
-    episode = 0,
   {
     mission_file = "scripts/mission/4017/mission.lua",
     episode = 0,
