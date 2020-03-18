@@ -1,0 +1,98 @@
+c_table_single_episode = {
+  {
+    select_character = "select_super.lua",
+    mission_file = "scripts/mission/D101/mission.lua",
+    translation_x = -90,
+    translation_y = -40,
+    translation_z = 670,
+    rotation_x = 0,
+    rotation_y = 0,
+    rotation_z = 0,
+    rotation_w = 1,
+    translation2_x = 0,
+    translation2_y = -40,
+    translation2_z = 670,
+    rotation2_x = 0,
+    rotation2_y = 0,
+    rotation2_z = 0,
+    rotation2_w = 1,
+    text_book = "text/msg_dl0037_title.mst",
+    name = "episode_name",
+    savecategory = 4
+  }
+}
+c_table_single_act_trial = {
+  {
+    mission_file = "scripts/mission/S800/mission.lua",
+    episode = 0,
+    act_type = 0,
+    stage_type = 0,
+    mission_type = 4,
+    act_id = 3
+  },
+  {
+    mission_file = "scripts/mission/S801/mission.lua",
+    episode = 0,
+    act_type = 1,
+    stage_type = 1,
+    mission_type = 4,
+    act_id = 8
+  },
+  {
+	mission_file = "scripts/mission/S802/mission.lua",
+    episode = 0,
+    act_type = 2,
+    stage_type = 2,
+    mission_type = 4,
+    act_id = 13
+ },
+ {
+    mission_file = "scripts/mission/S803/mission.lua",
+    episode = 0,
+    act_type = 3,
+    stage_type = 3,
+    mission_type = 4,
+    act_id = 18
+  },
+  {
+    mission_file = "scripts/mission/S804/mission.lua",
+    episode = 0,
+    act_type = 4,
+    stage_type = 4,
+    mission_type = 4,
+    act_id = 23
+  },
+  {
+    mission_file = "scripts/mission/S805/mission.lua",
+    episode = 0,
+    act_type = 5,
+    stage_type = 5,
+    mission_type = 4,
+    act_id = 28
+  },
+  {
+    mission_file = "scripts/mission/S806/mission.lua",
+    episode = 0,
+    act_type = 6,
+    stage_type = 6,
+    mission_type = 4,
+    act_id = 33
+  },
+  {
+	mission_file = "scripts/mission/S807/mission.lua",
+    episode = 0,
+    act_type = 7,
+    stage_type = 7,
+    mission_type = 4,
+    act_id = 38
+  },
+  {
+    mission_file = "scripts/mission/S808/mission.lua",
+    episode = 0,
+    act_type = 8,
+    stage_type = 8,
+    mission_type = 4,
+    act_id = 43
+  }
+}
+c_table_single_town_trial = {}
