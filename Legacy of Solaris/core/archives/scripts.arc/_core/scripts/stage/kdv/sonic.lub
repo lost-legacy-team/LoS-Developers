@@ -4,7 +4,8 @@ KingdomValley.Sonic.scripts = {
   "scripts/stage/kdv/b_sonic.lua",
   "scripts/stage/kdv/c_sonic.lua",
   "scripts/stage/kdv/d_sonic.lua",
-  "scripts/stage/kdv/a_tag.lua"
+  "scripts/stage/kdv/a_tag.lua",
+  "scripts/stage/kdv/b1_sonic.lua",
 }
 function KingdomValley.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -14,7 +15,8 @@ function KingdomValley.Sonic.constructor(_ARG_0_)
     ["Area B"] = KingdomValley.SonicB,
     ["Area C"] = KingdomValley.SonicC,
     ["Area D"] = KingdomValley.SonicD,
-    ["Area A(Tag)"] = KingdomValley.TagA
+    ["Area A(Tag)"] = KingdomValley.TagA,
+	["Area B1"] = KingdomValley.SonicB1
   }
   _ARG_0_.area = "Area A"
   _ARG_0_.result_name = 0
