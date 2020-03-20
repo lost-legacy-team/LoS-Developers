@@ -1,0 +1,82 @@
+c_table_single_episode = {
+  {
+    select_character = "select_super.lua",
+	mission_file = "scripts/mission/0301/mission.lua",
+    translation_x = -90,
+    translation_y = -40,
+    translation_z = 670,
+    rotation_x = 0,
+    rotation_y = 0,
+    rotation_z = 0,
+    rotation_w = 1,
+    translation2_x = 0,
+    translation2_y = -40,
+    translation2_z = 670,
+    rotation2_x = 0,
+    rotation2_y = 0,
+    rotation2_z = 0,
+    rotation2_w = 1,
+    text_book = "text/msg_dl0039_title.mst",
+    name = "episode_name",
+    savecategory = 4
+  }
+}
+c_table_single_act_trial = {
+  {
+    mission_file = "scripts/mission/SV01/mission.lua",
+    episode = 0,
+    act_type = 0,
+    stage_type = 3,
+    mission_type = 4,
+    act_id = 13
+  },
+  {
+    mission_file = "scripts/mission/SV02/mission.lua",
+    episode = 0,
+    act_type = 1,
+    stage_type = 1,
+    mission_type = 4,
+    act_id = 38
+  },
+  {
+    mission_file = "scripts/mission/SV03/mission.lua",
+    episode = 0,
+    act_type = 2,
+    stage_type = 2,
+    mission_type = 4,
+    act_id = 64
+  },	
+  {
+    mission_file = "scripts/mission/SV04/mission.lua",
+    episode = 0,
+    act_type = 3,
+    stage_type = 5,
+    mission_type = 4,
+    act_id = 69
+  },
+  {
+    mission_file = "scripts/mission/SV05/mission.lua",
+    episode = 0,
+    act_type = 4,
+    stage_type = 8,
+    mission_type = 4,
+    act_id = 74
+  },
+  {
+    mission_file = "scripts/mission/SV06/mission.lua",
+    episode = 0,
+    act_type = 5,
+    stage_type = 7,
+    mission_type = 4,
+    act_id = 79
+  },
+  {
+    mission_file = "scripts/mission/SV07/mission.lua",
+    episode = 0,
+    act_type = 6,
+    stage_type = 4,
+    mission_type = 3,
+    act_id = 84
+  }
+}
+c_table_single_town_trial = {}
