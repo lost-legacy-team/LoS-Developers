@@ -1,7 +1,7 @@
 c_table_single_episode = {
   {
     select_character = "select_super.lua",
-    mission_file = "scripts/mission/D101/mission.lua",
+    mission_file = "scripts/mission/0301/mission.lua",
     translation_x = -90,
     translation_y = -40,
     translation_z = 670,
