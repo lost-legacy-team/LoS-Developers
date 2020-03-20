@@ -2,7 +2,11 @@ FlameCore.Sonic = inherits_from(ActionStage)
 FlameCore.Sonic.scripts = {
   "scripts/stage/flc/a_sonic.lua",
   "scripts/stage/flc/b_sonic.lua",
-  "scripts/stage/flc/a_tag.lua"
+  "scripts/stage/flc/a_tag.lua",
+  "scripts/stage/flc/a_blaze.lua",
+  "scripts/stage/flc/b_blaze.lua",
+  "scripts/stage/flc/a_tails.lua",
+  "scripts/stage/flc/b_tails.lua",
 }
 function FlameCore.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -10,7 +14,11 @@ function FlameCore.Sonic.constructor(_ARG_0_)
   _ARG_0_.areas = {
     ["Area A"] = FlameCore.SonicA,
     ["Area B"] = FlameCore.SonicB,
-    ["Area A(Tag)"] = FlameCore.TagA
+    ["Area A(Tag)"] = FlameCore.TagA,
+	["Area A(Tails)"] = FlameCore.TailsA,
+	["Area B(Tails)"] = FlameCore.TailsB,
+	["Area A(Blaze)"] = FlameCore.BlazeA,
+	["Area B(Blaze)"] = FlameCore.BlazeB
   }
   _ARG_0_.area = "Area A"
 end

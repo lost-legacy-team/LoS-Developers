@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "csc/shadow/a",
+  mission_area = "csc/omega/a",
   mission_terrain = "stage/csc/a/",
   mission_set_default = "scripts/mission/6020/set_cscA_shadow.XML",
   mission_is_battle = true,
@@ -47,14 +47,14 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "BtoF" then
     g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/shadow/f"
+    g_mission_information.mission_area = "csc/rouge/f"
     g_mission_information.mission_set_default = "scripts/mission/6020/set_cscF2_silver.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "AtoB" then
     g_mission_information.mission_terrain = "stage/csc/b/"
-    g_mission_information.mission_area = "csc/silver/b"
+    g_mission_information.mission_area = "csc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6020/set_cscB_silver.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true

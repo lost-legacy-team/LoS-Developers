@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "silver_stg_csc",
-  mission_area = "csc/silver/f1",
+  mission_area = "csc/blaze/f1",
   mission_terrain = "stage/csc/f/",
   mission_set_default = "scripts/mission/6000/set_cscF1_blaze.XML",
   mission_movie_start = "event/e0200/e0200.sfd",
@@ -194,9 +194,9 @@ function on_talk_setup(_ARG_0_, _ARG_1_)
   end
 end
 function on_goto(_ARG_0_, _ARG_1_)
-  if g_mission_information.mission_area == "csc/silver/b" then
+  if g_mission_information.mission_area == "csc/blaze/b" then
     g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/silver/f2"
+    g_mission_information.mission_area = "csc/blaze/f2"
     g_mission_information.mission_set_default = "scripts/mission/6000/set_cscF2_blaze.XML"
     g_mission_information.mission_path_default = "scripts/mission/6000/path_cscF_blaze"
     g_mission_information.mission_is_battle = true
@@ -209,7 +209,7 @@ function on_event(_ARG_0_, _ARG_1_)
   end
   if _ARG_1_ == "e0200_end" then
     g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/silver/f1"
+    g_mission_information.mission_area = "csc/blaze/f1"
     g_mission_information.mission_set_default = "scripts/mission/6000/set_cscF1_blaze.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
@@ -242,7 +242,7 @@ function on_event(_ARG_0_, _ARG_1_)
     MissionClear(_ARG_0_, "complete")
   elseif _ARG_1_ == "F1toB" then
     g_mission_information.mission_terrain = "stage/csc/b/"
-    g_mission_information.mission_area = "csc/silver/b"
+    g_mission_information.mission_area = "csc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6000/set_cscB_silver.XML"
     g_mission_information.mission_path_default = "scripts/mission/6000/path_cscB_silver"
     g_mission_information.mission_is_battle = true
@@ -264,14 +264,14 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "csc/silver/f1" then
+  if g_mission_information.mission_area == "csc/blaze/f1" then
     g_mission_information.mission_terrain = "stage/csc/b/"
-    g_mission_information.mission_area = "csc/silver/b"
+    g_mission_information.mission_area = "csc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6000/set_cscB_silver.XML"
     g_mission_information.mission_path_default = "scripts/mission/6000/path_cscB_silver"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif g_mission_information.mission_area == "csc/silver/f2" then
+  elseif g_mission_information.mission_area == "csc/blaze/f2" then
     g_mission_information.mission_progress = 5
     SetGlobalFlag(_ARG_0_, 4097, 1)
     Result(_ARG_0_, "g_result_csc")

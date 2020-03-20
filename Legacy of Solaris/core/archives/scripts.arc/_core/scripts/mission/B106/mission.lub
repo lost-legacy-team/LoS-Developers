@@ -219,9 +219,9 @@ function on_goto(_ARG_0_, _ARG_1_)
       g_mission_information.mission_is_battle = false
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
     end
-  elseif g_mission_information.mission_area == "aqa/sonic/a" then
+  elseif g_mission_information.mission_area == "aqa/omega/a" then
     g_mission_information.mission_terrain = "stage/aqa/b/"
-    g_mission_information.mission_area = "aqa/sonic/b"
+    g_mission_information.mission_area = "aqa/omega/b"
     g_mission_information.mission_set_default = "scripts/mission/8034/set_aqaB_knuckles.xml"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -235,7 +235,7 @@ function on_event(_ARG_0_, _ARG_1_)
     if GetTemporaryFlag(_ARG_0_, c_flag_0905) == 1 then
       g_mission_information.mission_string = "knuckles_stg_aqa"
       g_mission_information.mission_terrain = "stage/aqa/a/"
-      g_mission_information.mission_area = "aqa/sonic/a"
+      g_mission_information.mission_area = "aqa/omega/a"
       g_mission_information.mission_set_default = "scripts/mission/8034/set_aqaA_knuckles.xml"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -385,7 +385,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "aqa/sonic/b" then
+  if g_mission_information.mission_area == "aqa/omega/b" then
     g_mission_information.mission_progress = 97
     SetGlobalFlag(_ARG_0_, 4040, 1)
     Result(_ARG_0_, "g_result_aqa")

@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "sonic_stg_csc",
-  mission_area = "csc/sonic/a",
+  mission_area = "csc/omega/a",
   mission_terrain = "stage/csc/a/",
   mission_set_default = "scripts/mission/8017/set_cscA_knuckles.XML",
   mission_event_start = "e0009",
@@ -70,23 +70,23 @@ script.reload("scripts/mission/B103/mission_talk.lua")
 function main(_ARG_0_)
 end
 function on_goto(_ARG_0_, _ARG_1_)
-  if g_mission_information.mission_area == "csc/sonic/a" then
+  if g_mission_information.mission_area == "csc/omega/a" then
     g_mission_information.mission_terrain = "stage/csc/b/"
-    g_mission_information.mission_area = "csc/sonic/b"
+    g_mission_information.mission_area = "csc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/8017/set_cscB_knuckles.xml"
 	g_mission_information.mission_path_default = "scripts/mission/8017/path_cscB_knuckles"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif g_mission_information.mission_area == "csc/sonic/b" then
+  elseif g_mission_information.mission_area == "csc/blaze/b" then
     g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/sonic/f2"
+    g_mission_information.mission_area = "csc/knuckles/f"
     g_mission_information.mission_set_default = "scripts/mission/8017/set_cscF2_knuckles.xml"
     g_mission_information.mission_path_default = "scripts/mission/8017/path_cscF2_knuckles"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif g_mission_information.mission_area == "flc/sonic/a" then
+  elseif g_mission_information.mission_area == "flc/blaze/a" then
     g_mission_information.mission_terrain = "stage/flc/b/"
-    g_mission_information.mission_area = "flc/sonic/b"
+    g_mission_information.mission_area = "flc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/8022/set_flc_b_sonic.xml"
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
@@ -104,7 +104,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0013_end" then
     g_mission_information.mission_string = "sonic_stg_flc"
     g_mission_information.mission_terrain = "stage/flc/a/"
-    g_mission_information.mission_area = "flc/sonic/a"
+    g_mission_information.mission_area = "flc/blaze/a"
     g_mission_information.mission_set_default = "scripts/mission/8022/set_flc_a_sonic.xml"
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
     g_mission_information.mission_area_text = "flamecore"
@@ -146,12 +146,12 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "csc/sonic/f2" then
+  if g_mission_information.mission_area == "csc/knuckles/f" then
     g_mission_information.mission_progress = 40
     SetGlobalFlag(_ARG_0_, 4015, 1)
     SetGlobalFlag(_ARG_0_, 51, 1)
     Result(_ARG_0_, "g_result_csc")
-  elseif g_mission_information.mission_area == "flc/sonic/b" then
+  elseif g_mission_information.mission_area == "flc/blaze/b" then
     g_mission_information.mission_progress = 45
     g_mission_information.mission_area_text = "iblis"
     SetGlobalFlag(_ARG_0_, 4020, 1)

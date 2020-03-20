@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act12",
-  mission_area = "csc/shadow/f",
+  mission_area = "csc/blaze/f",
   mission_terrain = "stage/csc/f/",
   mission_set_default = "scripts/mission/6110/set_cscF_shadow.XML",
   mission_is_battle = true,

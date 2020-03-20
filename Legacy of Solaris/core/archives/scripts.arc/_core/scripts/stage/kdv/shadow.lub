@@ -2,7 +2,8 @@ KingdomValley.Shadow = inherits_from(ActionStage)
 KingdomValley.Shadow.scripts = {
   "scripts/stage/kdv/a_shadow.lua",
   "scripts/stage/kdv/b_shadow.lua",
-  "scripts/stage/kdv/d_shadow.lua"
+  "scripts/stage/kdv/d_shadow.lua",
+  "scripts/stage/kdv/a1_shadow.lua",
 }
 function KingdomValley.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -10,7 +11,8 @@ function KingdomValley.Shadow.constructor(_ARG_0_)
   _ARG_0_.areas = {
     ["Area A"] = KingdomValley.ShadowA,
     ["Area B"] = KingdomValley.ShadowB,
-    ["Area D"] = KingdomValley.ShadowD
+    ["Area D"] = KingdomValley.ShadowD,
+	["Area A1"] = KingdomValley.ShadowA1
   }
   _ARG_0_.area = "Area A"
   _ARG_0_.result_name = 0

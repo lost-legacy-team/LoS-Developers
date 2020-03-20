@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "rct/silver/a",
+  mission_area = "rct/tails/a",
   mission_terrain = "stage/rct/a",
   mission_set_default = "scripts/mission/6030/set_rctA_tails.XML",
   mission_is_battle = true,

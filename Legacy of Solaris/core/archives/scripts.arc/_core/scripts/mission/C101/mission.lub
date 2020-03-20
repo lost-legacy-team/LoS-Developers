@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "rouge_stg_wap",
-  mission_area = "wap/shadow/b",
+  mission_area = "wap/blaze/b",
   mission_terrain = "stage/wap/b/",
   mission_set_default = "scripts/mission/6018/set_wap_b_rouge.XML",
   mission_movie_start = "event/e0100/e0100.sfd",
@@ -294,7 +294,7 @@ function on_event(_ARG_0_, _ARG_1_)
     SetTemporaryFlag(_ARG_0_, c_flag_1116, 1)
   elseif _ARG_1_ == "e0100_end" then
     g_mission_information.mission_terrain = "stage/wap/b/"
-    g_mission_information.mission_area = "wap/shadow/b"
+    g_mission_information.mission_area = "wap/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6018/set_wap_b_rouge.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -335,7 +335,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "wap/shadow/b" then
+  if g_mission_information.mission_area == "wap/blaze/b" then
     g_mission_information.mission_progress = 5
     SetGlobalFlag(_ARG_0_, 4051, 1)
     Result(_ARG_0_, "g_result_wap")

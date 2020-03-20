@@ -209,7 +209,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0004_end" then
     g_mission_information.mission_string = "tails_stg_dtd"
     g_mission_information.mission_terrain = "stage/dtd/a/"
-    g_mission_information.mission_area = "dtd/sonic/a"
+    g_mission_information.mission_area = "dtd/tails/a"
     g_mission_information.mission_set_default = "scripts/mission/6012/set_dtd_a_tails.xml"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -403,7 +403,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "dtd/sonic/a" then
+  if g_mission_information.mission_area == "dtd/tails/a" then
     g_mission_information.mission_progress = 20
     SetGlobalFlag(_ARG_0_, 4005, 1)
     Result(_ARG_0_, "g_result_dtd")

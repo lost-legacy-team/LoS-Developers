@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wvo/tails/a",
+  mission_area = "wvo/omega/a",
   mission_terrain = "stage/wvo/a/",
   mission_set_default = "scripts/mission/8010/set_wvoA_knuckles.XML",
   mission_is_battle = true,

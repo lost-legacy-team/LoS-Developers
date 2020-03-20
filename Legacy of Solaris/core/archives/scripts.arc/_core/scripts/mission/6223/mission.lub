@@ -169,15 +169,15 @@ function on_goto(_ARG_0_, _ARG_1_)
     if _ARG_1_ == "goto_wap" then
       g_mission_information.mission_string = "silver_stg_wap"
       g_mission_information.mission_terrain = "stage/wap/a"
-      g_mission_information.mission_area = "wap/silver/a"
+      g_mission_information.mission_area = "wap/blaze/a"
       g_mission_information.mission_set_default = "scripts/mission/6003/set_wap_a_blaze.XML"
       g_mission_information.mission_path_default = ""
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
     end
-  elseif g_mission_information.mission_area == "wap/silver/a" and _ARG_1_ == "goto_b" then
+  elseif g_mission_information.mission_area == "wap/blaze/a" and _ARG_1_ == "goto_b" then
     g_mission_information.mission_terrain = "stage/wap/b"
-    g_mission_information.mission_area = "wap/silver/b"
+    g_mission_information.mission_area = "wap/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6003/set_wap_b_blaze.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
@@ -256,7 +256,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "wap/silver/b" then
+  if g_mission_information.mission_area == "wap/blaze/b" then
     g_mission_information.mission_progress = 50
     g_mission_information.mission_area_text = "egggenesis"
     SetGlobalFlag(_ARG_0_, 4112, 1)

@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wvo/shadow/a",
+  mission_area = "wvo/omega/a",
   mission_terrain = "stage/wvo/a/",
   mission_set_default = "scripts/mission/5004/set_wvoA_omega.XML",
   mission_is_battle = true,

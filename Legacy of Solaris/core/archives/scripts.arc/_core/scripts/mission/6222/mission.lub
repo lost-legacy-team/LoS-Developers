@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "blaze_stg_tpj",
-  mission_area = "tpj/sonic/a",
+  mission_area = "tpj/blaze/a",
   mission_terrain = "stage/tpj/a/",
   mission_set_default = "scripts/mission/6002/set_tpjA_blaze.XML",
   mission_event_start = "e0206",
@@ -59,9 +59,9 @@ script.reload("scripts/mission/0201/mission_man.lua")
 function main(_ARG_0_)
 end
 function on_goto(_ARG_0_, _ARG_1_)
-  if g_mission_information.mission_area == "tpj/sonic/a" then
+  if g_mission_information.mission_area == "tpj/blaze/a" then
     g_mission_information.mission_terrain = "stage/tpj/c/"
-    g_mission_information.mission_area = "tpj/silver/c"
+    g_mission_information.mission_area = "tpj/blaze/c"
     g_mission_information.mission_set_default = "scripts/mission/6002/set_tpjC_blaze.XML"
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
@@ -75,7 +75,7 @@ function on_event(_ARG_0_, _ARG_1_)
     if GetTemporaryFlag(_ARG_0_, c_flag_0608) == 1 then
       g_mission_information.mission_string = "blaze_stg_tpj"
       g_mission_information.mission_terrain = "stage/tpj/a/"
-      g_mission_information.mission_area = "tpj/sonic/a"
+      g_mission_information.mission_area = "tpj/blaze/a"
       g_mission_information.mission_set_default = "scripts/mission/6222/set_tpjA_sonic.XML"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)

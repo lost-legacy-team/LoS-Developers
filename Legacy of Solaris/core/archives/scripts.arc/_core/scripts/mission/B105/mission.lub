@@ -107,7 +107,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "goto_wvo" then
     g_mission_information.mission_string = "sonic_stg_wvo_tails"
     g_mission_information.mission_terrain = "stage/wvo/a/"
-    g_mission_information.mission_area = "wvo/tails/a"
+    g_mission_information.mission_area = "wvo/omega/a"
     g_mission_information.mission_set_default = "scripts/mission/8010/set_wvoA_knuckles.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)

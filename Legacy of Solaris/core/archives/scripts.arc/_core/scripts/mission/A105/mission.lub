@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "tails_stg_rdt",
-  mission_area = "rct/silver/a",
+  mission_area = "rct/tails/a",
   mission_terrain = "stage/rct/a/",
   mission_set_default = "scripts/mission/6030/set_rctA_tails.XML",
   mission_event_start = "e0016",
@@ -179,7 +179,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0016_end" then
     g_mission_information.mission_string = "tails_stg_rdt"
     g_mission_information.mission_terrain = "stage/rct/a"
-    g_mission_information.mission_area = "rct/silver/a"
+    g_mission_information.mission_area = "rct/tails/a"
     g_mission_information.mission_set_default = "scripts/mission/6030/set_rctA_tails.XML"
     g_mission_information.mission_path_default = "scripts/mission/6030/path_rctA_tails"
     g_mission_information.mission_is_battle = true
@@ -198,7 +198,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "rct/silver/a" then
+  if g_mission_information.mission_area == "rct/tails/a" then
     g_mission_information.mission_progress = 71
     SetGlobalFlag(_ARG_0_, 4117, 1)
     Result(_ARG_0_, "g_result_rct")

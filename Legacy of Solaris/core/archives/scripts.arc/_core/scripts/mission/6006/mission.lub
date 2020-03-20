@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "flc/shadow/a",
+  mission_area = "flc/blaze/a",
   mission_terrain = "stage/flc/a/",
   mission_set_default = "scripts/mission/6006/set_flc_a_silver.XML",
   mission_path_default = "scripts/mission/6006/path_flcA_silver",
@@ -47,7 +47,7 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "AtoB" then
     g_mission_information.mission_terrain = "stage/flc/b/"
-    g_mission_information.mission_area = "flc/shadow/b"
+    g_mission_information.mission_area = "flc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6006/set_flc_b_silver.XML"
     g_mission_information.mission_path_default = "scripts/mission/6006/path_flcB_silver"
     g_mission_information.mission_is_battle = true

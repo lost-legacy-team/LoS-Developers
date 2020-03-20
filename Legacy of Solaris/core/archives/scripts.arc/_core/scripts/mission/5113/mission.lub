@@ -1,6 +1,6 @@
 g_mission_information = {
-  mission_string = "msg_act31",
-  mission_area = "aqa/sonic/a",
+  mission_string = "msg_act01",
+  mission_area = "aqa/omega/a",
   mission_terrain = "stage/aqa/a/",
   mission_set_default = "scripts/mission/5113/set_aqaA_omega.XML",
   mission_is_battle = true,
@@ -47,7 +47,7 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "goto_b" then
     g_mission_information.mission_terrain = "stage/aqa/b/"
-    g_mission_information.mission_area = "aqa/sonic/b"
+    g_mission_information.mission_area = "aqa/omega/b"
     g_mission_information.mission_set_default = "scripts/mission/5113/set_aqaB_omega.XML"
     g_mission_information.mission_path_default = "scripts/mission/5113/path_aqaB_omega"
     g_mission_information.mission_is_battle = true

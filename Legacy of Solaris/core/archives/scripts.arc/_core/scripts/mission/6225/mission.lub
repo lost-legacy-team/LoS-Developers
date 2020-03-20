@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "silver_stg_kdv",
-  mission_area = "kdv/sonic/a",
+  mission_area = "kdv/blaze/a",
   mission_terrain = "stage/kdv/a/",
   mission_set_default = "scripts/mission/6005/set_kdv_a_blaze.XML",
   mission_event_start = "e0224",
@@ -326,18 +326,18 @@ function on_goto(_ARG_0_, _ARG_1_)
       g_mission_information.mission_is_battle = false
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
     end
-  elseif g_mission_information.mission_area == "flc/shadow/a" then
+  elseif g_mission_information.mission_area == "flc/blaze/a" then
     g_mission_information.mission_terrain = "stage/flc/b/"
-    g_mission_information.mission_area = "flc/shadow/b"
+    g_mission_information.mission_area = "flc/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6006/set_flc_b_silver.XML"
     g_mission_information.mission_path_default = "scripts/mission/6006/path_flcB_silver"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif g_mission_information.mission_area == "kdv/sonic/a" then
+  elseif g_mission_information.mission_area == "kdv/blaze/a" then
     g_mission_information.mission_terrain = "stage/kdv/b/"
-    g_mission_information.mission_area = "kdv/silver/b"
+    g_mission_information.mission_area = "kdv/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/6005/set_kdv_b_blaze.XML"
-    g_mission_information.mission_path_default = "scripts/mission/6005/path_kdvB_sonic"
+    g_mission_information.mission_path_default = "scripts/mission/6005/path_kdvB_blaze"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
@@ -358,7 +358,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0224_end" then
     g_mission_information.mission_string = "silver_stg_kdv"
     g_mission_information.mission_terrain = "stage/kdv/a/"
-    g_mission_information.mission_area = "kdv/sonic/a"
+    g_mission_information.mission_area = "kdv/blaze/a"
     g_mission_information.mission_set_default = "scripts/mission/6005/set_kdv_a_blaze.XML"
     g_mission_information.mission_path_default = "scripts/mission/6005/path_kdvA_blaze"
     g_mission_information.mission_is_battle = true
@@ -370,7 +370,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0226_end" then
     g_mission_information.mission_string = "silver_stg_flc"
     g_mission_information.mission_terrain = "stage/flc/a/"
-    g_mission_information.mission_area = "flc/shadow/a"
+    g_mission_information.mission_area = "flc/blaze/a"
     g_mission_information.mission_set_default = "scripts/mission/6006/set_flc_a_silver.XML"
     g_mission_information.mission_path_default = "scripts/mission/6006/path_flcA_silver"
     g_mission_information.mission_is_battle = true
@@ -443,12 +443,12 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "flc/shadow/b" then
+  if g_mission_information.mission_area == "flc/blaze/b" then
     g_mission_information.mission_area_text = "iblis"
     g_mission_information.mission_progress = 97
     SetGlobalFlag(_ARG_0_, 4132, 1)
     Result(_ARG_0_, "g_result_flc")
-  elseif g_mission_information.mission_area == "kdv/silver/b" then
+  elseif g_mission_information.mission_area == "kdv/blaze/b" then
     g_mission_information.mission_progress = 93
     SetGlobalFlag(_ARG_0_, 4127, 1)
     Result(_ARG_0_, "g_result_kdv")

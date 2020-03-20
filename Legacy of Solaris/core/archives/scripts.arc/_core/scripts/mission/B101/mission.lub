@@ -202,7 +202,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "goto_dtd" then
     g_mission_information.mission_string = "knuckles_stg_dtd"
     g_mission_information.mission_terrain = "stage/dtd/b/"
-    g_mission_information.mission_area = "dtd/silver/b"
+    g_mission_information.mission_area = "dtd/omega/b"
     g_mission_information.mission_set_default = "scripts/mission/8011/set_dtd_b_silver.xml"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -396,7 +396,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "dtd/silver/b" then
+  if g_mission_information.mission_area == "dtd/omega/b" then
     g_mission_information.mission_progress = 20
     SetGlobalFlag(_ARG_0_, 4005, 1)
     Result(_ARG_0_, "g_result_dtd")

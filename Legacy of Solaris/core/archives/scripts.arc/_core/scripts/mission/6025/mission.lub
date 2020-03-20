@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wap/sonic/b",
+  mission_area = "wap/blaze/b",
   mission_terrain = "stage/wap/b",
   mission_set_default = "scripts/mission/6025/set_wap_b_sonic.XML",
   mission_is_battle = true,

@@ -4,7 +4,9 @@ CrisisCity.Shadow.scripts = {
   "scripts/stage/csc/b_shadow.lua",
   "scripts/stage/csc/c_shadow.lua",
   "scripts/stage/csc/e_shadow.lua",
-  "scripts/stage/csc/f_shadow.lua"
+  "scripts/stage/csc/f_shadow.lua",
+  "scripts/stage/csc/a_omega.lua",
+  "scripts/stage/csc/f_rouge.lua",
 }
 function CrisisCity.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -14,7 +16,9 @@ function CrisisCity.Shadow.constructor(_ARG_0_)
     ["Area B"] = CrisisCity.ShadowB,
     ["Area C"] = CrisisCity.ShadowC,
 	["Area E"] = CrisisCity.ShadowE,
-    ["Area F"] = CrisisCity.ShadowF
+    ["Area F"] = CrisisCity.ShadowF,
+	["Area A(Omega)"] = CrisisCity.OmegaA,
+	["Area F(Rouge)"] = CrisisCity.RougeF
   }
   _ARG_0_.area = "Area A"
 end

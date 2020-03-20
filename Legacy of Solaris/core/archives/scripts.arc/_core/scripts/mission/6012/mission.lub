@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "dtd/sonic/a",
+  mission_area = "dtd/tails/a",
   mission_terrain = "stage/dtd/a/",
   mission_set_default = "scripts/mission/6012/set_dtd_a_tails.XML",
   mission_is_battle = true,

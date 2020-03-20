@@ -11,7 +11,6 @@ function DustyDesert.ShadowA.Setup(_ARG_0_)
     Game.LoadTerrain("stage/dtd/a/"),
     Game.LoadStageSet("scripts/mission/0109/set_dtd_a_shadow.xml"),
     Game.LoadStageSet("placement/dtd/dtd_mapA_effects.xml", "particle"),
-	Game.LoadStageSet("placement/dtd/set_dtdA_omega_area.XML", "area"),
     Game.LoadSceneParams("scripts/stage/dtd/scene_dtd_a_sonic.lua"),
     Game.LoadPath("placement/dtd/dtd_s_a"),
     Game.LoadStageSet("placement/dtd/dset_dtd_a_sonic.XML", "pathobj"),

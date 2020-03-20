@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "tpj/shadow/c",
+  mission_area = "tpj/blaze/c",
   mission_terrain = "stage/tpj/c/",
   mission_set_default = "scripts/mission/5002/set_tpjc_rouge.XML",
   mission_is_battle = true,

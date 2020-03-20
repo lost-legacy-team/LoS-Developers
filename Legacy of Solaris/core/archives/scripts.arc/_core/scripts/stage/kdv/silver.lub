@@ -1,14 +1,19 @@
 KingdomValley.Silver = inherits_from(ActionStage)
 KingdomValley.Silver.scripts = {
+  "scripts/stage/kdv/a_blaze.lua",
   "scripts/stage/kdv/b_silver.lua",
-  "scripts/stage/kdv/d_silver.lua"
+  "scripts/stage/kdv/d_silver.lua",
+  "scripts/stage/kdv/b_blaze.lua",
 }
 function KingdomValley.Silver.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
   Game.Log("construct KingdomValley.Silver")
   _ARG_0_.areas = {
-    ["Area B"] = KingdomValley.SilverB,
-    ["Area D"] = KingdomValley.SilverD
+    ["Area A(Blaze)"] = KingdomValley.BlazeA,
+	["Area B"] = KingdomValley.SilverB,
+    ["Area D"] = KingdomValley.SilverD,
+	["Area B(Blaze)"] = KingdomValley.BlazeB,
+	["Area A(Blaze)"] = KingdomValley.BlazeA
   }
   _ARG_0_.area = "Area D"
   _ARG_0_.result_name = 0

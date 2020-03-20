@@ -238,7 +238,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0128_end" then
     g_mission_information.mission_string = "shadow_stg_dtd"
     g_mission_information.mission_terrain = "stage/dtd/b/"
-    g_mission_information.mission_area = "dtd/shadow/b"
+    g_mission_information.mission_area = "dtd/omega/b"
     g_mission_information.mission_set_default = "scripts/mission/6024/set_dtd_b_rouge.XML"
     g_mission_information.mission_is_battle = true
     g_mission_information.mission_area_text = "dustydesert"
@@ -298,7 +298,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "dtd/shadow/b" then
+  if g_mission_information.mission_area == "dtd/omega/b" then
     g_mission_information.mission_progress = 95
     SetGlobalFlag(_ARG_0_, 4086, 1)
     Result(_ARG_0_, "g_result_dtd")

@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "csc/shadow/a",
+  mission_area = "csc/omega/a",
   mission_terrain = "stage/csc/a/",
   mission_set_default = "scripts/mission/5007/set_cscA_omega.XML",
   mission_is_battle = true,

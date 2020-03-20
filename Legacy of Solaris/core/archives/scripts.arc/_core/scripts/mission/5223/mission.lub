@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "omega_stg_csc",
-  mission_area = "csc/shadow/a",
+  mission_area = "csc/omega/a",
   mission_terrain = "stage/csc/a/",
   mission_set_default = "scripts/mission/5007/set_cscA_omega.XML",
   mission_event_start = "e0109",
@@ -79,9 +79,9 @@ function on_goto(_ARG_0_, _ARG_1_)
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   else
-    if g_mission_information.mission_area == "flc/shadow/a" then
+    if g_mission_information.mission_area == "flc/blaze/a" then
       g_mission_information.mission_terrain = "stage/flc/b/"
-      g_mission_information.mission_area = "flc/shadow/b"
+      g_mission_information.mission_area = "flc/blaze/b"
       g_mission_information.mission_set_default = "scripts/mission/5003/set_flc_b_omega.XML"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -94,7 +94,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0109_end" then
     g_mission_information.mission_string = "omega_stg_csc"
     g_mission_information.mission_terrain = "stage/csc/a/"
-    g_mission_information.mission_area = "csc/shadow/a"
+    g_mission_information.mission_area = "csc/omega/a"
     g_mission_information.mission_set_default = "scripts/mission/5007/set_cscA_omega.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -102,7 +102,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0115_end" then
     g_mission_information.mission_string = "omega_stg_csc"
     g_mission_information.mission_terrain = "stage/flc/a/"
-    g_mission_information.mission_area = "flc/shadow/a"
+    g_mission_information.mission_area = "flc/blaze/a"
     g_mission_information.mission_set_default = "scripts/mission/5003/set_flc_a_omega.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
@@ -148,11 +148,11 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "csc/shadow/a" then
+  if g_mission_information.mission_area == "csc/omega/a" then
     g_mission_information.mission_progress = 31
     SetGlobalFlag(_ARG_0_, 4061, 1)
     Result(_ARG_0_, "g_result_csc")
-  elseif g_mission_information.mission_area == "flc/shadow/b" then
+  elseif g_mission_information.mission_area == "flc/blaze/b" then
     g_mission_information.mission_progress = 37
     SetGlobalFlag(_ARG_0_, 4066, 1)
     Result(_ARG_0_, "g_result_flc")

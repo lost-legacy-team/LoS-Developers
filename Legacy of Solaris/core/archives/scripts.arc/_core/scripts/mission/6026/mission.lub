@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "dtd/silver/b",
+  mission_area = "dtd/omega/b",
   mission_terrain = "stage/dtd/b/",
   mission_set_default = "scripts/mission/6026/set_dtd_b_amy.XML",
   mission_is_battle = true,

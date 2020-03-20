@@ -291,7 +291,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "goto_wvo" then
     g_mission_information.mission_string = "shadow_stg_wvo"
     g_mission_information.mission_terrain = "stage/wvo/a/"
-    g_mission_information.mission_area = "wvo/shadow/a"
+    g_mission_information.mission_area = "wvo/omega/a"
     g_mission_information.mission_set_default = "scripts/mission/6023/set_wvoA_rouge.XML"
     g_mission_information.mission_is_battle = true
     g_mission_information.mission_area_text = "waveocean"
@@ -317,7 +317,7 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   end
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "wvo/shadow/a" then
+  if g_mission_information.mission_area == "wvo/omega/a" then
     g_mission_information.mission_progress = 82
     SetGlobalFlag(_ARG_0_, 4081, 1)
     Result(_ARG_0_, "g_result_wvo")

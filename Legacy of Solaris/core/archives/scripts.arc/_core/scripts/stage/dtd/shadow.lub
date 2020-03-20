@@ -2,6 +2,8 @@ DustyDesert.Shadow = inherits_from(ActionStage)
 DustyDesert.Shadow.scripts = {
   "scripts/stage/dtd/a_shadow.lua",
   "scripts/stage/dtd/b_shadow.lua",
+  "scripts/stage/dtd/a_omega.lua",
+  "scripts/stage/dtd/b_omega.lua",
 }
 function DustyDesert.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -9,6 +11,8 @@ function DustyDesert.Shadow.constructor(_ARG_0_)
   _ARG_0_.areas = {
     ["Area A"] = DustyDesert.ShadowA,
     ["Area B"] = DustyDesert.ShadowB,
+	["Area A(Omega)"] = DustyDesert.OmegaA,
+	["Area B(Omega)"] = DustyDesert.OmegaB
   }
   _ARG_0_.area = "Area A"
 end

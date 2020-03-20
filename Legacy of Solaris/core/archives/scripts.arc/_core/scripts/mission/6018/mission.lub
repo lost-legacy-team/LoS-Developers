@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wap/shadow/b",
+  mission_area = "wap/blaze/b",
   mission_terrain = "stage/wap/b/",
   mission_set_default = "scripts/mission/6018/set_wap_b_rouge.XML",
   mission_is_battle = true,
