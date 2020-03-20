@@ -117,7 +117,7 @@ c_chaos_barrier = {
     z = 0 * meter
   }
 }
-c_chaos_spinkick_power = 150 * N
+c_chaos_spinkick_power = 50 * N
 c_chaos_spinkick = {
   type = shape_cylinder,
   radius = 3 * meter,
