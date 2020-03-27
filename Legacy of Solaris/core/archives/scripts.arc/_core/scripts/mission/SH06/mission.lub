@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "wvo/shadow/a1",
   mission_terrain = "stage/wvo/a/",
   mission_set_default = "scripts/mission/SH06/set_wvoA_silver.XML",

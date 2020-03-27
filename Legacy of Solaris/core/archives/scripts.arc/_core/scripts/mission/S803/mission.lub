@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "csc/sonic/b",
   mission_terrain = "stage/csc/b/",
   mission_set_default = "scripts/mission/S803/set_cscB_sonic_ex.XML",

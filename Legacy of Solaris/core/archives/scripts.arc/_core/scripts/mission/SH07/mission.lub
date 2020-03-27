@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "aqa/shadow/a",
   mission_terrain = "stage/aqa/a/",
   mission_set_default = "scripts/mission/SH07/set_aqaA_shadow.XML",

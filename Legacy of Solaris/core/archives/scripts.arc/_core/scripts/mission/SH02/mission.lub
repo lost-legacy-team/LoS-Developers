@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "kdv/shadow/a1",
   mission_terrain = "stage/kdv/a/",
   mission_set_default = "scripts/mission/SH02/set_kdv_a_shadow_ex.XML",

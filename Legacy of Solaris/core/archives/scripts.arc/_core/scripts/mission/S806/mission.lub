@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "tpj/sonic/a",
   mission_terrain = "stage/tpj/a/",
   mission_set_default = "scripts/mission/S806/set_tpjA_sonic_ex.XML",

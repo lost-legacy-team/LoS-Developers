@@ -3,7 +3,8 @@ WaveOcean.Sonic.scripts = {
   "scripts/stage/wvo/a_sonic.lua",
   "scripts/stage/wvo/b_sonic.lua",
   "scripts/stage/wvo/a_tails.lua",
-  "scripts/stage/wvo/a_tag.lua"
+  "scripts/stage/wvo/a_tag.lua",
+  "scripts/stage/wvo/a1_sonic.lua"
 }
 function WaveOcean.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -11,6 +12,7 @@ function WaveOcean.Sonic.constructor(_ARG_0_)
   _ARG_0_.areas = {
     ["Area A"] = WaveOcean.SonicA,
     ["Area B"] = WaveOcean.SonicB,
+	["Area A1"] = WaveOcean.SonicA1,
     ["Area A(Tails)"] = WaveOcean.TailsA,
     ["Area A(Tag)"] = WaveOcean.TagA
   }

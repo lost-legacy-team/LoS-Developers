@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "dtd/sonic/b",
   mission_terrain = "stage/dtd/b/",
   mission_set_default = "scripts/mission/S801/set_dtd_b_super.XML",

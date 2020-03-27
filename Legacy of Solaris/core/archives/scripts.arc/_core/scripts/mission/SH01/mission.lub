@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act12",
+  mission_string = "msg_act01",
   mission_area = "wap/silver/a",
   mission_terrain = "stage/wap/a/",
   mission_set_default = "scripts/mission/SH01/set_wap_a_silver.XML",
