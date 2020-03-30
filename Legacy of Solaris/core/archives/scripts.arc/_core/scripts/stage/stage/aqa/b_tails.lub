@@ -1,0 +1,125 @@
+AquaticBase.TailsB = inherits_from(ActionArea)
+function AquaticBase.TailsB.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct AquaticBase.TailsB")
+end
+function AquaticBase.TailsB.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/stage/render_test002.lua"),
+    Game.LoadTerrain("stage/aqa/b/"),
+    Game.LoadStageSet("placement/aqa/set_aqaB_sonic.XML"),
+    Game.LoadStageSet("placement/aqa/aqa_mapB_effects.xml", "particle"),
+    Game.LoadParticle("particle/map_aqa.plc"),
+    Game.LoadSceneParams("scripts/stage/aqa/scene_aqa_b.lua"),
+    Game.LoadPath("placement/aqa/aqa_s_b"),
+    Game.LoadStageSet("placement/aqa/d_set_aqaB_sonic.XML", "pathobj"),
+    Game.LoadPath("placement/aqa/d_aqa_s_b", "pathobj"),
+    Game.LoadCameraSet("placement/aqa/set_aqaB_sonic.XML"),
+    Game.LoadPath("placement/aqa/aqa_s_b_guide", "guide"),
+    Game.LoadSoundBank("sound/stage_aqa"),
+    Game.LoadVoiceBank("sound/voice_aqa_e"),
+    Game.PlayBGM("stg_aqa_b")
+  })
+  Game.SetPlayer(43619.371, 9628.525, -31967.338, 180, "sonic_new.lua")
+  Game.SetGenArea({
+    size = {
+      165 * 100,
+      165 * 100,
+      165 * 100
+    }
+  })
+end
+function AquaticBase.TailsB.door01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door01")
+end
+function AquaticBase.TailsB.door02(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door02")
+end
+function AquaticBase.TailsB.door_close02(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.ProcessMessage("aqa_door02", "GateClose")
+end
+function AquaticBase.TailsB.door03(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door03")
+end
+function AquaticBase.TailsB.door04(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door04")
+end
+function AquaticBase.TailsB.door07(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door07")
+end
+function AquaticBase.TailsB.door06(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.StartEntityByName("amigo_collision01")
+  Game.StartEntityByName("GroupHelper10")
+end
+function AquaticBase.TailsB.door08(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door08")
+end
+function AquaticBase.TailsB.door09(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door09")
+end
+function AquaticBase.TailsB.door10(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_door10")
+end
+function AquaticBase.TailsB.close01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue01")
+end
+function AquaticBase.TailsB.close02(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue02")
+end
+function AquaticBase.TailsB.close03(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue03")
+end
+function AquaticBase.TailsB.close04(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue04")
+end
+function AquaticBase.TailsB.close04(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue04")
+end
+function AquaticBase.TailsB.close05(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue05")
+end
+function AquaticBase.TailsB.close06(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue06")
+end
+function AquaticBase.TailsB.close07(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue07")
+end
+function AquaticBase.TailsB.close08(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue08")
+end
+function AquaticBase.TailsB.close09(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue09")
+end
+function AquaticBase.TailsB.close10(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue10")
+end
+function AquaticBase.TailsB.close11(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue11")
+end
+function AquaticBase.TailsB.close12(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("aqa_glass_blue12")
+end
