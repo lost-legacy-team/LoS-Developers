@@ -104,6 +104,8 @@ function FlameCore.ShadowB.door_open02(_ARG_0_, _ARG_1_)
   _ARG_0_:OffAllLightCollision()
   Game.ProcessMessage("flc_door04", "GateOpen")
   Game.StartEntityByName("GroupHelper43")
+  Game.Signal("common_cage07")
+  Game.StartEntityByName("GroupHelper30")
 end
 function FlameCore.ShadowB.door_close02(_ARG_0_, _ARG_1_)
   Game.ProcessMessage("flc_door04", "GateClose")
