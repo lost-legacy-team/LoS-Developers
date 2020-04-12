@@ -77,14 +77,6 @@ c_table_single_act_trial = {
     stage_type = 1,
     mission_type = 2,
     act_id = 43
-  },
-  { 
-    mission_file = "scripts/mission/9000/mission.lua",
-    episode = 6,
-    act_type = 9,
-    stage_type = 6,
-    mission_type = 2,
-    act_id = 23
   }
 }
 c_table_single_town_trial = {}
