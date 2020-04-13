@@ -13,6 +13,7 @@ function KingdomValley.BlazeB.Setup(_ARG_0_)
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_b.lua"),
     Game.LoadStageSet("placement/kdv/dset_kdv_b_sonic.XML", "pathobj"),
     Game.LoadPath("placement/kdv/kdv_s_b"),
+	Game.LoadPath("placement/kdv/kdv_s_b_guide", "guide"),
     Game.LoadCameraSet("placement/kdv/set_kdv_b_sonic.XML"),
     Game.LoadSoundBank("sound/stage_kdv"),
     Game.LoadVoiceBank("sound/voice_kdv_e"),
