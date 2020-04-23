@@ -1,13 +1,13 @@
 g_mission_information = {
   mission_string = "msg_twn_shadow31",
-  mission_area = "twn/sonic/c",
-  mission_terrain = "stage/twn/c/",
-  mission_set_default = "scripts/mission/5222/set_mission_0008c_01.XML",
+  mission_area = "tpj/blaze/c",
+  mission_terrain = "stage/tpj/c/",
+  mission_set_default = "scripts/mission/5002/set_tpjC_rouge.XML",
   mission_event_start = "e0104",
   mission_startup = "e0104_end",
   mission_text = "text/msg_twn_omega.mst",
-  mission_is_battle = false,
-  mission_area_text = "egggenesis",
+  mission_is_battle = true,
+  mission_area_text = "tropicaljungle",
   mission_progress = 62
 }
 g_shop = {
@@ -72,7 +72,7 @@ function on_event(_ARG_0_, _ARG_1_)
     Result(_ARG_0_, "g_result_genesis")
   elseif _ARG_1_ == "goto_tpj" then
     if GetTemporaryFlag(_ARG_0_, c_flag_0608) == 1 then
-      g_mission_information.mission_string = "omega_stg_tpj"
+      g_mission_information.mission_string = "msg_twn_shadow31"
       g_mission_information.mission_terrain = "stage/tpj/c/"
       g_mission_information.mission_area = "tpj/blaze/c"
       g_mission_information.mission_set_default = "scripts/mission/5002/set_tpjC_rouge.XML"
@@ -85,12 +85,12 @@ function on_event(_ARG_0_, _ARG_1_)
     SetTemporaryFlag(_ARG_0_, c_flag_0606, 1)
     SetTemporaryFlag(_ARG_0_, c_flag_0608, 1)
     g_mission_information.mission_string = "msg_twn_shadow31"
-    g_mission_information.mission_terrain = "stage/twn/c/"
-    g_mission_information.mission_area = "twn/sonic/c"
-    g_mission_information.mission_set_default = "scripts/mission/5222/set_mission_0008c_01.XML"
-    g_mission_information.mission_is_battle = false
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    g_mission_information.mission_area_text = "msg_solleanna_c"
+      g_mission_information.mission_terrain = "stage/tpj/c/"
+      g_mission_information.mission_area = "tpj/blaze/c"
+      g_mission_information.mission_set_default = "scripts/mission/5002/set_tpjC_rouge.XML"
+      g_mission_information.mission_is_battle = true
+      ChangeArea(_ARG_0_, g_mission_information.mission_area)
+      g_mission_information.mission_area_text = "tropicaljungle"
   elseif _ARG_1_ == "e0114_end" then
     SetNextMission(_ARG_0_, "scripts/mission/5223/mission.lua")
     MissionClear(_ARG_0_, "complete")

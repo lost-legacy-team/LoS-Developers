@@ -4,6 +4,7 @@ TropicalJungle.Sonic.scripts = {
   "scripts/stage/tpj/b_sonic.lua",
   "scripts/stage/tpj/c_sonic.lua",
   "scripts/stage/tpj/a_blaze.lua",
+  "scripts/stage/tpj/b_blaze.lua",
   "scripts/stage/tpj/c_blaze.lua",
 }
 function TropicalJungle.Sonic.constructor(_ARG_0_)
@@ -14,6 +15,7 @@ function TropicalJungle.Sonic.constructor(_ARG_0_)
     ["Area B"] = TropicalJungle.SonicB,
 	["Area C"] = TropicalJungle.SonicC,
 	["Area A(Blaze)"] = TropicalJungle.BlazeA,
+	["Area B(Blaze)"] = TropicalJungle.BlazeB,
 	["Area C(Blaze)"] = TropicalJungle.BlazeC
   }
   _ARG_0_.area = "Area A"

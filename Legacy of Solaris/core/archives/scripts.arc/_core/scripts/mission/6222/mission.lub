@@ -60,9 +60,9 @@ function main(_ARG_0_)
 end
 function on_goto(_ARG_0_, _ARG_1_)
   if g_mission_information.mission_area == "tpj/blaze/a" then
-    g_mission_information.mission_terrain = "stage/tpj/c/"
-    g_mission_information.mission_area = "tpj/blaze/c"
-    g_mission_information.mission_set_default = "scripts/mission/6002/set_tpjC_blaze.XML"
+    g_mission_information.mission_terrain = "stage/tpj/b/"
+    g_mission_information.mission_area = "tpj/blaze/b"
+    g_mission_information.mission_set_default = "scripts/mission/6002/set_tpjB_blaze.XML"
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
 end
