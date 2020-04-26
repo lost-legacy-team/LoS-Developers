@@ -41,11 +41,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if g_mission_information.mission_area == "eGenesis_silver" then
-    if _ARG_1_ == "boss_is_dead" then
-      g_mission_information.mission_area = ""
-      PlayEvent(_ARG_0_, "g_result_genesis", "result_genesis_end")
-    end
+  if _ARG_1_ == "boss_is_dead" then
     Result(_ARG_0_, "g_result_genesis")
   elseif _ARG_1_ == "result_genesis_end" then
     MissionClear(_ARG_0_, "complete")
@@ -55,7 +51,7 @@ function on_talk_icon(_ARG_0_, _ARG_1_)
 end
 function on_talk_setup(_ARG_0_, _ARG_1_)
 end
-function on_talk_open(_ARG_0_, _ARG_1_)
+function on_talk_oepn(_ARG_0_, _ARG_1_)
 end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
