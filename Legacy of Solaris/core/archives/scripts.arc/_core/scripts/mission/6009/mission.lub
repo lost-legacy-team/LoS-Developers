@@ -9,9 +9,9 @@ g_mission_information = {
   mission_is_battle = true
 }
 g_result_genesis = {
-  id = 141,
+  id = 442,
   stagename = "TOWN",
-  timebonus_base = 26000,
+  timebonus_base = 38000,
   timebonus_rate = 80,
   ringbonus_rate = 100,
   rank_s = 30000,

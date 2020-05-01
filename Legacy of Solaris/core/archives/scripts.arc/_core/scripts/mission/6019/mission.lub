@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "kdv/shadow/d",
+  mission_area = "kdv/rouge/d",
   mission_terrain = "stage/kdv/d/",
   mission_set_default = "scripts/mission/6019/set_kdv_D_rouge.XML",
   mission_is_battle = true,
@@ -20,7 +20,7 @@ c_icon_mission = 2
 c_icon_mission_cleared = 3
 c_icon_goal = 4
 g_result_kdv = {
-  id = 38,
+  id = 419,
   stagename = "TOWN",
   timebonus_base = 40000,
   timebonus_rate = 40,

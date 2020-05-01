@@ -9,7 +9,7 @@ g_mission_information = {
   mission_is_battle = true
 }
 g_result_mefiress = {
-  id = 97,
+  id = 431,
   stagename = "TOWN",
   timebonus_base = 34000,
   timebonus_rate = 80,

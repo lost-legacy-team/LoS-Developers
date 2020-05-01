@@ -11,7 +11,7 @@ g_mission_information = {
 }
 g_result_genesis = {
   stagename = "TOWN",
-  id = 201,
+  id = 430,
   timebonus_base = 40000,
   timebonus_rate = 40,
   ringbonus_rate = 100,

@@ -9,7 +9,7 @@ g_mission_information = {
   mission_is_battle = true
 }
 g_result_iblis = {
-  id = 143,
+  id = 443,
   stagename = "TOWN",
   timebonus_base = 34000,
   timebonus_rate = 80,
