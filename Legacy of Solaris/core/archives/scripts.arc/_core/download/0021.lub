@@ -28,7 +28,7 @@ c_table_single_act_trial = {
     act_type = 0,
     stage_type = 6,
     mission_type = 2,
-    act_id = 13
+    act_id = 425
   },
   {
     mission_file = "scripts/mission/5007/mission.lua",
@@ -36,7 +36,7 @@ c_table_single_act_trial = {
     act_type = 1,
     stage_type = 3,
     mission_type = 2,
-    act_id = 18
+    act_id = 426
   },
   {
     mission_file = "scripts/mission/5003/mission.lua",
@@ -44,7 +44,7 @@ c_table_single_act_trial = {
     act_type = 2,
     stage_type = 4,
     mission_type = 2,
-    act_id = 23
+    act_id = 427
   },
   {
     mission_file = "scripts/mission/5004/mission.lua",
@@ -52,7 +52,7 @@ c_table_single_act_trial = {
     act_type = 3,
     stage_type = 0,
     mission_type = 2,
-    act_id = 28
+    act_id = 428
   },
   {
     mission_file = "scripts/mission/5005/mission.lua",
@@ -60,7 +60,7 @@ c_table_single_act_trial = {
     act_type = 4,
     stage_type = 1,
     mission_type = 2,
-    act_id = 33
+    act_id = 429
   },
   {
     mission_file = "scripts/mission/5009/mission.lua",
@@ -68,7 +68,7 @@ c_table_single_act_trial = {
     act_type = 10,
     stage_type = 17,
     mission_type = 0,
-    act_id = 201
+    act_id = 430
   },
   {
     mission_file = "scripts/mission/5010/mission.lua",
@@ -76,7 +76,7 @@ c_table_single_act_trial = {
     act_type = 11,
     stage_type = 22,
     mission_type = 0,
-    act_id = 201
+    act_id = 431
   },
   {
     mission_file = "scripts/mission/5111/mission.lua",
@@ -84,7 +84,7 @@ c_table_single_act_trial = {
     act_type = 9,
     stage_type = 3,
     mission_type = 4,
-    act_id = 100
+    act_id = 432
   },
   {
     mission_file = "scripts/mission/5112/mission.lua",
@@ -92,7 +92,7 @@ c_table_single_act_trial = {
     act_type = 9,
     stage_type = 1,
     mission_type = 2,
-    act_id = 33
+    act_id = 433
   },
   {
     mission_file = "scripts/mission/5110/mission.lua",
@@ -100,7 +100,7 @@ c_table_single_act_trial = {
     act_type = 9,
     stage_type = 2,
     mission_type = 2,
-    act_id = 13
+    act_id = 434
   },
   {
     mission_file = "scripts/mission/5113/mission.lua",
@@ -108,7 +108,7 @@ c_table_single_act_trial = {
     act_type = 9,
     stage_type = 8,
     mission_type = 2,
-    act_id = 43
+    act_id = 435
   }
 }
 c_table_single_town_trial = {}

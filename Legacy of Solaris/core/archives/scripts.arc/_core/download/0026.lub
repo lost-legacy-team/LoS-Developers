@@ -28,7 +28,7 @@ c_table_single_act_trial = {
     act_type = 0,
     stage_type = 3,
     mission_type = 4,
-    act_id = 13
+    act_id = 466
   },
   {
     mission_file = "scripts/mission/SV02/mission.lua",
@@ -36,7 +36,7 @@ c_table_single_act_trial = {
     act_type = 1,
     stage_type = 1,
     mission_type = 4,
-    act_id = 38
+    act_id = 467
   },
   {
     mission_file = "scripts/mission/SV03/mission.lua",
@@ -44,7 +44,7 @@ c_table_single_act_trial = {
     act_type = 2,
     stage_type = 2,
     mission_type = 4,
-    act_id = 64
+    act_id = 468
   },	
   {
     mission_file = "scripts/mission/SV04/mission.lua",
@@ -52,7 +52,7 @@ c_table_single_act_trial = {
     act_type = 3,
     stage_type = 5,
     mission_type = 4,
-    act_id = 69
+    act_id = 469
   },
   {
     mission_file = "scripts/mission/SV05/mission.lua",
@@ -60,7 +60,7 @@ c_table_single_act_trial = {
     act_type = 4,
     stage_type = 8,
     mission_type = 4,
-    act_id = 74
+    act_id = 470
   },
   {
     mission_file = "scripts/mission/SV06/mission.lua",
@@ -68,7 +68,7 @@ c_table_single_act_trial = {
     act_type = 5,
     stage_type = 7,
     mission_type = 4,
-    act_id = 79
+    act_id = 471
   },
   {
     mission_file = "scripts/mission/SV07/mission.lua",
@@ -76,7 +76,7 @@ c_table_single_act_trial = {
     act_type = 6,
     stage_type = 4,
     mission_type = 3,
-    act_id = 84
+    act_id = 472
   }
 }
 c_table_single_town_trial = {}
