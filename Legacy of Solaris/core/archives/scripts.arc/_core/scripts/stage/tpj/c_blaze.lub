@@ -48,3 +48,10 @@ end
 function TropicalJungle.BlazeC.Oneup(_ARG_0_, _ARG_1_)
   Game.Signal("common_cage02")
 end
+function TropicalJungle.BlazeC.Wind(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box1")
+Game.Signal("common_windcollision_box2")
+Game.Signal("common_windcollision_box3")
+end
+

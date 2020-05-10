@@ -1,9 +1,9 @@
-AquaticBase.TailsB = inherits_from(ActionArea)
-function AquaticBase.TailsB.constructor(_ARG_0_)
+AquaticBase.KnucklesB = inherits_from(ActionArea)
+function AquaticBase.KnucklesB.constructor(_ARG_0_)
   ActionArea.constructor(_ARG_0_)
-  Game.Log("construct AquaticBase.TailsB")
+  Game.Log("construct AquaticBase.KnucklesB")
 end
-function AquaticBase.TailsB.Setup(_ARG_0_)
+function AquaticBase.KnucklesB.Setup(_ARG_0_)
   ActionArea.Setup(_ARG_0_)
   _ARG_0_:AddComponent({
     Game.LoadRenderScript("scripts/render/stage/render_test002.lua"),
@@ -27,43 +27,43 @@ function AquaticBase.TailsB.Setup(_ARG_0_)
     }
   })
 end
-function AquaticBase.TailsB.door02(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.door02(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door05")
 end
-function AquaticBase.TailsB.door04(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.door04(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door04")
 end
-function AquaticBase.TailsB.door07(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.door07(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door07")
 end
-function AquaticBase.TailsB.door01(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.door01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door01")
 end
-function AquaticBase.TailsB.door03(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.door03(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door06")
 end
-function AquaticBase.TailsB.close01(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.close01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_glass_blue01")
 end
-function AquaticBase.TailsB.close02(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.close02(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_glass_blue02")
 end
-function AquaticBase.TailsB.close03(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.close03(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_glass_blue03")
 end
-function AquaticBase.TailsB.close04(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.close04(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_glass_blue04")
 end
-function AquaticBase.TailsB.door_last(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesB.door_last(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door08")
 end

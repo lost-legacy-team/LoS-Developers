@@ -10,7 +10,6 @@ function CrisisCity.SonicE.Setup(_ARG_0_)
     Game.LoadRenderScript("scripts/render/stage/render_test_lightmap.lua"),
     Game.LoadTerrain("stage/csc/e/"),
     Game.LoadStageSet("placement/csc/set_cscE_sonic.xml"),
-	Game.LoadStageSet("placement/csc/csc_mapD_effects.xml", "particle"),
     Game.LoadStageSet("placement/csc/set_cscE_sonic_area.xml", "area"),
     Game.LoadSceneParams("scripts/stage/csc/scene_csc_e.lua"),
     Game.LoadPath("placement/csc/path_cscE_sonic"),

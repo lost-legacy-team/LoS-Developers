@@ -67,7 +67,7 @@ OLS = {
     0.95,
     9.0E-6
   },
-  G = 0.97
+  G = 0.85
 }
 EnvMap = {
   FileName = "stage/csc/c/csc_envmap.dds"

@@ -4,7 +4,9 @@ AquaticBase.Sonic.scripts = {
   "scripts/stage/aqa/b_sonic.lua",
   "scripts/stage/aqa/a_tag.lua",
   "scripts/stage/aqa/a_tails.lua",
-  "scripts/stage/aqa/b_tails.lua"
+  "scripts/stage/aqa/b_tails.lua",
+  "scripts/stage/aqa/a_knuckles.lua",
+  "scripts/stage/aqa/b_knuckles.lua"
 }
 function AquaticBase.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -14,7 +16,9 @@ function AquaticBase.Sonic.constructor(_ARG_0_)
     ["Area B"] = AquaticBase.SonicB,
     ["Area A(Tag)"] = AquaticBase.TagA,
 	["Area A(Tails)"] = AquaticBase.TailsA,
-	["Area B(Tails)"] = AquaticBase.TailsB
+	["Area B(Tails)"] = AquaticBase.TailsB,
+	["Area A(Knuckles)"] = AquaticBase.KnucklesA,
+	["Area B(Knuckles)"] = AquaticBase.KnucklesB,
   }
   _ARG_0_.area = "Area A"
 end

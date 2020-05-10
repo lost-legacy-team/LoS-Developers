@@ -10,6 +10,7 @@ function CrisisCity.BlazeB.Setup(_ARG_0_)
     Game.LoadRenderScript("scripts/render/render_gamemode_2_1.lua"),
     Game.LoadTerrain("stage/csc/b/"),
     Game.LoadStageSet("scripts/mission/0201/set_cscB_silver.XML"),
+	Game.LoadStageSet("placement/csc/set_cscB_blaze_area.XML", "area"),
     Game.LoadStageSet("placement/csc/csc_mapB_effects.xml", "particle"),
     Game.LoadSceneParams("scripts/stage/csc/scene_csc_b.lua"),
     Game.LoadPath("scripts/mission/0201/path_cscB_silver"),

@@ -1,9 +1,9 @@
-AquaticBase.TailsA = inherits_from(ActionArea)
-function AquaticBase.TailsA.constructor(_ARG_0_)
+AquaticBase.KnucklesA = inherits_from(ActionArea)
+function AquaticBase.KnucklesA.constructor(_ARG_0_)
   ActionArea.constructor(_ARG_0_)
-  Game.Log("construct AquaticBase.TailsA")
+  Game.Log("construct AquaticBase.KnucklesA")
 end
-function AquaticBase.TailsA.Setup(_ARG_0_)
+function AquaticBase.KnucklesA.Setup(_ARG_0_)
   ActionArea.Setup(_ARG_0_)
   _ARG_0_:AddComponent({
     Game.LoadRenderScript("scripts/render/stage/render_test002.lua"),
@@ -28,39 +28,39 @@ function AquaticBase.TailsA.Setup(_ARG_0_)
     }
   })
 end
-function AquaticBase.TailsA.door01(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door18")
 end
-function AquaticBase.TailsA.door02(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door02(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door09")
 end
-function AquaticBase.TailsA.door09(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door09(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door13")
 end
-function AquaticBase.TailsA.door10(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door10(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door12")
 end
-function AquaticBase.TailsA.door03(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door03(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("common_cage01")
   Game.Signal("aqa_door10")
 end
-function AquaticBase.TailsA.door11(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door11(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door14")
 end
-function AquaticBase.TailsA.door04(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door04(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door15")
   Game.ProcessMessage("aqa_door09", "GateClose")
   Game.ProcessMessage("aqa_door10", "GateClose")
   Game.StartEntityByName("amigo_collision03")
 end
-function AquaticBase.TailsA.door08(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.door08(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door11")
   Game.StartEntityByName("GroupHelper40")
@@ -68,11 +68,11 @@ function AquaticBase.TailsA.door08(_ARG_0_, _ARG_1_)
   Game.ProcessMessage("common_laser69", "GateOpen")
   Game.StartEntityByName("amigo_collision02")
 end
-function AquaticBase.TailsA.laser01(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.laser01(_ARG_0_, _ARG_1_)
   Game.ProcessMessage("common_laser60", "GateOpen")
   Game.ProcessMessage("common_laser61", "GateOpen")
 end
-function AquaticBase.TailsA.kakushi01(_ARG_0_, _ARG_1_)
+function AquaticBase.KnucklesA.kakushi01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door16")
 end
