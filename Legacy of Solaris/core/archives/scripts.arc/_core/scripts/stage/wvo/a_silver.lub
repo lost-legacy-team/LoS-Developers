@@ -21,21 +21,6 @@ function WaveOcean.SilverA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_wvo_e"),
     Game.PlayBGM("stg_wvo_a")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(2168, 14154, 1656, 180, "blaze.lua")
 end
 function WaveOcean.SilverA.orca01(_ARG_0_, _ARG_1_)

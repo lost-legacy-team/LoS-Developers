@@ -56,15 +56,15 @@ OLS = {
     13
   },
   BRay = {
+    0.07,
     0.09,
-    0.13,
-    0.16,
-    1.1E-4
+    0.14,
+    1.0E-4
   },
   BMie = {
-    0.12,
-    0.070,
-    0.008,
+    0.06,
+    0.06,
+    0.05,
     1.0E-4
   },
   G = 0.99
@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.28,
   MaxThreshold = 2.8,
-  Scale = 3.2
+  Scale = 4.2
 }
 ReflectionAreas = {
   FileName = "stage/kdv/b/kdv_mapB_rfzone",

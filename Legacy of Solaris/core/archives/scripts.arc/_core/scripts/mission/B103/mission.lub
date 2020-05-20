@@ -1,8 +1,8 @@
 g_mission_information = {
   mission_string = "sonic_stg_csc",
-  mission_area = "csc/omega/a",
-  mission_terrain = "stage/csc/a/",
-  mission_set_default = "scripts/mission/8017/set_cscA_knuckles.XML",
+  mission_area = "csc/blaze/b",
+  mission_terrain = "stage/csc/b/",
+  mission_set_default = "scripts/mission/8017/set_cscB_knuckles.XML",
   mission_event_start = "e0009",
   mission_startup = "e0009_end",
   mission_text = "text/msg_twn_sonic.mst",

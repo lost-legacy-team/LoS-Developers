@@ -21,9 +21,9 @@ function TropicalJungle.BlazeC.Setup(_ARG_0_)
   })
   Game.SetGenArea({
     size = {
-      250 * 100,
-      250 * 100,
-      250 * 100
+      100 * 100,
+      100 * 100,
+      100 * 100
     },
     offset = {
       0,

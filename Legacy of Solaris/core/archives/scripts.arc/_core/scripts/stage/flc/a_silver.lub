@@ -17,21 +17,6 @@ function FlameCore.SilverA.Setup(_ARG_0_)
     Game.LoadSoundBank("sound/stage_flc"),
     Game.LoadVoiceBank("sound/voice_flc_e")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(6849, -4059, 25394, 45, "silver.lua")
   Game.PlayBGM("stg_flc_a")
 end

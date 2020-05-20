@@ -22,14 +22,6 @@ function WaveOcean.ShadowA.Setup(_ARG_0_)
   })
   Game.SetPlayer(14706, 75, -144613, 180, "omega.lua")
   Game.SetPlayer(-5354, 13929, 1644, 180, "shadow.lua", 1, true)
-  Game.SetGenArea({
-    size = {
-      260 * 100,
-      200 * 100,
-      200 * 100
-    },
-    border = 60 * 100
-  })
 end
 function WaveOcean.ShadowA.open_cage(_ARG_0_, _ARG_1_)
   Game.Debug()

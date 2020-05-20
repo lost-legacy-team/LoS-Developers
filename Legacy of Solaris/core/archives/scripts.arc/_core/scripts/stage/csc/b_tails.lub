@@ -20,21 +20,6 @@ function CrisisCity.TailsB.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_csc_e"),
     Game.PlayBGM("stg_csc_b")
   })
-  Game.SetGenArea({
-    size = {
-      800 * 100,
-      800 * 100,
-      800 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(-15500, 22600, 59725, 90, "sonic_new.lua")
 end
 function CrisisCity.TailsB.cage01(_ARG_0_, _ARG_1_)

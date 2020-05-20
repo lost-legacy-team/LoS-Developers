@@ -37,6 +37,10 @@ function KingdomValley.BlazeA.brake03(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("inclinedbridge02")
 end
+function KingdomValley.BlazeA.brake05(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("objectphysics71")
+end
 function KingdomValley.BlazeA.hint01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.ProcessMessage("LEVEL", "HintMessage", {id = "hint_01"})

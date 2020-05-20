@@ -19,14 +19,7 @@ function AquaticBase.OmegaA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_aqa_e"),
     Game.PlayBGM("stg_aqa_a")
   })
-  Game.SetPlayer(-946, -835, 113, 0, "sonic_new.lua")
-  Game.SetGenArea({
-    size = {
-      165 * 100,
-      165 * 100,
-      165 * 100
-    }
-  })
+  Game.SetPlayer(0, 750, -590, 0, "omega.lua")
 end
 function AquaticBase.OmegaA.door01(_ARG_0_, _ARG_1_)
   Game.Debug()
@@ -54,8 +47,8 @@ function AquaticBase.OmegaA.enemy01(_ARG_0_, _ARG_1_)
 end
 function AquaticBase.OmegaA.laser01(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.ProcessMessage("common_laser60", "GateClose")
-  Game.ProcessMessage("common_laser61", "GateClose")
+  Game.ProcessMessage("common_laser11", "GateOpen")
+  Game.ProcessMessage("common_laser12", "GateOpen")
 end
 function AquaticBase.OmegaA.door06(_ARG_0_, _ARG_1_)
   Game.Debug()

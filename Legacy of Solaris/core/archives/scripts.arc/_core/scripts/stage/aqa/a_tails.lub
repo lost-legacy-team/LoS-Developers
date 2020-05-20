@@ -19,14 +19,7 @@ function AquaticBase.TailsA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_aqa_e"),
     Game.PlayBGM("stg_aqa_a")
   })
-  Game.SetPlayer(0, 750, -590, 0, "shadow.lua")
-  Game.SetGenArea({
-    size = {
-      165 * 100,
-      165 * 100,
-      165 * 100
-    }
-  })
+  Game.SetPlayer(0, 750, -590, 0, "tails.lua")
 end
 function AquaticBase.TailsA.door01(_ARG_0_, _ARG_1_)
   Game.Debug()

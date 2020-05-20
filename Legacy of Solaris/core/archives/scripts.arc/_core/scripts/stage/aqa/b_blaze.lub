@@ -22,13 +22,6 @@ function AquaticBase.BlazeB.Setup(_ARG_0_)
     Game.PlayBGM("stg_aqa_b")
   })
   Game.SetPlayer(43619.371, 9628.525, -31967.338, 180, "blaze.lua")
-  Game.SetGenArea({
-    size = {
-      165 * 100,
-      165 * 100,
-      165 * 100
-    }
-  })
 end
 function AquaticBase.BlazeB.door01(_ARG_0_, _ARG_1_)
   Game.Debug()

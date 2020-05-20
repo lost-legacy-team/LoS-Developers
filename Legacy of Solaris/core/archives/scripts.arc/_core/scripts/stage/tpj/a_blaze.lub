@@ -22,7 +22,7 @@ function TropicalJungle.BlazeA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_tpj_e"),
     Game.PlayBGM("stg_tpj_a")
   })
-  Game.SetPlayer(-12320, 13440, 65847, -180, "princess.lua")
+  Game.SetPlayer(-12320, 13440, 65847, -180, "blaze.lua")
 end
 function TropicalJungle.BlazeA.AtoB(_ARG_0_)
   _ARG_0_:ChangeArea("Area B")

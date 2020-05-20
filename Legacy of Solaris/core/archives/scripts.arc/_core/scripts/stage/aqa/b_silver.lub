@@ -18,13 +18,6 @@ function AquaticBase.SilverB.Setup(_ARG_0_)
     Game.PlayBGM("stg_aqa_b")
   })
   Game.SetPlayer(-368, -109, -6021, 180, "silver.lua")
-  Game.SetGenArea({
-    size = {
-      165 * 100,
-      165 * 100,
-      165 * 100
-    }
-  })
 end
 function AquaticBase.SilverB.door01(_ARG_0_, _ARG_1_)
   Game.Debug()

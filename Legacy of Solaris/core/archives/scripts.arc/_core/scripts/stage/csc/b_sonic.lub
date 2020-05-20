@@ -20,21 +20,6 @@ function CrisisCity.SonicB.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_csc_e"),
     Game.PlayBGM("stg_csc_b")
   })
-  Game.SetGenArea({
-    size = {
-      250 * 100,
-      250 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(-15500, 22600, 59725, 90, "sonic_new.lua")
 end
 function CrisisCity.SonicB.cage01(_ARG_0_, _ARG_1_)

@@ -19,9 +19,9 @@ function KingdomValley.RougeD.Setup(_ARG_0_)
     })
   Game.SetGenArea({
     size = {
-      250 * 100,
-      250 * 100,
-      250 * 100
+      150 * 100,
+      125 * 100,
+      150 * 100
     },
     offset = {
       0,
@@ -42,12 +42,9 @@ function KingdomValley.RougeD.cage01(_ARG_0_, _ARG_1_)
   Game.Signal("common_cage02")
   Game.Signal("kdv_door05")
 end
-function KingdomValley.RougeD.door01(_ARG_0_, _ARG_1_)
+function KingdomValley.RougeD.cage_open01(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("kdv_door01")
-  Game.StartEntityByName("amigo_collision01")
-  Game.StartEntityByName("amigo_collision03")
-  Game.StartEntityByName("amigo_collision04")
+  Game.Signal("common_cage01")
 end
 function KingdomValley.RougeD.door02(_ARG_0_, _ARG_1_)
   Game.Debug()
@@ -91,4 +88,9 @@ end
 function KingdomValley.RougeD.close01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.ProcessMessage("kdv_door01", "GateClose")
+end
+function KingdomValley.RougeD.Wind(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box06")
+Game.Signal("common_windcollision_box12")
 end

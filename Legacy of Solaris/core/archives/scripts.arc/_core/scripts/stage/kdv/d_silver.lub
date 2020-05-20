@@ -17,21 +17,6 @@ function KingdomValley.SilverD.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_kdv_a")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(11788, 1411, 13690, 160, "venice.lua")
 end
 function KingdomValley.SilverD.goto_b(_ARG_0_, _ARG_1_)

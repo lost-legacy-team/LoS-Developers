@@ -20,7 +20,7 @@ function CrisisCity.BlazeB.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_csc_e"),
     Game.PlayBGM("stg_csc_b")
   })
-  Game.SetPlayer(9739, 5598.5, -60245, -40, "Silver.lua")
+  Game.SetPlayer(9739, 5598.5, -60245, -40, "blaze.lua")
 end
 function CrisisCity.BlazeB.cage01(_ARG_0_, _ARG_1_)
   Game.Debug()

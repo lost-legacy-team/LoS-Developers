@@ -24,14 +24,6 @@ function WaveOcean.SonicA.Setup(_ARG_0_)
   })
   Game.SetPlayer(44068, 9483, 28589, 263, "sonic_new.lua")
   Game.SetPlayer(-5354, 13929, 1644, 180, "tails.lua", 1, true)
-  Game.SetGenArea({
-    size = {
-      180 * 100,
-      200 * 100,
-      200 * 100
-    },
-    border = 60 * 100
-  })
 end
 function WaveOcean.SonicA.goto_b(_ARG_0_, _ARG_1_)
   _ARG_0_:ChangeArea("Area B")

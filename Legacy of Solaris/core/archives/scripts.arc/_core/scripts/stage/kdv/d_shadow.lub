@@ -16,21 +16,6 @@ function KingdomValley.ShadowD.Setup(_ARG_0_)
     Game.LoadSoundBank("sound/stage_kdv"),
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_kdv_a")
-    })
-  Game.SetGenArea({
-    size = {
-      250 * 100,
-      250 * 100,
-      250 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
   })
   Game.SetPlayer(-5912, 501, 18453, 160, "rouge.lua")
   Game.SetPlayer(-5912, 501, 18453, 160, "shadow.lua", 1, true)

@@ -25,22 +25,7 @@ function CrisisCity.BlazeF1.Setup(_ARG_0_)
     Game.CreateObjInfo("psimark"),
     Game.CreateObjInfo("csctornado")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
-  Game.SetPlayer(17255, 0, -1173, -60, "silver.lua")
+  Game.SetPlayer(17255, 0, -1173, -60, "blaze.lua")
 end
 function CrisisCity.BlazeF1.call_enemy01(_ARG_0_, _ARG_1_)
   Game.StartEntityByName("GroupHelper02")
@@ -119,28 +104,28 @@ function CrisisCity.BlazeF1.esp04(_ARG_0_, _ARG_1_)
 end
 function CrisisCity.BlazeF1.glassbreak001(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics338")
+  Game.Signal("objectphysics88")
   Game.Signal("impulsesphere01")
 end
 function CrisisCity.BlazeF1.glassbreak002(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics339")
+  Game.Signal("objectphysics89")
+  Game.Signal("objectphysics91")
   Game.Signal("impulsesphere02")
 end
 function CrisisCity.BlazeF1.glassbreak003(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics340")
   Game.Signal("impulsesphere03")
 end
 function CrisisCity.BlazeF1.glassbreak004(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics341")
   Game.Signal("impulsesphere04")
 end
 function CrisisCity.BlazeF1.glassbreak005(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics342")
-  Game.Signal("objectphysics343")
+  Game.Signal("objectphysics92")
+  Game.Signal("objectphysics93")
+  Game.Signal("objectphysics94")
   Game.Signal("impulsesphere05")
 end
 function CrisisCity.BlazeF1.F1toB(_ARG_0_)

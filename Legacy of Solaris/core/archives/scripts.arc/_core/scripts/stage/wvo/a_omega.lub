@@ -24,11 +24,11 @@ function WaveOcean.OmegaA.Setup(_ARG_0_)
   Game.SetPlayer(-5354, 13929, 1644, 180, "shadow.lua", 1, true)
   Game.SetGenArea({
     size = {
-      260 * 100,
-      200 * 100,
-      200 * 100
+      95 * 100,
+      85 * 100,
+      95 * 100
     },
-    border = 60 * 100
+    border = 10 * 100
   })
 end
 function WaveOcean.OmegaA.open_cage(_ARG_0_, _ARG_1_)
@@ -54,4 +54,8 @@ end
 function WaveOcean.OmegaA.door01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("wvo_doorA02")
+end
+function WaveOcean.OmegaA.cage_open01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("common_cage01")
 end

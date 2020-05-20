@@ -25,21 +25,6 @@ function CrisisCity.SilverF1.Setup(_ARG_0_)
     Game.CreateObjInfo("psimark"),
     Game.CreateObjInfo("csctornado")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(17255, 0, -1173, -60, "silver.lua")
 end
 function CrisisCity.SilverF1.call_enemy01(_ARG_0_, _ARG_1_)

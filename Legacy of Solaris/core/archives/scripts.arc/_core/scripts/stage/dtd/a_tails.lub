@@ -22,7 +22,7 @@ function DustyDesert.TailsA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_dtd_e"),
     Game.PlayBGM("stg_dtd_a")
   })
-  Game.SetPlayer(15371, 1317, 50946, 160, "princess.lua")
+  Game.SetPlayer(15371, 1317, 50946, 160, "tails.lua")
 end
 function DustyDesert.TailsA.pillar01(_ARG_0_, _ARG_1_)
   Game.Debug()

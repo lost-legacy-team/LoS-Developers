@@ -18,22 +18,7 @@ function FlameCore.BlazeA.Setup(_ARG_0_)
     Game.LoadSoundBank("sound/stage_flc"),
     Game.LoadVoiceBank("sound/voice_flc_e")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
-  Game.SetPlayer(-9352.521, 799.532, 38599.273, 180, "shadow.lua")
+  Game.SetPlayer(-9352.521, 799.532, 38599.273, 180, "blaze.lua")
   Game.PlayBGM("stg_flc_a")
 end
 function FlameCore.BlazeA.AtoB(_ARG_0_)

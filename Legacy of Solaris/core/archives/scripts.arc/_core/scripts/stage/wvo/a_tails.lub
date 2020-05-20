@@ -21,14 +21,6 @@ function WaveOcean.TailsA.Setup(_ARG_0_)
     Game.PlayBGM("stg_wvo_a")
   })
   Game.SetPlayer(2168, 14154, 1656, 180, "tails.lua")
-  Game.SetGenArea({
-    size = {
-      180 * 100,
-      200 * 100,
-      200 * 100
-    },
-    border = 60 * 100
-  })
 end
 function WaveOcean.TailsA.orca01(_ARG_0_, _ARG_1_)
   Game.Debug()

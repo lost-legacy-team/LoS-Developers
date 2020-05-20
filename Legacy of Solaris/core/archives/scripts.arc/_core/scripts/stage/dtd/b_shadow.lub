@@ -23,9 +23,9 @@ function DustyDesert.ShadowB.Setup(_ARG_0_)
   })
   Game.SetGenArea({
     size = {
-      280 * 100,
-      280 * 100,
-      280 * 100
+      80 * 100,
+      60 * 100,
+      80 * 100
     },
     offset = {
       0,

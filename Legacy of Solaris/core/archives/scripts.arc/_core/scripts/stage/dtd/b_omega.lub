@@ -23,9 +23,9 @@ function DustyDesert.OmegaB.Setup(_ARG_0_)
   })
   Game.SetGenArea({
     size = {
-      280 * 100,
-      280 * 100,
-      280 * 100
+      100 * 100,
+      60 * 100,
+      100 * 100
     },
     offset = {
       0,

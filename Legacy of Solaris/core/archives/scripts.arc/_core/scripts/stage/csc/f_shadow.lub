@@ -21,21 +21,6 @@ function CrisisCity.ShadowF.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_csc_e"),
     Game.PlayBGM("stg_csc_f")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(16595, 2700, 1750, -100, "shadow.lua")
 end
 function CrisisCity.ShadowF.explosion_001(_ARG_0_, _ARG_1_)

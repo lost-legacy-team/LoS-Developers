@@ -19,13 +19,6 @@ function AquaticBase.ShadowB.Setup(_ARG_0_)
     Game.PlayBGM("stg_aqa_b")
   })
   Game.SetPlayer(-368, -109, -6021, 180, "shadow.lua")
-  Game.SetGenArea({
-    size = {
-      165 * 100,
-      165 * 100,
-      165 * 100
-    }
-  })
 end
 function AquaticBase.ShadowB.door02(_ARG_0_, _ARG_1_)
   Game.Debug()

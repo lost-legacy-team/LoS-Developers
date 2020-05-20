@@ -18,21 +18,6 @@ function KingdomValley.SonicB.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_kdv_b")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(-22612, 12458, -26085, 300, "sonic_new.lua")
 end
 function KingdomValley.SonicB.goto_c(_ARG_0_, _ARG_1_)
@@ -91,4 +76,5 @@ function KingdomValley.SonicB.brake05(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("objectphysics51")
   Game.Signal("impulsesphere03")
-end
+end  
+
