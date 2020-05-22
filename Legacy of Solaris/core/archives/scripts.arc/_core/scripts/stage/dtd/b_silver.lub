@@ -19,13 +19,6 @@ function DustyDesert.SilverB.Setup(_ARG_0_)
     Game.PlayBGM("stg_dtd_b")
   })
   Game.SetPlayer(23159, -600, -21909, -90, "silver.lua")
-  Game.SetGenArea({
-    size = {
-      280 * 100,
-      280 * 100,
-      280 * 100
-    }
-  })
 end
 function DustyDesert.SilverB.door01(_ARG_0_, _ARG_1_)
   Game.Debug()

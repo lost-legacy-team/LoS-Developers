@@ -2,18 +2,18 @@ Light = {
   Ambient = {
     Color = {
       0.3,
-      0.3,
-      0.3,
-      1
+      0.35,
+      0.4,
+      0.8
     }
   },
   Main = {
     Type = "Directional",
     Color = {
-      0.7,
-      0.7,
-      0.7,
-      1.5
+      0.85,
+      0.80,
+      0.85,
+      1
     },
     Direction_3dsmax = {
       Position = {
@@ -30,10 +30,10 @@ Light = {
   },
   Sub = {
     Color = {
+      0.22,
+      0.37,
       0.4,
-      0.4,
-      0.45,
-      1
+      0.7
     },
     Direction = {
       -0.168,
@@ -44,24 +44,24 @@ Light = {
 }
 OLS = {
   SunColor = {
-    14,
-    14,
-    13,
-    1.1
+    12,
+    12,
+    10.5,
+    1
   },
   BRay = {
+    0.07,
     0.09,
-    0.13,
+    0.25,
+    1.1E-4
+  },
+  BMie = {
+    0.06,
+    0.06,
     0.16,
     1.0E-4
   },
-  BMie = {
-    0.27,
-    0.28,
-    0.12,
-    1.0E-4
-  },
-  G = 0.99
+  G = 0.97
 }
 EnvMap = {
   FileName = "stage/kdv/a/kdv_envmap.dds"
