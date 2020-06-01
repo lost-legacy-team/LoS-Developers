@@ -130,7 +130,7 @@ function on_event(_ARG_0_, _ARG_1_)
     on_goto(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "BtoC" then
     on_goto(_ARG_0_, _ARG_1_)
-  elseif _ARG_1_ == "BtoF" then
+  elseif _ARG_1_ == "BtoF2" then
     on_goto(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "goto_d" then
     on_goto(_ARG_0_, _ARG_1_)

@@ -1,0 +1,67 @@
+WhiteAcropolis.KnucklesB = inherits_from(ActionArea)
+function WhiteAcropolis.KnucklesB.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct WhiteAcropolis.KnucklesB")
+end
+function WhiteAcropolis.KnucklesB.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  Game.Log("WhiteAcropolis.KnucklesB.Setup")
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/stage/render_wap_b.lua"),
+    Game.LoadTerrain("stage/wap/b/"),
+    Game.LoadStageSet("scripts/mission/0203/set_wap_b_silver.XML"),
+    Game.LoadStageSet("placement/wap/wap_mapB_effects.xml", "particle"),
+    Game.LoadParticle("particle/map_wap.plc"),
+    Game.LoadSceneParams("scripts/stage/wap/scene_wap_b.lua"),
+	Game.LoadPath("placement/wap/wap_s_b_grind", "grind"),
+    Game.LoadPath("placement/wap/wap_silver_b"),
+    Game.LoadSoundBank("sound/stage_wap"),
+    Game.LoadVoiceBank("sound/voice_wap_e"),
+    Game.PlayBGM("stg_wap_b")
+  })
+  Game.SetPlayer(-4725.669, 0, 18379.227, 0, "knuckles.lua")
+end
+function WhiteAcropolis.KnucklesB.StartPlaying(_ARG_0_)
+end
+function WhiteAcropolis.KnucklesB.enemy01(_ARG_0_, _ARG_1_)
+  Game.Signal("enemy01")
+  Game.StartEntityByName("GroupHelper01")
+end
+function WhiteAcropolis.KnucklesB.laser01(_ARG_0_, _ARG_1_)
+  Game.Signal("laser01")
+  Game.ProcessMessage("common_laser19", "GateOpen")
+  Game.ProcessMessage("common_laser22", "GateOpen")
+end
+function WhiteAcropolis.KnucklesB.door01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.ProcessMessage("wap_door03", "GateOpen")
+end
+function WhiteAcropolis.KnucklesB.enemy02(_ARG_0_, _ARG_1_)
+  Game.Signal("enemy02")
+  Game.StartEntityByName("GroupHelper03")
+end
+function WhiteAcropolis.KnucklesB.enemy03(_ARG_0_, _ARG_1_)
+  Game.Signal("enemy03")
+  Game.StartEntityByName("GroupHelper04")
+end
+function WhiteAcropolis.KnucklesB.enemy04(_ARG_0_, _ARG_1_)
+  Game.Signal("enemy03")
+  Game.StartEntityByName("GroupHelper05")
+end
+function WhiteAcropolis.KnucklesB.esp01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("physicspath01")
+  Game.ProcessMessage("physicspath01", "PsiEffect", {effect = true})
+  Game.Signal("physicspath02")
+  Game.ProcessMessage("physicspath02", "PsiEffect", {effect = true})
+end
+function WhiteAcropolis.KnucklesB.cage01(_ARG_0_, _ARG_1_)
+  Game.Signal("common_cage01")
+end
+function WhiteAcropolis.KnucklesB.hakai01(_ARG_0_, _ARG_1_)
+  Game.ProcessMessage("common_laser52", "GateOpen")
+  Game.ProcessMessage("common_laser53", "GateOpen")
+end
+function WhiteAcropolis.KnucklesB.enemy100(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("GroupHelper26")
+end

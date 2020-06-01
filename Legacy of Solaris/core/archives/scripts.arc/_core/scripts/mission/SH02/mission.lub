@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act01",
+  mission_string = "msg_act12",
   mission_area = "kdv/shadow/a1",
   mission_terrain = "stage/kdv/a/",
   mission_set_default = "scripts/mission/SH02/set_kdv_a_shadow_ex.XML",
@@ -48,10 +48,10 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "goto_c" then
     if g_mission_information.mission_area == "kdv/shadow/a1" then
-      g_mission_information.mission_terrain = "stage/kdv/d/"
-      g_mission_information.mission_area = "kdv/shadow/d"
-      g_mission_information.mission_set_default = "scripts/mission/SH02/set_kdv_d_shadow_ex.xml"
-      g_mission_information.mission_path_default = ""
+      g_mission_information.mission_terrain = "stage/kdv/b/"
+      g_mission_information.mission_area = "kdv/shadow/b1"
+      g_mission_information.mission_set_default = "scripts/mission/SH02/set_kdv_b_shadow_ex.xml"
+      g_mission_information.mission_path_default = "scripts/mission/SH02/path_kdvB_shadow_ex"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
 

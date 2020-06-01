@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act01",
+  mission_string = "msg_act12",
   mission_area = "tpj/sonic/a",
   mission_terrain = "stage/tpj/a/",
   mission_set_default = "scripts/mission/S806/set_tpjA_sonic_ex.XML",
@@ -46,7 +46,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "AtoB" then
+  if _ARG_1_ == "AtoC" then
     g_mission_information.mission_terrain = "stage/tpj/c/"
     g_mission_information.mission_area = "tpj/sonic/c"
     g_mission_information.mission_set_default = "scripts/mission/S806/set_tpjC_sonic_ex.XML"

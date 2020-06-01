@@ -77,4 +77,7 @@ function KingdomValley.SonicB.brake05(_ARG_0_, _ARG_1_)
   Game.Signal("objectphysics51")
   Game.Signal("impulsesphere03")
 end  
-
+function KingdomValley.SonicB.Wind(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box01")
+end

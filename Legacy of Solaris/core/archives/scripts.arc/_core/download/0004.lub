@@ -9,6 +9,14 @@ c_table_single_act_trial = {
     act_id = 54
   },
   {
+    mission_file = "scripts/mission/SH01/mission.lua",
+    episode = 1,
+    act_type = 0,
+    stage_type = 0,
+    mission_type = 4,
+    act_id = 470
+  },
+  {
     mission_file = "scripts/mission/4058/mission.lua",
     episode = 1,
     act_type = 1,
@@ -17,12 +25,28 @@ c_table_single_act_trial = {
     act_id = 59
   },
   {
+    mission_file = "scripts/mission/SH02/mission.lua",
+    episode = 1,
+    act_type = 1,
+    stage_type = 1,
+    mission_type = 4,
+    act_id = 460
+  },
+  {
     mission_file = "scripts/mission/4063/mission.lua",
     episode = 1,
     act_type = 2,
     stage_type = 2,
     mission_type = 3,
     act_id = 64
+  },
+  {
+    mission_file = "scripts/mission/SH03/mission.lua",
+    episode = 1,
+    act_type = 2,
+    stage_type = 2,
+    mission_type = 4,
+    act_id = 471
   },	
   {
     mission_file = "scripts/mission/4068/mission.lua",
@@ -31,6 +55,14 @@ c_table_single_act_trial = {
     stage_type = 3,
     mission_type = 3,
     act_id = 69
+  },	
+  {
+    mission_file = "scripts/mission/SH04/mission.lua",
+    episode = 1,
+    act_type = 3,
+    stage_type = 3,
+    mission_type = 4,
+    act_id = 462
   },
   {
     mission_file = "scripts/mission/4073/mission.lua",
@@ -41,12 +73,28 @@ c_table_single_act_trial = {
     act_id = 74
   },
   {
+    mission_file = "scripts/mission/SH05/mission.lua",
+    episode = 1,
+    act_type = 4,
+    stage_type = 4,
+    mission_type = 4,
+    act_id = 463
+  },
+  {
     mission_file = "scripts/mission/4078/mission.lua",
     episode = 1,
     act_type = 5,
     stage_type = 5,
     mission_type = 3,
     act_id = 79
+  },
+  {
+    mission_file = "scripts/mission/SH07/mission.lua",
+    episode = 1,
+    act_type = 5,
+    stage_type = 5,
+    mission_type = 4,
+    act_id = 465
   },
   {
     mission_file = "scripts/mission/4083/mission.lua",
@@ -57,12 +105,28 @@ c_table_single_act_trial = {
     act_id = 84
   },
   {
+    mission_file = "scripts/mission/SH06/mission.lua",
+    episode = 1,
+    act_type = 6,
+    stage_type = 6,
+    mission_type = 4,
+    act_id = 472
+  },
+  {
     mission_file = "scripts/mission/4088/mission.lua",
     episode = 1,
     act_type = 7,
     stage_type = 7,
     mission_type = 3,
     act_id = 89
+	},
+  {
+    mission_file = "scripts/mission/SH08/mission.lua",
+    episode = 1,
+    act_type = 7,
+    stage_type = 7,
+    mission_type = 4,
+    act_id = 473
   }
 }
 c_table_single_town_trial = {}

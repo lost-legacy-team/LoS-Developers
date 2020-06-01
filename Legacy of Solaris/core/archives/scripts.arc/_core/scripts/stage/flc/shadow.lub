@@ -1,6 +1,8 @@
 FlameCore.Shadow = inherits_from(ActionStage)
 FlameCore.Shadow.scripts = {
   "scripts/stage/flc/a_shadow.lua",
+  "scripts/stage/flc/a1_shadow.lua",
+  "scripts/stage/flc/b1_shadow.lua",
   "scripts/stage/flc/b_shadow.lua",
 }
 function FlameCore.Shadow.constructor(_ARG_0_)
@@ -8,6 +10,8 @@ function FlameCore.Shadow.constructor(_ARG_0_)
   Game.Log("construct FlameCore.Shadow")
   _ARG_0_.areas = {
     ["Area A"] = FlameCore.ShadowA,
+	["Area A1"] = FlameCore.ShadowA1,
+	["Area B1"] = FlameCore.ShadowB1,
     ["Area B"] = FlameCore.ShadowB
   }
   _ARG_0_.area = "Area A"

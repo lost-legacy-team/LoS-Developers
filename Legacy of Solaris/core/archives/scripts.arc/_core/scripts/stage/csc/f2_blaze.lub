@@ -10,9 +10,7 @@ function CrisisCity.BlazeF2.Setup(_ARG_0_)
     Game.LoadRenderScript("scripts/render/stage/render_csc_f.lua"),
     Game.LoadTerrain("stage/csc/f/"),
     Game.LoadStageSet("scripts/mission/0201/set_cscF2_silver.XML"),
-    Game.LoadStageSet("placement/csc/csc_mapF1_effects.xml", "particle"),
     Game.LoadStageSet("placement/csc/csc_mapF_effects.xml", "particle"),
-	Game.LoadParticle("particle/map_end.plc"),
     Game.LoadStageSet("placement/csc/set_cscF2_silver_area.xml", "area"),
     Game.LoadSceneParams("scripts/stage/csc/scene_csc_f.lua"),
     Game.LoadPath("placement/csc/path_cscF_silver"),
@@ -25,7 +23,7 @@ function CrisisCity.BlazeF2.Setup(_ARG_0_)
     Game.CreateObjInfo("psimark"),
     Game.CreateObjInfo("csctornado")
   })
-  Game.SetPlayer(-65530, -376, -14821.5, 45, "silver.lua")
+  Game.SetPlayer(-65530, -376, -14821.5, 45, "blaze.lua")
 end
 function CrisisCity.BlazeF2.StartPlaying(_ARG_0_)
 end

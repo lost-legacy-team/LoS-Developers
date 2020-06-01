@@ -1,18 +1,17 @@
 g_mission_information = {
-  mission_string = "msg_act01",
-  mission_area = "flc/sonic/a",
+  mission_string = "msg_act12",
+  mission_area = "flc/sonic/a1",
   mission_terrain = "stage/flc/a/",
-  mission_set_default = "scripts/mission/S804/set_flc_a_super.XML",
+  mission_set_default = "scripts/mission/S804/set_flc_a_sonic_ex.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
-  mission_startup = "",
-  mission_path_default = "scripts/mission/S804/path_flcA_super"
+  mission_event_end = "",
+  mission_path_default = "scripts/mission/S804/path_flcA_sonic_ex"
 }
 g_message_setuped = ""
 c_flag_start = 0
 c_flag_mission_start = c_flag_start + 1
-g_talk_reuse = 0
 g_message_icon = 0
 c_icon_chat = 0
 c_icon_hint = 1
@@ -20,15 +19,15 @@ c_icon_mission = 2
 c_icon_mission_cleared = 3
 c_icon_goal = 4
 g_result_flc = {
-  id = 454,
+  id = 459,
   stagename = "TOWN",
-  timebonus_base = 45000,
+  timebonus_base = 42000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
   rank_s = 50000,
-  rank_a = 45000,
+  rank_a = 40000,
   rank_b = 20000,
-  rank_c = 25000,
+  rank_c = 5000,
   rank_d = 0,
   ringbonus_s = 3000,
   ringbonus_a = 2000,
@@ -46,11 +45,11 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "AtoB" then
-    g_mission_information.mission_terrain = "stage/flc/b/"
-    g_mission_information.mission_area = "flc/sonic/b"
-    g_mission_information.mission_set_default = "scripts/mission/S804/set_flc_b_super.XML"
-    g_mission_information.mission_path_default = "scripts/mission/S804/path_flcB_super"
+  if _ARG_1_ == "BtoA" then
+    g_mission_information.mission_terrain = "stage/flc/a/"
+    g_mission_information.mission_area = "flc/shadow/a"
+    g_mission_information.mission_set_default = "scripts/mission/4068/set_flc_a_shadow_vh.XML"
+    g_mission_information.mission_path_default = "scripts/mission/4068/path_flcA_shadow_vh"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "result_flc_end" then
@@ -62,6 +61,6 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  SetGlobalFlag(_ARG_0_, S804, 1)
+  SetGlobalFlag(_ARG_0_, 4068, 1)
   Result(_ARG_0_, "g_result_flc")
 end

@@ -57,3 +57,9 @@ function KingdomValley.ShadowA1.hint11(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.ProcessMessage("LEVEL", "HintMessage", {id = "hint_12"})
 end
+function KingdomValley.ShadowA1.Wind(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box06")
+Game.Signal("common_windcollision_box12")
+Game.Signal("common_windcollision_box13")
+end

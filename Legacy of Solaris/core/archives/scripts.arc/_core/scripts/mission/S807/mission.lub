@@ -1,13 +1,13 @@
 g_mission_information = {
-  mission_string = "msg_act01",
+  mission_string = "msg_act12",
   mission_area = "kdv/sonic/a",
   mission_terrain = "stage/kdv/a/",
-  mission_set_default = "scripts/mission/S807/set_kdv_a_super.XML",
+  mission_set_default = "scripts/mission/S807/set_kdv_a_sonic.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = "scripts/mission/S807/path_kdvA_super"
+  mission_path_default = ""
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -22,7 +22,7 @@ c_icon_goal = 4
 g_result_kdv = {
   id = 457,
   stagename = "TOWN",
-  timebonus_base = 33880,
+  timebonus_base = 25000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
   rank_s = 50000,
@@ -48,25 +48,25 @@ end
 function on_event(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "goto_c" then
     if g_mission_information.mission_area == "kdv/sonic/a" then
-      g_mission_information.mission_terrain = "stage/kdv/d/"
-      g_mission_information.mission_area = "kdv/sonic/d"
-      g_mission_information.mission_set_default = "scripts/mission/S807/set_kdv_d_super.xml"
-      g_mission_information.mission_path_default = "scripts/mission/S807/path_kdvD_super"
-      g_mission_information.mission_is_battle = true
-      ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    elseif g_mission_information.mission_area == "kdv/sonic/d" then
       g_mission_information.mission_terrain = "stage/kdv/b/"
       g_mission_information.mission_area = "kdv/sonic/b1"
-      g_mission_information.mission_set_default = "scripts/mission/S807/set_kdv_b_super.xml"
-      g_mission_information.mission_path_default = "scripts/mission/S807/path_kdvB_super"
+      g_mission_information.mission_set_default = "scripts/mission/S807/set_kdv_b_sonic.xml"
+      g_mission_information.mission_path_default = ""
+      g_mission_information.mission_is_battle = true
+      ChangeArea(_ARG_0_, g_mission_information.mission_area)
+    elseif g_mission_information.mission_area == "kdv/sonic/b" then
+      g_mission_information.mission_terrain = "stage/kdv/c/"
+      g_mission_information.mission_area = "kdv/sonic/c"
+      g_mission_information.mission_set_default = "scripts/mission/S807/set_kdv_c_sonic_vh.xml"
+      g_mission_information.mission_path_default = "scripts/mission/S807/path_kdvC_sonic_vh"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
     end
   elseif _ARG_1_ == "goto_b" then
     g_mission_information.mission_terrain = "stage/kdv/b/"
-    g_mission_information.mission_area = "kdv/sonic/b1"
-    g_mission_information.mission_set_default = "scripts/mission/S807/set_kdv_b_super.xml"
-    g_mission_information.mission_path_default = "scripts/mission/S807/path_kdvB_super"
+    g_mission_information.mission_area = "kdv/sonic/b"
+    g_mission_information.mission_set_default = "scripts/mission/S807/set_kdv_b_sonic_vh.xml"
+    g_mission_information.mission_path_default = "scripts/mission/S807/path_kdvB_sonic_vh"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "result_kdv_end" then
@@ -78,6 +78,6 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  SetGlobalFlag(_ARG_0_, 4555, 1)
+  SetGlobalFlag(_ARG_0_, S807, 1)
   Result(_ARG_0_, "g_result_kdv")
 end

@@ -7,12 +7,15 @@ FlameCore.Sonic.scripts = {
   "scripts/stage/flc/b_blaze.lua",
   "scripts/stage/flc/a_tails.lua",
   "scripts/stage/flc/b_tails.lua",
+  "scripts/stage/flc/a1_sonic.lua",
+  
 }
 function FlameCore.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
   Game.Log("construct FlameCore.Sonic")
   _ARG_0_.areas = {
     ["Area A"] = FlameCore.SonicA,
+	["Area A1"] = FlameCore.SonicA1,
     ["Area B"] = FlameCore.SonicB,
     ["Area A(Tag)"] = FlameCore.TagA,
 	["Area A(Tails)"] = FlameCore.TailsA,

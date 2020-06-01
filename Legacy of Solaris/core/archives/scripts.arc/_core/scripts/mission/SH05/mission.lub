@@ -1,10 +1,10 @@
 g_mission_information = {
-  mission_string = "msg_act01",
-  mission_area = "tpj/blaze/a",
-  mission_terrain = "stage/tpj/a/",
-  mission_set_default = "scripts/mission/SH05/set_tpjA_sonic.XML",
+  mission_string = "msg_act12",
+  mission_area = "rct/shadow/a1",
+  mission_terrain = "stage/rct/a/",
+  mission_set_default = "scripts/mission/SH05/set_rctA_shadow_ex.XML",
   mission_is_battle = true,
-  mission_path_default = "scripts/mission/SH05/path_tpjA_sonic",
+  mission_path_default = "scripts/mission/SH05/path_rctA_shadow_ex",
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = ""
@@ -19,7 +19,7 @@ c_icon_hint = 1
 c_icon_mission = 2
 c_icon_mission_cleared = 3
 c_icon_goal = 4
-g_result_tpj = {
+g_result_rct = {
   id = 463,
   stagename = "TOWN",
   timebonus_base = 35000,
@@ -35,7 +35,7 @@ g_result_tpj = {
   ringbonus_b = 1000,
   ringbonus_c = 500,
   ringbonus_d = 200,
-  finish = "result_tpj_end"
+  finish = "result_rct_end"
 }
 function main(_ARG_0_)
 end
@@ -46,14 +46,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "AtoB" then
-    g_mission_information.mission_terrain = "stage/tpj/c/"
-    g_mission_information.mission_area = "tpj/blaze/c"
-    g_mission_information.mission_set_default = "scripts/mission/SH05/set_tpjC_rouge.XML"
-    g_mission_information.mission_path_default = "scripts/mission/SH05/path_tpjC_rouge"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "result_tpj_end" then
+  if _ARG_1_ == "result_rct_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end
@@ -63,5 +56,5 @@ function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
   SetGlobalFlag(_ARG_0_, SH05, 1)
-  Result(_ARG_0_, "g_result_tpj")
+  Result(_ARG_0_, "g_result_rct")
 end

@@ -1,13 +1,12 @@
 g_mission_information = {
-  mission_string = "msg_act01",
-  mission_area = "wap/silver/a",
+  mission_string = "msg_act32",
+  mission_area = "wap/shadow/a",
   mission_terrain = "stage/wap/a/",
-  mission_set_default = "scripts/mission/SH01/set_wap_a_silver.XML",
+  mission_set_default = "scripts/mission/SH01/set_wap_a_shadow.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
-  mission_movie_start = "",
-  mission_startup = "",
-  mission_path_default = "scripts/mission/SH01/path_wapA_shadow"
+  mission_event_start = "",
+  mission_event_end = ""
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -19,21 +18,21 @@ c_icon_mission = 2
 c_icon_mission_cleared = 3
 c_icon_goal = 4
 g_result_wap = {
-  id = 459,
+  id = 470,
   stagename = "TOWN",
-  timebonus_base = 28000,
-  timebonus_rate = 20,
+  timebonus_base = 47000,
+  timebonus_rate = 40,
   ringbonus_rate = 100,
   rank_s = 50000,
   rank_a = 45000,
-  rank_b = 30000,
-  rank_c = 25000,
+  rank_b = 25000,
+  rank_c = 5000,
   rank_d = 0,
   ringbonus_s = 3000,
   ringbonus_a = 2000,
   ringbonus_b = 1000,
-  ringbonus_c = 500,
-  ringbonus_d = 200,
+  ringbonus_c = 800,
+  ringbonus_d = 500,
   finish = "result_wap_end"
 }
 function main(_ARG_0_)
@@ -52,9 +51,15 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "wap_all_destroy" then
-    SetGlobalFlag(_ARG_0_, SH01, 1)
-    Result(_ARG_0_, "g_result_wap")
+  elseif _ARG_1_ == "start_timer" then
+    StartCountdown(_ARG_0_, 300, "__miss")
+  elseif _ARG_1_ == "__miss" then
+    g_mission_information.mission_terrain = "stage/wap/a/"
+    g_mission_information.mission_area = "wap/shadow/a"
+    g_mission_information.mission_set_default = "scripts/mission/SH01/set_wap_a_shadow.XML"
+    g_mission_information.mission_is_battle = true
+	ChangeArea(_ARG_0_, g_mission_information.mission_area)
+    StartCountdown(_ARG_0_, 0, "")
   elseif _ARG_1_ == "result_wap_end" then
     MissionClear(_ARG_0_, "complete")
   end

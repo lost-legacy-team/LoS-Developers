@@ -45,7 +45,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "BtoF" then
+  if _ARG_1_ == "BtoF2" then
     g_mission_information.mission_terrain = "stage/csc/f/"
     g_mission_information.mission_area = "csc/rouge/f"
     g_mission_information.mission_set_default = "scripts/mission/6020/set_cscF2_silver.XML"

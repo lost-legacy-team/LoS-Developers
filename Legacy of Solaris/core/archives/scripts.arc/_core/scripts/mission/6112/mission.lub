@@ -1,40 +1,41 @@
 g_mission_information = {
-  mission_string = "msg_act01",
-  mission_area = "wap/blaze/a1",
-  mission_terrain = "stage/wap/a",
-  mission_set_default = "scripts/mission/6112/set_wap_a_blaze_ex.XML",
+  mission_string = "msg_act31",
+  mission_area = "tpj/blaze/a",
+  mission_terrain = "stage/tpj/a/",
+  mission_set_default = "scripts/mission/6112/set_tpjA_blaze.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
-  mission_event_startup = "",
-  mission_path_default = "scripts/mission/6112/path_wapA_blaze_ex"
+  mission_event_end = "",
+  mission_path_default = "scripts/mission/6112/path_tpjA_blaze"
 }
 g_message_setuped = ""
 c_flag_start = 0
 c_flag_mission_start = c_flag_start + 1
+g_talk_reuse = 0
 g_message_icon = 0
 c_icon_chat = 0
 c_icon_hint = 1
 c_icon_mission = 2
 c_icon_mission_cleared = 3
 c_icon_goal = 4
-g_result_wap = {
-  id = 446,
+g_result_tpj = {
+  id = 466,
   stagename = "TOWN",
-  timebonus_base = 34000,
+  timebonus_base = 34480,
   timebonus_rate = 40,
   ringbonus_rate = 100,
-  rank_s = 80000,
-  rank_a = 50000,
-  rank_b = 30000,
-  rank_c = 25000,
+  rank_s = 30000,
+  rank_a = 20000,
+  rank_b = 1000,
+  rank_c = 500,
   rank_d = 0,
   ringbonus_s = 3000,
   ringbonus_a = 2000,
   ringbonus_b = 1000,
   ringbonus_c = 500,
   ringbonus_d = 200,
-  finish = "result_wap_end"
+  finish = "result_tpj_end"
 }
 function main(_ARG_0_)
 end
@@ -45,14 +46,24 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "goto_b" then
-    g_mission_information.mission_terrain = "stage/wap/b"
-    g_mission_information.mission_area = "wap/blaze/b"
-    g_mission_information.mission_set_default = "scripts/mission/6112/set_wap_b_blaze_ex.XML"
+  if _ARG_1_ == "AtoB" then
+    g_mission_information.mission_terrain = "stage/tpj/b/"
+    g_mission_information.mission_area = "tpj/blaze/b"
+    g_mission_information.mission_set_default = "scripts/mission/6112/set_tpjB_blaze.XML"
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "result_wap_end" then
+	elseif _ARG_1_ == "start_timer" then
+    StartCountdown(_ARG_0_, 180, "__miss")
+  elseif _ARG_1_ == "__miss" then
+    g_mission_information.mission_terrain = "stage/tpj/a/"
+    g_mission_information.mission_area = "tpj/blaze/a"
+    g_mission_information.mission_set_default = "scripts/mission/6112/set_tpjA_blaze.XML"
+	g_mission_information.mission_path_default = "scripts/mission/6112/path_tpjA_blaze"
+    g_mission_information.mission_is_battle = true
+	ChangeArea(_ARG_0_, g_mission_information.mission_area)
+    StartCountdown(_ARG_0_, 0, "")
+  elseif _ARG_1_ == "result_tpj_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end
@@ -61,6 +72,6 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  SetGlobalFlag(_ARG_0_, 6003, 1)
-  Result(_ARG_0_, "g_result_wap")
+  SetGlobalFlag(_ARG_0_, 6112, 1)
+  Result(_ARG_0_, "g_result_tpj")
 end

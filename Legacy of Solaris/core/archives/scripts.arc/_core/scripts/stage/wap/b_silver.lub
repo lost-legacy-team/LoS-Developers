@@ -19,14 +19,6 @@ function WhiteAcropolis.SilverB.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_wap_e"),
     Game.PlayBGM("stg_wap_b")
   })
-  Game.SetGenArea({
-    size = {
-      160 * 100,
-      160 * 100,
-      160 * 100
-    },
-    border = 10 * 100
-  })
   Game.SetPlayer(-4725.669, 0, 18379.227, 0, "silver.lua")
 end
 function WhiteAcropolis.SilverB.StartPlaying(_ARG_0_)
