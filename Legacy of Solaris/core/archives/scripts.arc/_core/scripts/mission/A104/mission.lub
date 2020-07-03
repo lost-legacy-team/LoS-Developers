@@ -115,7 +115,7 @@ function on_event(_ARG_0_, _ARG_1_)
     MissionClear(_ARG_0_, "complete")
   elseif _ARG_1_ == "AtoB" then
     on_goto(_ARG_0_, _ARG_1_)
-  elseif _ARG_1_ == "BtoF" then
+  elseif _ARG_1_ == "BtoF2" then
     on_goto(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "CtoE" then
     on_goto(_ARG_0_, _ARG_1_)
