@@ -1,0 +1,88 @@
+Light = {
+  Ambient = {
+    Color = {
+      0.3,
+      0.35,
+      0.4,
+      0.8
+    }
+  },
+  Main = {
+    Type = "Directional",
+    Color = {
+      0.85,
+      0.80,
+      0.85,
+      1
+    },
+    Direction_3dsmax = {
+      Position = {
+        -0.05,
+        -0.18,
+        0.205
+      },
+      Target = {
+        0,
+        0,
+        0
+      }
+    }
+  },
+  Sub = {
+    Color = {
+      0.22,
+      0.37,
+      0.4,
+      0.7
+    },
+    Direction = {
+      -0.168,
+      0.75,
+      -0.77
+    }
+  }
+}
+OLS = {
+  SunColor = {
+    12,
+    12,
+    10.5,
+    1
+  },
+  BRay = {
+    0.07,
+    0.09,
+    0.25,
+    1.1E-4
+  },
+  BMie = {
+    0.06,
+    0.06,
+    0.16,
+    1.0E-4
+  },
+  G = 0.97
+}
+EnvMap = {
+  FileName = "stage/kdv/a/kdv_envmap.dds"
+}
+Bloom = {
+  MinThreshold = 0.25,
+  MaxThreshold = 15,
+  Scale = 3.8
+}
+ShadowMap = {
+  BaseSize = 600,
+  CenterOffset = {
+    0,
+    0,
+    600 * 0.5
+  }
+}
+LOD = {
+  Main = {
+    FarDistance = 10000,
+    ClumpClipDistance = 1500000,
+    TerrainClipDistance = 5000
+  }
+}
