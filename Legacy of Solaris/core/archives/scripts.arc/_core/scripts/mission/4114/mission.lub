@@ -1,6 +1,6 @@
 g_mission_information = {
   mission_string = "msg_act30",
-  mission_area = "wap/silver/a",
+  mission_area = "wap/silver/a1",
   mission_terrain = "stage/wap/a",
   mission_set_default = "scripts/mission/4114/set_wap_a_silver_vh.XML",
   mission_is_battle = true,
