@@ -108,7 +108,23 @@ c_table_single_act_trial = {
     act_type = 9,
     stage_type = 6,
     mission_type = 2,
-    act_id = 466	
+    act_id = 466
+  },
+  {
+    mission_file = "scripts/mission/6113/mission.lua",
+    episode = 8,
+    act_type = 9,
+    stage_type = 8,
+    mission_type = 4,
+    act_id = 491
+  },
+  {
+    mission_file = "scripts/mission/6114/mission.lua",
+    episode = 8,
+    act_type = 9,
+    stage_type = 4,
+    mission_type = 2,
+    act_id = 490	
   }
 }
 c_table_single_town_trial = {}
