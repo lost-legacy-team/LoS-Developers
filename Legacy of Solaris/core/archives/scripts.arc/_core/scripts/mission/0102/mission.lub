@@ -146,7 +146,7 @@ function on_event(_ARG_0_, _ARG_1_)
     SetGlobalFlag(_ARG_0_, 4093, 1)
     Result(_ARG_0_, "g_result_iblis")
   elseif _ARG_1_ == "e0112_end" then
-    SetNextMission(_ARG_0_, "scripts/mission/0105/mission.lua")
+    SetNextMission(_ARG_0_, "scripts/mission/0103/mission.lua")
     MissionClear(_ARG_0_, "complete")
   elseif _ARG_1_ == "AtoB" then
     on_goto(_ARG_0_, _ARG_1_)
