@@ -19,21 +19,6 @@ function KingdomValley.BlazeB.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_kdv_c")
   })
-  Game.SetGenArea({
-    size = {
-      200 * 100,
-      200 * 100,
-      200 * 100
-    },
-    offset = {
-      0,
-      0,
-      0
-    },
-    border = {
-      20 * 100
-    }
-  })
   Game.SetPlayer(-22612, 12458, -26085, 300, "blaze.lua")
 end
 function KingdomValley.BlazeB.goto_c(_ARG_0_, _ARG_1_)

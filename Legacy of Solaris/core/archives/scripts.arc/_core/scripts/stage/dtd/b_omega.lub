@@ -134,3 +134,12 @@ function DustyDesert.OmegaB.door14(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("dtd_door15")
 end
+function DustyDesert.OmegaB.laser_off(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.ProcessMessage("common_laser03", "GateOpen")
+  Game.ProcessMessage("common_laser04", "GateOpen")
+end
+function DustyDesert.OmegaB.cage01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("common_cage01")
+end

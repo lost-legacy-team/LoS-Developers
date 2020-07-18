@@ -27,3 +27,7 @@ end
 function TropicalJungle.BlazeA.AtoB(_ARG_0_)
   _ARG_0_:ChangeArea("Area B")
 end
+function TropicalJungle.BlazeA.Wind(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box06")
+end
