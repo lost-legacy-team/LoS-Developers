@@ -60,8 +60,10 @@ function KingdomValley.SilverD.door04(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("kdv_door04")
 end
-function KingdomValley.SilverD.Wind(_ARG_0_, _ARG_1_)
+function KingdomValley.SilverD.Wind_Start(_ARG_0_, _ARG_1_)
 Game.Debug()
-Game.Signal("common_windcollision_box06")
-Game.Signal("common_windcollision_box12")
+Game.Signal("common_windcollision_box01")
+Game.Signal("common_windcollision_box02")
+Game.Signal("common_windcollision_box03")
+Game.Signal("common_windcollision_box04")
 end
