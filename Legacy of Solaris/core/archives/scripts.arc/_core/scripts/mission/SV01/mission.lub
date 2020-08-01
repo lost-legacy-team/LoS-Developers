@@ -1,10 +1,10 @@
 g_mission_information = {
-  mission_string = "msg_act32",
+  mission_string = "msg_act12",
   mission_area = "csc/silver/f1",
   mission_terrain = "stage/csc/f/",
-  mission_set_default = "scripts/mission/SV01/set_cscF1_silver_h.XML",
+  mission_set_default = "scripts/mission/SV01/set_cscF_silver.XML",
   mission_is_battle = true,
-  mission_path_default = "scripts/mission/0201/path_cscF1_silver",
+  mission_path_default = "scripts/mission/0201/path_cscF_silver",
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = ""
@@ -21,12 +21,12 @@ c_icon_goal = 4
 g_result_csc = {
   id = 474,
   stagename = "TOWN",
-  timebonus_base = 59000,
+  timebonus_base = 29000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
-  rank_s = 50000,
-  rank_a = 45000,
-  rank_b = 25000,
+  rank_s = 30000,
+  rank_a = 25000,
+  rank_b = 15000,
   rank_c = 5000,
   rank_d = 0,
   ringbonus_s = 3000,
@@ -38,46 +38,20 @@ g_result_csc = {
 }
 function main(_ARG_0_)
 end
+function on_event(_ARG_0_, _ARG_1_)
+  if _ARG_1_ == "result_csc_end" then
+    MissionClear(_ARG_0_, "complete")
+  end
+end
 function on_talk_icon(_ARG_0_, _ARG_1_)
 end
 function on_talk_setup(_ARG_0_, _ARG_1_)
 end
-function on_goto(_ARG_0_, _ARG_1_)
-end
-function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "BtoF2" then
-    g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/silver/f2"
-    g_mission_information.mission_set_default = "scripts/mission/SV01/set_cscF2_silver_h.XML"
-    g_mission_information.mission_path_default = "scripts/mission/0201/path_cscF_silver"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "F1toB" then
-    g_mission_information.mission_terrain = "stage/csc/b/"
-    g_mission_information.mission_area = "csc/silver/b"
-    g_mission_information.mission_set_default = "scripts/mission/SV01/set_cscB_silver.XML"
-    g_mission_information.mission_path_default = "scripts/mission/0201/path_cscB_silver"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-	elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 300, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/csc/f1/"
-    g_mission_information.mission_area = "csc/silver/f1"
-    g_mission_information.mission_set_default = "scripts/mission/SV01/set_cscF1_silver_h.XML"
-	g_mission_information.mission_path_default = "scripts/mission/0201/path_cscF1_silver"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
-  elseif _ARG_1_ == "result_csc_end" then
-    MissionClear(_ARG_0_, "complete")
-  end
-end
-function on_talk_open(_ARG_0_, _ARG_1_)
+function on_talk_oepn(_ARG_0_, _ARG_1_)
 end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  SetGlobalFlag(_ARG_0_, SV01, 1)
   Result(_ARG_0_, "g_result_csc")
 end
+
