@@ -2,9 +2,9 @@ c_table_single_episode = {
   {
     select_character = "select_omega.lua",
     mission_file = "scripts/mission/5222/mission.lua",
-    translation_x = -90,
-    translation_y = -34,
-    translation_z = 580,
+    translation_x = -145,
+    translation_y = -45,
+    translation_z = 480,
     rotation_x = 0.1265,
     rotation_y = 0.1265,
     rotation_z = -0.0175,
