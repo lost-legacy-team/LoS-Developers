@@ -67,7 +67,7 @@ OLS = {
     0.05,
     1.0E-4
   },
-  G = 50.00
+  G = 0.99
 }
 EnvMap = {
   FileName = "stage/wvo/a/wvo_envmap.dds"
@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.42,
   MaxThreshold = 3,
-  Scale = 4.85
+  Scale = 6
 }
 LOD = {
   Main = {FarDistance = 28000}

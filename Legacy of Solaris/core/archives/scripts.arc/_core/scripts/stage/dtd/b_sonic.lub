@@ -84,10 +84,6 @@ function DustyDesert.SonicB.laser01(_ARG_0_, _ARG_1_)
   Game.ProcessMessage("common_laser01", "GateOpen")
   Game.ProcessMessage("common_laser02", "GateOpen")
 end
-function DustyDesert.SonicB.laser01_close(_ARG_0_, _ARG_1_)
-  Game.ProcessMessage("common_laser01", "GateClose")
-  Game.ProcessMessage("common_laser02", "GateClose")
-end
 function DustyDesert.SonicB.laser02(_ARG_0_, _ARG_1_)
   Game.ProcessMessage("common_laser03", "GateOpen")
   Game.ProcessMessage("common_laser04", "GateOpen")
@@ -115,4 +111,8 @@ end
 function DustyDesert.SonicB.door13(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("dtd_door07")
+end
+function DustyDesert.SonicB.Wind_Start(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("common_windcollision_box06")
 end

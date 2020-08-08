@@ -7,7 +7,7 @@ function TropicalJungle.BlazeC.Setup(_ARG_0_)
   ActionArea.Setup(_ARG_0_)
   Game.Log("TropicalJungle.BlazeC.Setup")
   _ARG_0_:AddComponent({
-    Game.LoadRenderScript("scripts/render/render_gamemode_2_1.lua"),
+    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
     Game.LoadTerrain("stage/tpj/c/"),
     Game.LoadStageSet("scripts/mission/4032/set_tpjC_sonic_vh.XML"),
     Game.LoadStageSet("placement/tpj/tpj_mapC_effects.xml", "particle"),
