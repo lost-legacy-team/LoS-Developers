@@ -78,3 +78,9 @@ function KingdomValley.ShadowD.close01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.ProcessMessage("kdv_door01", "GateClose")
 end
+function KingdomValley.ShadowD.Wind_Start(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box01")
+Game.Signal("common_windcollision_box03")
+Game.Signal("common_windcollision_box04")
+end
