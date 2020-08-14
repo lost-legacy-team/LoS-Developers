@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.38,
   MaxThreshold = 2.8,
-  Scale = 4
+  Scale = 4.5
 }
 ReflectionAreas = {
   FileName = "stage/kdv/a/kdv_mapA_rfzone",

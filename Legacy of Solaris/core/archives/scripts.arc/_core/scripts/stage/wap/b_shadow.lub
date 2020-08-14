@@ -108,3 +108,8 @@ function WhiteAcropolis.ShadowB.cage_open01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("common_cage01")
 end
+function WhiteAcropolis.ShadowB.haikai01(_ARG_0_, _ARG_1_)
+  Game.Signal("laser01")
+  Game.ProcessMessage("common_laser25", "GateOpen")
+  Game.ProcessMessage("common_laser26", "GateOpen")
+end
