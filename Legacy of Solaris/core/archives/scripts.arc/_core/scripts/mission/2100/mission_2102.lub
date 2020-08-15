@@ -48,7 +48,6 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_terrain = "stage/wap/b/"
     g_mission_information.mission_area = "wap/shadow/b"
     g_mission_information.mission_set_default = "scripts/mission/2100/set_wap_b_shadow_h.XML"
-    g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "wap_all_destroy" then
