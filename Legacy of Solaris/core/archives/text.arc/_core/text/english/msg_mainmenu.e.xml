@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mst06 name="msg_mainmenu" mst_version="1" endianness="B">
+	<message index="0" name="msg_saveerror_1">You reached the maximum number of Save Data Slots.</message>
+	<message index="1" name="msg_saveerror_2">In order to create new Save Data \nplease delete old Save Data.</message>
+	<message index="2" name="msg_saveerror_3">If you continue the game without creating\nSave Data the progress of the game will not\nbe saved. OK?</message>
+	<message index="3" name="msg_saveerror_4">If you continue the game the progress of\nthe game will not be saved. OK?</message>
+	<message index="4" name="msg_progress">PROGRESS</message>
+	<message index="5" name="msg_lastplayarea">LAST PLAY AREA</message>
+	<message index="6" name="msg_lastplayarea_2">Last Played Area</message>
+	<message index="7" name="msg_fileselect">FILE SELECT</message>
+	<message index="8" name="msg_mainmenu">MAIN MENU</message>
+	<message index="9" name="msg_singleplayer">SINGLE PLAYER</message>
+	<message index="10" name="msg_multiplayer">MULTIPLAYER</message>
+	<message index="11" name="msg_network">NETWORK</message>
+	<message index="12" name="msg_extras">EXTRAS</message>
+	<message index="13" name="msg_options">OPTIONS</message>
+	<message index="14" name="msg_episodeselect">EPISODE SELECT</message>
+	<message index="15" name="msg_trialselect">TRIAL SELECT</message>
+	<message index="16" name="msg_goldmedalresults">GOLD MEDAL RESULTS</message>
+	<message index="17" name="msg_actselect">ACT TRIAL</message>
+	<message index="18" name="msg_towntrial">TOWN TRIAL</message>
+	<message index="19" name="msg_tag">TAG</message>
+	<message index="20" name="msg_tagselect">TAG SELECT</message>
+	<message index="21" name="msg_tagstory">TAG STORY</message>
+	<message index="22" name="msg_tagtrial">TAG TRIAL</message>
+	<message index="23" name="msg_tagtrialselect">TAG TRIAL SELECT</message>
+	<message index="24" name="msg_battle">BATTLE</message>
+	<message index="25" name="msg_ruleselect">RULE SELECT</message>
+	<message index="26" name="msg_select">AREA SELECT</message>
+	<message index="27" name="msg_ranking">RANKING</message>
+	<message index="28" name="msg_download">DOWNLOAD</message>
+	<message index="29" name="msg_audioroom">AUDIO ROOM</message>
+	<message index="30" name="msg_theaterroom">THEATER ROOM</message>
+	<message index="31" name="msg_xboxlive">Xbox Live</message>
+	<message index="32" name="msg_xboxlive2">Xbox Live</message>
+	<message index="33" name="msg_new">NEW!</message>
+	<message index="34" name="msg_characterselect">CHARACTER SELECT</message>
+	<message index="35" name="msg_singleplayer_c">Single Player: For one player</message>
+	<message index="36" name="msg_multiplayer_c">Multiplayer: 2 player mode</message>
+	<message index="37" name="msg_network_360_c">Xbox Live: View score and time rankings</message>
+	<message index="38" name="msg_network_ps3_c">Network: Download content and view rankings</message>
+	<message index="39" name="msg_extra_c">Extras:  Listen to music and view event movies</message>
+	<message index="40" name="msg_options_c">Options: Adjust various game settings</message>
+	<message index="41" name="msg_episodeselect_c">Episode Select: Play through the storyline</message>
+	<message index="42" name="msg_trial_c">Trial Select: Play stages you have cleared</message>
+	<message index="43" name="msg_goldmedalresults_c">Gold Medal Results: Displays list of Gold Medals collected</message>
+	<message index="44" name="msg_tagstory_c">Tag Story: A special two-player story</message>
+	<message index="45" name="msg_tagtrial_c">Tag Trial: Challenge previously-cleared missions with two players!</message>
+	<message index="46" name="msg_ranking_c">Rankings: Check your rank</message>
+	<message index="47" name="msg_download_c">Download; You can download additional game content</message>
+	<message index="48" name="msg_network_c">Network: You can check rankings and download content</message>
+	<message index="49" name="msg_xboxlive_c">Xbox Live: Connect to Xbox Live and check rankings</message>
+	<message index="50" name="msg_episodesonic_c">Play the Sonic The Hedgehog Episode</message>
+	<message index="51" name="msg_episodeshadow_c">Play the Shadow The Hedgehog Episode</message>
+	<message index="52" name="msg_episodesilver_c">Play the Silver The Hedgehog Episode</message>
+	<message index="53" name="msg_lastepisode_c">Play the Last Episode</message>
+	<message index="54" name="msg_episodetails_c">Play Miles "Tails" Prower Episode</message>
+	<message index="55" name="msg_episodeknuckles_c">Play Knuckles The Echidna Episode</message>
+	<message index="56" name="msg_playerselect_c">Please select a Player</message>
+	<message index="57" name="msg_stageselect_c">Please select a Stage</message>
+	<message index="58" name="msg_episoderouge_c">Play Rouge The Bat Episode</message>
+	<message index="59" name="msg_episodeomega_c">Play E-123 Omega Episode</message>
+	<message index="60" name="msg_episodeblaze_c">Play Blaze The Cat Episode</message>
+	<message index="61" name="msg_episodeamy_c">Play Amy Rose Episode</message>
+	<message index="62" name="msg_trial_tails">Play Miles "Tails" Prower Missions</message>
+	<message index="63" name="msg_trial_knuckles">Play Knuckles The Echidna Missions</message>
+	<message index="64" name="msg_trial_rouge">Play Rouge The Bat Missions</message>
+	<message index="65" name="msg_trial_omega">Play E-123 Omega Missions</message>
+	<message index="66" name="msg_trial_amy">Play Amy Rose Missions</message>
+	<message index="67" name="msg_trial_blaze">Play Blaze The Cat Missions</message>
+	<message index="68" name="msg_trial_supersonic">Play Super Sonic Missions</message>
+	<message index="69" name="msg_trial_supershadow">Play Super Shadow Missions</message>
+	<message index="70" name="msg_trial_supersilver">Play Super Silver Missions</message>
+	<message index="71" name="msg_trial_dlcharacter">Play Amigo Character Missions</message>
+	<message index="72" name="msg_trial_metal">Play Metal Sonic Missions</message>
+	<message index="73" name="msg_trial_secret">Play ??? Mission.</message>
+	<message index="74" name="msg_selectmission_c">Please select a Mission</message>
+	<message index="75" name="msg_tag_c">Tag: Work together and head to the goal!</message>
+	<message index="76" name="msg_battle_c">Battle: Reach the goal first!</message>
+	<message index="77" name="msg_continue">CONTINUE</message>
+	<message index="78" name="msg_newgame">NEW GAME</message>
+	<message index="79" name="msg_newgame_c">Continue previous game</message>
+	<message index="80" name="msg_continue_c">Start new game</message>
+	<message index="81" name="msg_characterselect_c">Select a character</message>
+	<message index="82" name="msg_credits">End Credits</message>
+	<message index="83" name="msg_ending">Ending</message>
+	<message index="84" name="msg_theaterroom_c">Theater Room: View story events</message>
+	<message index="85" name="msg_theaterroom_c_yobi">Theater Room: Watch CG movies</message>
+	<message index="86" name="msg_solleanna_a">Soleanna Castle Town</message>
+	<message index="87" name="msg_solleanna_b">Soleanna New City</message>
+	<message index="88" name="msg_solleanna_c">Soleanna forest</message>
+	<message index="89" name="msg_audioroom_c_2">Audio Room: Check out the game's music</message>
+	<message index="90" name="msg_audioroom_c_3">Select the track you want to hear</message>
+	<message index="91" name="msg_audioroom_c">Audio Room: You can listen to different sounds</message>
+	<message index="92" name="msg_bgm">MUSIC</message>
+	<message index="93" name="msg_se">SE</message>
+	<message index="94" name="msg_select_wirelesscontroller_ps3">Please select a wireless controller to use.</message>
+	<message index="95" name="msg_select_controller_ps3">Please select a wireless controller to use.</message>
+	<message index="96" name="msg_select_controller_ps3_2">Please select a wireless controller.</message>
+	<message index="97" name="msg_select_controller_360">Please select Xbox 360 Controller to use.</message>
+	<message index="98" name="msg_select_360controller">Please select Xbox 360 Controller to use.</message>
+	<message index="99" name="msg_select_controller_360_2">Please select Xbox 360 Controller.</message>
+	<message index="100" name="msg_entry">Join the game!</message>
+	<message index="101" name="msg_entry_360_1" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="102" name="msg_entry_360_2" placeholder="picture(button_b)">Press $ button to enter.</message>
+	<message index="103" name="msg_entry_360_3" placeholder="picture(button_start)">Press $ button to enter.</message>
+	<message index="104" name="msg_entry_360_4" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="105" name="msg_entry_360_5" placeholder="picture(button_start)">Press $ button to enter.</message>
+	<message index="106" name="msg_entry_360_6" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="107" name="msg_entry_360_7" placeholder="picture(button_start)">Press $ button to enter.</message>
+	<message index="108" name="msg_entry_ps3_1" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="109" name="msg_entry_ps3_2" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="110" name="msg_entry_ps3_3" placeholder="picture(button_start)">Press $ button to enter.</message>
+	<message index="111" name="msg_entry_ps3_4" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="112" name="msg_entry_ps3_5" placeholder="picture(button_start)">Press $ button to enter.</message>
+	<message index="113" name="msg_entry_ps3_6" placeholder="picture(button_a)">Press $ button to enter.</message>
+	<message index="114" name="msg_entry_ps3_7" placeholder="picture(button_start)">Press $ button to enter.</message>
+	<message index="115" name="msg_makenewgame">Start new game.</message>
+	<message index="116" name="msg_makenewgame2">Start new game.</message>
+	<message index="117" name="msg_continuegame">Continue </message>
+	<message index="118" name="msg_selectcharachter">Please select character to play.</message>
+	<message index="119" name="msg_selectstage">Please select a stage to play.</message>
+	<message index="120" name="msg_multiplayer_2">Multiplayer: 2 players mode.</message>
+	<message index="121" name="msg_tag_2">Tag: Work together and head to the goal!</message>
+	<message index="122" name="msg_battle_2">Battle: Compete each other's speed.</message>
+	<message index="123" name="msg_battle_3">Battle: Reach the gold first!</message>
+	<message index="124" name="msg_battle_commonrule">Reach the goal first!</message>
+	<message index="125" name="msg_xboxlive_connecting">Connecting to Xbox Live.</message>
+	<message index="126" name="msg_xboxlive_connected">Connected to Xbox Live.</message>
+	<message index="127" name="msg_xboxlive_cannot_connect">Failed to connect to Xbox Live.</message>
+	<message index="128" name="msg_xboxlive_cannot_connect2">Failed to connect to Xbox Live.\nPlease check your connection.</message>
+	<message index="129" name="msg_tagsave">If you save a new tag game, your old\ntag game data will be overwritten.\nIs this okay?</message>
+	<message index="130" name="msg_twn">Soleanna Town</message>
+	<message index="131" name="msg_gamerprofile">Display Gamer Profile</message>
+	<message index="132" name="msg_gamerprofile_2">GamerProfile</message>
+	<message index="133" name="msg_quitmission">Quit Mission</message>
+	<message index="134" name="msg_stopgame">Interrupt</message>
+	<message index="135" name="msg_devicechange">Change storage device</message>
+	<message index="136" name="msg_devicechange_2">Select storage device</message>
+	<message index="137" name="msg_lastsavetime">Last Save Time</message>
+	<message index="138" name="msg_lastsavetime_2">LAST SAVE TIME</message>
+	<message index="139" name="msg_totalplaytime">Total Play Time</message>
+	<message index="140" name="msg_unknown7">???????</message>
+	<message index="141" name="msg_unknown_5">?????</message>
+	<message index="142" name="msg_acttrial_c">ACT Trial: Choose a Stage and play!</message>
+	<message index="143" name="msg_twntrial_c">Town Trial: Choose a Town Mission and play!</message>
+	<message index="144" name="msg_trial_sonic">Play Sonic The Hedgehog Missions</message>
+	<message index="145" name="msg_trial_shadow">Play Shadow The Hedgehog Missions</message>
+	<message index="146" name="msg_trial_silver">Play Silver The Hedgehog Missions</message>
+	<message index="147" name="msg_trial_last">Play Last Mission</message>
+	<message index="148" name="msg_episodesupersonic_c">Play Super Sonic Spisode</message>
+	<message index="149" name="msg_episodesupershadow_c">Play Super Shadow Episode</message>
+	<message index="150" name="msg_episodesupersilver_c">Play Super Silver Episode</message>
+	<message index="151" name="msg_episodedlcharacter_c">Play Download Character Episode</message>
+	<message index="152" name="msg_episodemetal_c">Play Metal Sonic Episode</message>
+	<message index="153" name="msg_episodeunknown_c">Play ??? Episode</message>
+	<message index="154" name="msg_mp_sonicdemo">SONIC THE HEDGEHOG\nDemo</message>
+	<message index="155" name="msg_mp_movie720">SONIC THE HEDGEHOG\nPreview Version (720p)</message>
+	<message index="156" name="msg_mp_movie480">SONIC THE HEDGEHOG\nPreview Version (480p)</message>
+	<message index="157" name="msg_mp_theme_sonicthehedgehog">SONIC THE HEDGEHOG\nTheme</message>
+	<message index="158" name="msg_mp_theme_sonic">Sonic's Theme</message>
+	<message index="159" name="msg_mp_theme_shadow">Shadow's Theme</message>
+	<message index="160" name="msg_mp_theme_silver">Silver's Theme</message>
+	<message index="161" name="msg_mp_theme_tails">Tails' Theme</message>
+	<message index="162" name="msg_mp_theme_knuckles">Knuckles' Theme</message>
+	<message index="163" name="msg_mp_theme_rouge">Rouge's Theme</message>
+	<message index="164" name="msg_mp_theme_omega">Omega's Theme</message>
+	<message index="165" name="msg_mp_theme_amy">Amy's Theme</message>
+	<message index="166" name="msg_mp_theme_blaze">Blaze's Theme</message>
+	<message index="167" name="msg_mp_theme_eggman">Dr. Eggman's Theme</message>
+	<message index="168" name="msg_mp_theme_metal">Metal Sonic's Theme</message>
+	<message index="169" name="msg_mp_theme_soleanna">Soleanna's Theme</message>
+	<message index="170" name="msg_mp_theme_memorialsonic">Memorial Sonic's Theme</message>
+	<message index="171" name="msg_mp_icon_sonicthehedgehog">SONIC THE HEDGEHOG Icon</message>
+	<message index="172" name="msg_mp_icon_sonic">Sonic Icon</message>
+	<message index="173" name="msg_mp_icon_shadow">Shadow Icon</message>
+	<message index="174" name="msg_mp_icon_silver">Silver Icon</message>
+	<message index="175" name="msg_mp_icon_eggman">Dr. Eggman Icon</message>
+	<message index="176" name="msg_mp_icon_metal">Metal Sonic Icon</message>
+	<message index="177" name="msg_mp_icon_soleanna">Soleanna Icon</message>
+	<message index="178" name="msg_mp_icon_memorialsonic">Memorial Sonic Icon</message>
+	<message index="179" name="msg_mp_icon_allicon">Sonic All Icon Set</message>
+	<message index="180" name="msg_mp_sonic_veryhard">Additional Mission Pack\n"Sonic/Very Hard"</message>
+	<message index="181" name="msg_mp_sonic_superhard">Additional Mission Pack\n"Sonic/Super Hard"</message>
+	<message index="182" name="msg_mp_sonic_extra">Additional Mission Pack\n"Sonic/Extra"</message>
+	<message index="183" name="msg_mp_shadow_veryhard">Additional Mission Pack\n"Shadow/Very Hard"</message>
+	<message index="184" name="msg_mp_shadow_superhard">Additional Mission Pack\n"Shadow/Super Hard"</message>
+	<message index="185" name="msg_mp_shadow_extra">Additional Mission Pack\n"Shadow/Extra"</message>
+	<message index="186" name="msg_mp_silver_veryhard">Additional Mission Pack\n"Silver/Very Hard"</message>
+	<message index="187" name="msg_mp_silver_superhard">Additional Mission Pack\n"Silver/Super Hard"</message>
+	<message index="188" name="msg_mp_silver_extra">Additional Mission Pack\n"Silver/Extra"</message>
+	<message index="189" name="msg_mp_all_veryhard">Additional Mission Pack\n"Very Hard All"</message>
+	<message index="190" name="msg_mp_all_superhard">Additional Mission Pack\n"Super Hard All."</message>
+	<message index="191" name="msg_mp_all_extra">Additional Mission Pack\n"Extra All"</message>
+	<message index="192" name="msg_mp_episode_tails">Additional Episode\n"Tails"</message>
+	<message index="193" name="msg_mp_episode_knuckles">Additional Episode\n"Knuckles"</message>
+	<message index="194" name="msg_mp_episode_amy">Additional Episode\n"Amy"</message>
+	<message index="195" name="msg_mp_episode_blaze">Additional Episode\n"Blaze"</message>
+	<message index="196" name="msg_mp_episode_rouge">Additional Episode\n"Rouge"</message>
+	<message index="197" name="msg_mp_episode_omega">Additional Episode\n"Omega"</message>
+	<message index="198" name="msg_mp_episode_metal">Additional Episode\n"Metal Sonic"</message>
+	<message index="199" name="msg_mp_mission_tails">Additional Mission Pack\n"Tails"</message>
+	<message index="200" name="msg_mp_mission_knuckles">Additional Mission Pack\n"Knuckles"</message>
+	<message index="201" name="msg_mp_mission_amy">Additional Mission Pack\n"Amy"</message>
+	<message index="202" name="msg_mp_mission_blaze">Additional Mission Pack\n"Blaze"</message>
+	<message index="203" name="msg_mp_mission_rouge">Additional Mission Pack\n"Rouge"</message>
+	<message index="204" name="msg_mp_mission_omega">Additional Mission Pack\n"Omega"</message>
+	<message index="205" name="msg_mp_mission_metal">Additional Mission Pack\n"Metal Sonic"</message>
+	<message index="206" name="msg_mp_sonicdemo2_c">Sonic The Hedgehog \nredefines his trademark\nspeed for the most \nintense, high-velocity\nadventure yet! </message>
+	<message index="207" name="msg_mp_movie720_c">SONIC THE HEDGEHOG\nPreview Version (720p)</message>
+	<message index="208" name="msg_mp_movie480_c">SONIC THE HEDGEHOG\nPreview Version (480p)</message>
+	<message index="209" name="msg_mp_theme_sonicthehedgehog_c">Title Theme of\n"SONIC THE HEDGEHOG"</message>
+	<message index="210" name="msg_mp_theme_sonic_c">Sonic The Hedgehog's Theme</message>
+	<message index="211" name="msg_mp_theme_shadow_c">Shadow The Hedgehog's Theme</message>
+	<message index="212" name="msg_mp_theme_silver_c">Silver The Hedgehog's Theme</message>
+	<message index="213" name="msg_mp_theme_eggman_c">Dr. Eggman Boss Theme</message>
+	<message index="214" name="msg_mp_theme_metal_c">Metal Sonic's Theme</message>
+	<message index="215" name="msg_mp_theme_soleanna_c">King Soleanna and Elise's Theme</message>
+	<message index="216" name="msg_mp_theme_memorialsonic_c">Sonic 15th Anniversary Theme</message>
+	<message index="217" name="msg_mp_icon_sonicthehedgehog_c">SONIC THE HEDGEHOG Title Icon</message>
+	<message index="218" name="msg_mp_icon_sonic_c">Sonic, Tails, and Knuckles Icon</message>
+	<message index="219" name="msg_mp_icon_shadow_c">Shadow, Rouge, and Omega Icon</message>
+	<message index="220" name="msg_mp_icon_silver_c">Silver, Amy, and Blaze Icon</message>
+	<message index="221" name="msg_mp_icon_eggman_c">Eggman and Boss Icon</message>
+	<message index="222" name="msg_mp_icon_metal_c">Metal Sonic Icon</message>
+	<message index="223" name="msg_mp_icon_soleanna_c">Elise and King Soleanna Icon</message>
+	<message index="224" name="msg_mp_icon_allicon_c">A set of all\nSONIC THE HEDGEHOG icons</message>
+	<message index="225" name="msg_mp_sonic_veryhard_c">You can play a new set of\nvery hard missions for Sonic.</message>
+	<message index="226" name="msg_mp_sonic_superhard_c">You can play a new set of\nsuper hard missions for Sonic.</message>
+	<message index="227" name="msg_mp_sonic_extra_c">You can play a new set of extra\nmissions for Sonic.</message>
+	<message index="228" name="msg_mp_shadow_veryhard_c">You can play a new set of\nvery hard missions for Shadow.</message>
+	<message index="229" name="msg_mp_shadow_superhard_c">You can play a new set of\nsuper hard missions for Shadow.</message>
+	<message index="230" name="msg_mp_shadow_extra_c">You can play a new set of extra\nmissions for Shadow.</message>
+	<message index="231" name="msg_mp_silver_veryhard_c">You can play a new set of\nvery hard missions for Silver.</message>
+	<message index="232" name="msg_mp_silver_superhard_c">You can play a new set of\nsuper hard missions for Silver.</message>
+	<message index="233" name="msg_mp_silver_extra_c">You can play a new set of extra\nmissions for Silver.</message>
+	<message index="234" name="msg_mp_all_veryhard_c">You can play a new set of\nvery hard missions for Sonic,\nShadow, and Silver.</message>
+	<message index="235" name="msg_mp_all_superhard_c">You can play a new set of\nsuper hard missions for Sonic,\nShadow, and Silver.</message>
+	<message index="236" name="msg_mp_all_extra_c">You can play a new set of extra\nmissions for Sonic, Shadow,\nand Silver.</message>
+	<message index="237" name="msg_mp_episode_tails_c">You can play an additional\nepisode for Tails.</message>
+	<message index="238" name="msg_mp_episode_knuckles_c">You can play an additional\nepisode for Knuckles.</message>
+	<message index="239" name="msg_mp_episode_amy_c">You can play an additional\nepisode for Amy.</message>
+	<message index="240" name="msg_mp_episode_blaze_c">You can play an additional\nepisode for Blaze.</message>
+	<message index="241" name="msg_mp_episode_rouge_c">You can play an additional\nepisode for Rouge.</message>
+	<message index="242" name="msg_mp_episode_omega_c">You can play an additional\nepisode for Omega.</message>
+	<message index="243" name="msg_mp_episode_metal_c">You can play an additional\nepisode for Metal Sonic.</message>
+	<message index="244" name="msg_mp_mission_tails_c">You can play additional missions\nfor Tails.</message>
+	<message index="245" name="msg_mp_mission_knuckles_c">You can play additional missions\nfor Knuckles.</message>
+	<message index="246" name="msg_mp_mission_amy_c">You can play additional missions\nfor Amy.</message>
+	<message index="247" name="msg_mp_mission_blaze_c">You can play additional missions\nfor Blaze.</message>
+	<message index="248" name="msg_mp_mission_rouge_c">You can play additional missions\nfor Rouge.</message>
+	<message index="249" name="msg_mp_mission_omega_c">You can play additional missions\nfor Omega.</message>
+	<message index="250" name="msg_mp_mission_metal_c">You can play additional missions\nfor Metal Sonic.</message>
+	<message index="251" name="msg_stage">STAGE</message>
+	<message index="252" name="msg_other">OTHER</message>
+	<message index="253" name="msg_shaffle">SHUFFLE</message>
+	<message index="254" name="msg_mission">MISSION</message>
+	<message index="255" name="msg_mission1">MISSION 1</message>
+	<message index="256" name="msg_mission2">MISSION 2</message>
+	<message index="257" name="msg_mission3">MISSION 3</message>
+	<message index="258" name="msg_mission4">MISSION 4</message>
+	<message index="259" name="msg_mission5">MISSION 5</message>
+	<message index="260" name="msg_download_contents">Download: Play downloaded content.</message>
+	<message index="261" name="msg_download_mission">Download: Play downloaded mission.</message>
+	<message index="262" name="sonic">SONIC</message>
+	<message index="263" name="shadow">SHADOW</message>
+	<message index="264" name="silver">SILVER</message>
+	<message index="265" name="msg_lastepisode">LAST EPISODE</message>
+	<message index="266" name="act1">ACT1</message>
+	<message index="267" name="act2">ACT2</message>
+	<message index="268" name="act3">ACT3</message>
+	<message index="269" name="act4">ACT4</message>
+	<message index="270" name="act5">ACT5</message>
+	<message index="271" name="act6">ACT6</message>
+	<message index="272" name="act7">ACT7</message>
+	<message index="273" name="act8">ACT8</message>
+	<message index="274" name="act9">ACT9</message>
+	<message index="275" name="boss">BOSS</message>
+	<message index="276" name="boss1">BOSS1</message>
+	<message index="277" name="boss2">BOSS2</message>
+	<message index="278" name="boss3">BOSS3</message>
+	<message index="279" name="boss4">BOSS4</message>
+	<message index="280" name="boss5">BOSS5</message>
+	<message index="281" name="lastact">LAST ACT</message>
+	<message index="282" name="extra">EXTRA</message>
+	<message index="283" name="eggcerberus">EGG-HOUND</message>
+	<message index="284" name="egggenesis">EGG-GENESIS</message>
+	<message index="285" name="eggwyvern">EGG-WYVERN</message>
+	<message index="286" name="mephiles">MEPHILES</message>
+	<message index="287" name="mephiles_phase1">MEPHILES PHASE 1</message>
+	<message index="288" name="mephiles_phase2">MEPHILES PHASE 2</message>
+	<message index="289" name="iblis">IBLIS</message>
+	<message index="290" name="iblis_phase1">IBLIS PHASE 1</message>
+	<message index="291" name="iblis_phase2">IBLIS PHASE 2</message>
+	<message index="292" name="iblis_phase3">IBLIS PHASE 3</message>
+	<message index="293" name="vs_sonic">VS. SONIC</message>
+	<message index="294" name="vs_shadow">VS. SHADOW</message>
+	<message index="295" name="vs_silver">VS. SILVER</message>
+	<message index="296" name="sonicthehedgehog">SONIC THE HEDGEHOG</message>
+	<message index="297" name="shadowthehedgehog">SHADOW THE HEDGEHOG</message>
+	<message index="298" name="silverthehedgehog">SILVER THE HEDGEHOG</message>
+	<message index="299" name="solaris">SOLARIS</message>
+	<message index="300" name="waveocean">WAVE OCEAN</message>
+	<message index="301" name="dustydesert">DUSTY DESERT</message>
+	<message index="302" name="whiteacropolis">WHITE ACROPOLIS</message>
+	<message index="303" name="crisiscity">CRISIS CITY</message>
+	<message index="304" name="flamecore">FLAME CORE</message>
+	<message index="305" name="radicaltrain">RADICAL TRAIN</message>
+	<message index="306" name="tropicaljungle">TROPICAL JUNGLE</message>
+	<message index="307" name="waveocean_tails">WAVE OCEAN : TAILS</message>
+	<message index="308" name="kingdomvalley">KINGDOM VALLEY</message>
+	<message index="309" name="aquaticbase">AQUATIC BASE</message>
+	<message index="310" name="endofthewolrd">END OF THE WORLD</message>
+	<message index="311" name="tropicaljungle_rouge">TROPICAL JUNGLE : ROUGE</message>
+	<message index="312" name="waveocean_blaze">WAVE OCEAN : BLAZE</message>
+	<message index="313" name="solleanna_a">Soleanna Castle Town</message>
+	<message index="314" name="solleanna_b">Soleanna New City</message>
+	<message index="315" name="solleanna_c">Soleanna forest</message>
+	<message index="316" name="msg_xboxlive_saving1">Saving data.\nPlease do not turn the power off.</message>
+	<message index="317" name="msg_xboxlive_saving2">Saving..</message>
+	<message index="318" name="msg_xboxlive_servererror">&lt;SONIC THE HEDGEHOG&gt; server\nis unavailable at the moment. \nPlease try again later.</message>
+	<message index="319" name="msg_timeorscore_360" placeholder="picture(button_ｙ)">$ Toggle time/score</message>
+	<message index="320" name="msg_friend_360" placeholder="picture(button_x)">$ Friends</message>
+	<message index="321" name="msg_timeorscore_ps3" placeholder="picture(button_ｙ)">$ Toggle time/score</message>
+	<message index="322" name="msg_friend_ps3" placeholder="picture(button_x)">$ Friends</message>
+	<message index="323" name="msg_1st">1ST</message>
+	<message index="324" name="msg_2nd">2ND</message>
+	<message index="325" name="msg_3rd">NOT IN USE</message>
+	<message index="326" name="msg_4th">NOT IN USE</message>
+	<message index="327" name="msg_rankbonus">RANK BONUS</message>
+	<message index="328" name="msg_gametext">The beautiful Water Kingdom of\nSoleanna. The young Princess\nElise, holder of the secret of\nthe "Flames of Disaster," is\nabducted by Dr. Eggman during\nthe fire ceremony. Sonic goes\nto thwart Eggman and rescue\nthe princess, but another hedgehog,\nSilver, tries to stop him, calling him\nthe "Iblis Trigger," the key to\nsome terrible power. Why is he after\nSonic? What is the Iblis Trigger?\nWhat does Dr. Eggman know about\nthe Flames of Disaster? Sonic's\nlatest adventure is about to begin!</message>
+	<message index="329" name="episode_tails">Play Miles "Tails" Prower Episode</message>
+	<message index="330" name="tails_trial">Play Miles "Tails" Prower Missions</message>
+</mst06>

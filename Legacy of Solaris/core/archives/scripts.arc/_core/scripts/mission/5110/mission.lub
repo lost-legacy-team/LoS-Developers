@@ -1,13 +1,13 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wap/blaze/a",
+  mission_area = "wap/omega/a",
   mission_terrain = "stage/wap/a",
   mission_set_default = "scripts/mission/5110/set_wap_a_omega.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = ""
+  mission_path_default = "scripts/mission/5110/path_wapA_omega"
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -24,10 +24,10 @@ g_result_wap = {
   timebonus_base = 40000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
-  rank_s = 50000,
-  rank_a = 35000,
-  rank_b = 30000,
-  rank_c = 15000,
+  rank_s = 90000,
+  rank_a = 75000,
+  rank_b = 50000,
+  rank_c = 30000,
   rank_d = 0,
   ringbonus_s = 3000,
   ringbonus_a = 2000,
@@ -49,7 +49,7 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_terrain = "stage/wap/b"
     g_mission_information.mission_area = "wap/blaze/b"
     g_mission_information.mission_set_default = "scripts/mission/5110/set_wap_b_omega.XML"
-    g_mission_information.mission_path_default = "scripts/mission/5110/path_wapB_silver"
+    g_mission_information.mission_path_default = "scripts/mission/5110/path_wapB_omega"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "result_wap_end" then

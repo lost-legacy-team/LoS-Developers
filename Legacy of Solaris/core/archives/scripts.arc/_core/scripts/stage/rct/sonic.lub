@@ -3,7 +3,6 @@ RadicalTrain.Sonic.scripts = {
   "scripts/stage/rct/a_sonic.lua",
   "scripts/stage/rct/b_sonic.lua",
   "scripts/stage/rct/a_tails.lua",
-  "scripts/stage/rct/a_blaze.lua",
 }
 function RadicalTrain.Sonic.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -11,7 +10,6 @@ function RadicalTrain.Sonic.constructor(_ARG_0_)
   _ARG_0_.areas = {
     ["Area A"] = RadicalTrain.SonicA,
     ["Area B"] = RadicalTrain.SonicB,
-	["Area A(Blaze)"] = RadicalTrain.BlazeA,
 	["Area A(Tails)"] = RadicalTrain.TailsA
   }
   _ARG_0_.area = "Area A"

@@ -1,26 +1,22 @@
 CrisisCity.Silver = inherits_from(ActionStage)
 CrisisCity.Silver.scripts = {
   "scripts/stage/csc/b_silver.lua",
-  "scripts/stage/csc/f_silver.lua",
   "scripts/stage/csc/f1_silver.lua",
   "scripts/stage/csc/f2_silver.lua",
   "scripts/stage/csc/f1_blaze.lua",
   "scripts/stage/csc/f2_blaze.lua",
-  "scripts/stage/csc/b_blaze.lua",
-  "scripts/stage/csc/f_blaze.lua"
+  "scripts/stage/csc/b_blaze.lua"
 }
 function CrisisCity.Silver.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
   Game.Log("construct CrisisCity.Silver")
   _ARG_0_.areas = {
     ["Area B"] = CrisisCity.SilverB,
-	["Area F"] = CrisisCity.SilverF,
     ["Area F1"] = CrisisCity.SilverF1,
     ["Area F2"] = CrisisCity.SilverF2,
 	["Area F1(Blaze)"] = CrisisCity.BlazeF1,
 	["Area F2(Blaze)"] = CrisisCity.BlazeF2,
-	["Area B(Blaze)"] = CrisisCity.BlazeB,
-	["Area F(Blaze)"] = CrisisCity.BlazeF
+	["Area B(Blaze)"] = CrisisCity.BlazeB
   }
   _ARG_0_.area = "Area A"
   _ARG_0_.result_name = 1

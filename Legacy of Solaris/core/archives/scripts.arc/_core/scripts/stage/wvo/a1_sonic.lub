@@ -66,7 +66,7 @@ function WaveOcean.SonicA1.orca10(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("wvo_orca10")
 end
-function WaveOcean.SonicA1.door01(_ARG_0_, _ARG_1_)
+function WaveOcean.SonicA.door01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.ProcessMessage("wvo_doorB01", "GateClose")
   Game.StartEntityByName("GroupHelper11")

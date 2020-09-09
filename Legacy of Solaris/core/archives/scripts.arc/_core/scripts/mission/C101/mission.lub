@@ -254,7 +254,7 @@ function on_goto(_ARG_0_, _ARG_1_)
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
     elseif _ARG_1_ == "goto_kdv" then
       g_mission_information.mission_terrain = "stage/kdv/d/"
-      g_mission_information.mission_area = "kdv/shadow/d"
+      g_mission_information.mission_area = "kdv/rouge/d"
       g_mission_information.mission_set_default = "scripts/mission/6019/set_kdv_D_rouge.XML"
       g_mission_information.mission_path_default = ""
       g_mission_information.mission_is_battle = true
@@ -339,7 +339,7 @@ function on_goal(_ARG_0_)
     g_mission_information.mission_progress = 5
     SetGlobalFlag(_ARG_0_, 4051, 1)
     Result(_ARG_0_, "g_result_wap")
-  elseif g_mission_information.mission_area == "kdv/shadow/d" then
+  elseif g_mission_information.mission_area == "kdv/rouge/d" then
     g_mission_information.mission_progress = 19
     SetGlobalFlag(_ARG_0_, 4056, 1)
     Result(_ARG_0_, "g_result_kdv")

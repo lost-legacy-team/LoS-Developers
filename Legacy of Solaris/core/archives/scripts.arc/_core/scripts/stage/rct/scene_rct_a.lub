@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.25,
   MaxThreshold = 2.9,
-  Scale = 7.5
+  Scale = 5.5
 }
 LOD = {
   Main = {FarDistance = 20000, ClipDistance = 50000}

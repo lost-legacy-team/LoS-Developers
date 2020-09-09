@@ -11,7 +11,6 @@ function RadicalTrain.SonicA.Setup(_ARG_0_)
     Game.LoadTerrain("stage/rct/a/"),
     Game.LoadStageSet("placement/rct/set_rctA_sonic.xml"),
     Game.LoadStageSet("placement/rct/set_rctA_sonic_area.XML", "area"),
-	Game.LoadStageSet("placement/rct/set_rctA_tails_area.xml", "area1"),
     Game.LoadSceneParams("scripts/stage/rct/scene_rct_a.lua"),
     Game.LoadPath("placement/rct/path_rctA_sonic"),
     Game.LoadPath("placement/rct/grind_rctA_sonic", "grind"),

@@ -5,7 +5,7 @@ WhiteAcropolis.Silver.scripts = {
   "scripts/stage/wap/b_silver.lua",
   "scripts/stage/wap/a_blaze.lua",
   "scripts/stage/wap/b_blaze.lua",
-  "scripts/stage/wap/a1_blaze.lua",
+  "scripts/stage/wap/a_omega.lua",
 }
 function WhiteAcropolis.Silver.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -16,7 +16,7 @@ function WhiteAcropolis.Silver.constructor(_ARG_0_)
     ["Area B"] = WhiteAcropolis.SilverB,
 	["Area A(Blaze)"] = WhiteAcropolis.BlazeA,
     ["Area B(Blaze)"] = WhiteAcropolis.BlazeB,
-	["Area A1(Blaze)"] = WhiteAcropolis.BlazeA1
+	["Area A(Omega)"] = WhiteAcropolis.OmegaA
    }
   _ARG_0_.area = "Area B"
 end

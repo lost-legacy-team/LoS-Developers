@@ -67,7 +67,7 @@ OLS = {
     0.3,
     1.0E-4
   },
-  G = 50.00
+  G = 0.97
 }
 EnvMap = {
   FileName = "stage/aqa/a/aqa_envmap.dds"

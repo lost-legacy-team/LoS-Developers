@@ -20,7 +20,7 @@ function KingdomValley.BlazeA.Setup(_ARG_0_)
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_kdv_b")
   })
-  Game.SetPlayer(44068, 9483, 28589, 263, "sonic_new.lua")
+  Game.SetPlayer(44068, 9483, 28589, 263, "blaze.lua")
 end
 function KingdomValley.BlazeA.goto_c(_ARG_0_, _ARG_1_)
   _ARG_0_:ChangeArea("Area B")
