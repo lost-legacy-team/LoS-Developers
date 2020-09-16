@@ -70,7 +70,7 @@ OLS = {
   G = 0.85
 }
 EnvMap = {
-  FileName = "stage/csc/f/csc_envmap.dds"
+  FileName = "stage/csc/f/csc_envmap05.dds"
 }
 Bloom = {
   MinThreshold = 0.3,
