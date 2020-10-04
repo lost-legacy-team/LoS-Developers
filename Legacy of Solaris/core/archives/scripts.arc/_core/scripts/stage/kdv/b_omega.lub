@@ -8,24 +8,30 @@ function KingdomValley.OmegaB.Setup(_ARG_0_)
   _ARG_0_:AddComponent({
     Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
     Game.LoadTerrain("stage/kdv/b/"),
-    Game.LoadStageSet("scripts/mission/0211/set_kdv_b_silver.XML"),
+    Game.LoadStageSet("scripts/mission/0101/set_kdv_b_shadow.XML"),
     Game.LoadStageSet("placement/kdv/kdv_mapB_effects.xml", "particle"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_b.lua"),
     Game.LoadStageSet("placement/kdv/dset_kdv_b_sonic.XML", "pathobj"),
-    Game.LoadPath("placement/kdv/kdv_silver_b"),
+    Game.LoadPath("placement/kdv/kdv_shadow_b"),
+    Game.LoadCameraSet("placement/kdv/set_kdv_b_shadow.XML"),
     Game.LoadSoundBank("sound/stage_kdv"),
     Game.LoadVoiceBank("sound/voice_kdv_e"),
     Game.PlayBGM("stg_kdv_c")
   })
   Game.SetPlayer(-22612, 12458, -26085, 300, "omega.lua")
 end
+function KingdomValley.OmegaB.goto_c(_ARG_0_, _ARG_1_)
+  _ARG_0_:ChangeArea("Area C")
+end
 function KingdomValley.OmegaB.brake01(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics2")
+  Game.Signal("objectphysics52")
+  Game.Signal("impulsesphere01")
 end
 function KingdomValley.OmegaB.brake02(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics7")
+  Game.Signal("objectphysics55")
+  Game.Signal("impulsesphere02")
 end
 function KingdomValley.OmegaB.brake03(_ARG_0_, _ARG_1_)
   Game.Debug()
@@ -50,16 +56,28 @@ function KingdomValley.OmegaB.brake07(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("inclinedbridge02")
 end
-function KingdomValley.OmegaB.Wind_Start01(_ARG_0_, _ARG_1_)
-Game.Debug()
-Game.Signal("common_windcollision_box01")
-Game.Signal("common_windcollision_box02")
-end
-function KingdomValley.OmegaB.cage_open01(_ARG_0_, _ARG_1_)
+function KingdomValley.OmegaB.open_cage(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("common_cage01")
 end
-function KingdomValley.OmegaB.cage_open02(_ARG_0_, _ARG_1_)
+function KingdomValley.OmegaB.open_cage02(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("common_cage02")
+end
+function KingdomValley.OmegaB.door03(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("kdv_door03")
+end
+function KingdomValley.OmegaB.door02(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("kdv_door02")
+end
+function KingdomValley.OmegaB.door05(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("kdv_door01")
+end
+function KingdomValley.OmegaB.brake03(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("objectphysics51")
+  Game.Signal("impulsesphere03")
 end

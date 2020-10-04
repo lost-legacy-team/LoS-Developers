@@ -93,3 +93,5 @@ c_homing_damage = 1 * point
 c_homing_power = 300 * N
 c_spinning_claw_min = 3 * sec
 c_spinning_claw_max = 15 * sec
+c_wallwait_time = 0.5 * sec
+c_wallrun_spd = 8 * (meter / sec)

@@ -1,2 +1,3 @@
-script.reload("scripts/render/render_gamemode.lua")
-GenerateCSMObjects = 2
+script.reload("scripts/render/render_gamemode_zprepass.lua")
+Zpass = OutputLinearZ
+GenerateCSMObjects = 4

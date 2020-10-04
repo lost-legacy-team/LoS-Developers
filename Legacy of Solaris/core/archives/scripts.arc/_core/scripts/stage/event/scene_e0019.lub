@@ -67,7 +67,7 @@ OLS = {
     0.1,
     5.1E-5
   },
-  G = 8.00
+  G = 0.99
 }
 EnvMap = {
   FileName = "stage/twn/c/twn_c_cubemap_df_e.dds"
@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.2,
   MaxThreshold = 4,
-  Scale = 4
+  Scale = 2.5
 }
 ReflectionAreas = {
   FileName = "stage/twn/c/twn_mapC_rfzone"

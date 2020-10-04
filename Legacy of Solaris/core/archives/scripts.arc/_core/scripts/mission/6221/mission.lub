@@ -229,7 +229,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0203_end" then
     PlayEvent(_ARG_0_, "e0205", "e0205_end")
   elseif _ARG_1_ == "e0205_end" then
-    g_mission_information.mission_string = "msg_twn_silver01"
+    g_mission_information.mission_string = "silver_stg_wvo_blz"
     g_mission_information.mission_terrain = "stage/wvo/a/"
     g_mission_information.mission_area = "wvo/silver/a"
     g_mission_information.mission_set_default = "scripts/mission/6001/set_wvoA_blaze.XML"
@@ -256,11 +256,11 @@ function on_talk_close(_ARG_0_, _ARG_1_)
   if _ARG_1_ == "msg_t20102c801_01_1" then
     if GetTemporaryFlag(_ARG_0_, c_flag_2111) == 0 then
       SetTemporaryFlag(_ARG_0_, c_flag_2111, 1)
-      g_mission_information.mission_string = "msg_twn_silver02"
+      g_mission_information.mission_string = "silver_stg_wvo_blz"
     end
   elseif _ARG_1_ == "msg_t20102c803_01_1" and GetTemporaryFlag(_ARG_0_, c_flag_2111) == 0 then
     SetTemporaryFlag(_ARG_0_, c_flag_2111, 1)
-    g_mission_information.mission_string = "msg_twn_silver02"
+    g_mission_information.mission_string = "silver_stg_wvo_blz"
   end
 end
 function on_goal(_ARG_0_)

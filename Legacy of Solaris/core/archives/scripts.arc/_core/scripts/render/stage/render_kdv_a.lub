@@ -1,2 +1,4 @@
-script.reload("scripts/render/render_gamemode.lua")
-GenerateCSMObjects = 16
+script.reload("scripts/render/render_gamemode_zprepass.lua")
+GenerateCSMObjects = 4
+Zpass = OutputLinearZ
+HiSpecGPU = True

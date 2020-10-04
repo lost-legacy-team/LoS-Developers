@@ -2,12 +2,12 @@ g_mission_information = {
   mission_string = "msg_act01",
   mission_area = "wvo/silver/a",
   mission_terrain = "stage/wvo/a/",
-  mission_set_default = "scripts/mission/0201/set_wvoA_silver.XML",
-  mission_path_default = "scripts/mission/0201/wvo_s_a",
+  mission_set_default = "scripts/mission/6001/set_wvoA_blaze.XML",
+  mission_is_battle = true,
+  mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
-  mission_event_end = "",
-  mission_text = "text/msg_twn_silver.mst",
-  mission_is_battle = true
+  mission_event_startup = "",
+  mission_path_default = "scripts/mission/6001/path_wvoA_blaze"
 }
 g_result_wvo = {
   id = 138,
@@ -43,5 +43,6 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
+  SetGlobalFlag(_ARG_0_, 4137, 1)
   Result(_ARG_0_, "g_result_wvo")
 end

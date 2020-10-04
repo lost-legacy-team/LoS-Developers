@@ -7,7 +7,7 @@ function CrisisCity.ShadowF.Setup(_ARG_0_)
   ActionArea.Setup(_ARG_0_)
   Game.Log("CrisisCity.ShadowF.Setup")
   _ARG_0_:AddComponent({
-    Game.LoadRenderScript("scripts/render/render_gamemode.lua"),
+    Game.LoadRenderScript("scripts/render/stage/render_csc_f.lua"),
     Game.LoadTerrain("stage/csc/f/"),
     Game.LoadStageSet("scripts/mission/0102/set_cscF_shadow.XML"),
     Game.LoadStageSet("placement/csc/set_cscF_shadow_area.XML", "area"),

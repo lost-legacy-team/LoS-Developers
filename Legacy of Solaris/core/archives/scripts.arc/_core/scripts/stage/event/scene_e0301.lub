@@ -75,7 +75,7 @@ EnvMap = {
 Bloom = {
   MinThreshold = 0.2,
   MaxThreshold = 4,
-  Scale = 3.8
+  Scale = 2.5
 }
 ReflectionAreas = {
   FileName = "stage/twn/c/twn_mapC_rfzone"

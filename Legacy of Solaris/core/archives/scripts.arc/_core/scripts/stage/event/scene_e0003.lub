@@ -70,7 +70,7 @@ OLS = {
   G = 0.99
 }
 EnvMap = {
-  FileName = "stage/dtd/b/suna_cube.dds"
+  FileName = "stage/dtd/b/suna_cube02.dds"
 }
 Bloom = {
   MinThreshold = 0.28,

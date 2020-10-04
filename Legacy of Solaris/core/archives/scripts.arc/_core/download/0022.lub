@@ -36,7 +36,7 @@ c_table_single_act_trial = {
     act_type = 1,
     stage_type = 0,
     mission_type = 2,
-    act_id = 437
+    act_id = 138
   },
   {
     mission_file = "scripts/mission/6002/mission.lua",

@@ -238,7 +238,7 @@ function on_goto(_ARG_0_, _ARG_1_)
     if _ARG_1_ == "goto_c" then
       g_mission_information.mission_terrain = "stage/twn/c/"
       g_mission_information.mission_area = "twn/shadow/c"
-      g_mission_information.mission_set_default = "scripts/mission/C101/set_mission_0101c_01.XML"
+      g_mission_information.mission_set_default = "scripts/mission/C101/set_mission_0101c.XML"
       g_mission_information.mission_path_default = "scripts/mission/C101/set_mission_0101c"
       g_mission_information.mission_is_battle = false
       ChangeArea(_ARG_0_, g_mission_information.mission_area)

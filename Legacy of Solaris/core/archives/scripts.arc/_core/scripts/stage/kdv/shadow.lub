@@ -7,6 +7,7 @@ KingdomValley.Shadow.scripts = {
   "scripts/stage/kdv/b1_shadow.lua",
   "scripts/stage/kdv/d_rouge.lua",
   "scripts/stage/kdv/d_omega.lua",
+  "scripts/stage/kdv/b_omega.lua",
 }
 function KingdomValley.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -18,7 +19,8 @@ function KingdomValley.Shadow.constructor(_ARG_0_)
 	["Area A1"] = KingdomValley.ShadowA1,
 	["Area B1"] = KingdomValley.ShadowB1,
 	["Area D(Rouge)"] = KingdomValley.RougeD,
-	["Area D(Omega)"] = KingdomValley.OmegaD
+	["Area D(Omega)"] = KingdomValley.OmegaD,
+	["Area B(Omega)"] = KingdomValley.OmegaB
   }
   _ARG_0_.area = "Area A"
   _ARG_0_.result_name = 0

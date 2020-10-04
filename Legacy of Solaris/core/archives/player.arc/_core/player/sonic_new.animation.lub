@@ -91,9 +91,27 @@ UserData = {
     value = animation_signal_0
   },
   {
+    animation = "tornado_ground",
+    type = "sound",
+    time = 24 / 60,
+    value = sound_19_tornado
+  },
+  {
     animation = "tornado_air",
     type = "model_system",
     time = 0.05 / 60,
+    value = animation_signal_0
+  },
+  {
+    animation = "tornado_air",
+    type = "sound",
+    time = 0.05 / 60,
+    value = sound_19_tornado
+  },
+  {
+    animation = "attack",
+    type = "model_system",
+    time = 0 * frame,
     value = animation_signal_0
   }
 }
