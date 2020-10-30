@@ -46,14 +46,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "goto_b" then
-    g_mission_information.mission_terrain = "stage/wvo/b/"
-    g_mission_information.mission_area = "wvo/sonic/b"
-    g_mission_information.mission_set_default = "scripts/mission/4002/set_wvoB_sonic_vh.XML"
-    g_mission_information.mission_path_default = "scripts/mission/4002/path_wvoB_sonic_vh"
-    g_mission_information.mission_is_battle = true
-      ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "start_timer" then
+  if _ARG_1_ == "start_timer" then
     StartCountdown(_ARG_0_, 180, "__miss")
   elseif _ARG_1_ == "__miss" then
     g_mission_information.mission_terrain = "stage/wvo/a/"

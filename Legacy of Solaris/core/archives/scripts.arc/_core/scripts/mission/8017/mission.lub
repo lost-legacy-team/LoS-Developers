@@ -53,13 +53,6 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_path_default = "scripts/mission/8017/path_cscF2_knuckles"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "CtoE" then
-    g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/shadow/f"
-    g_mission_information.mission_set_default = "scripts/mission/8017/set_cscF_shadow.xml"
-    g_mission_information.mission_path_default = "scripts/mission/8017/path_cscF_shadow"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
   elseif _ARG_1_ == "result_csc_end" then
     MissionClear(_ARG_0_, "complete")
   end

@@ -11,7 +11,7 @@ function KingdomValley.SonicC.Setup(_ARG_0_)
     Game.LoadRenderScript("scripts/render/stage/render_kdv_c.lua"),
     Game.LoadTerrain("stage/kdv/c/"),
     Game.LoadStageSet("placement/kdv/set_kdv_c_sonic.XML"),
-    Game.LoadStageSet("placement/kdv/set_kdv_c_sonic_area.xml", "area"),
+	Game.LoadStageSet("placement/kdv/set_kdv_c_sonic_area.XML", "area"),
     Game.LoadStageSet("placement/kdv/kdv_mapC_effects.xml", "particle"),
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_c.lua"),
     Game.LoadPath("placement/kdv/kdv_s_c"),

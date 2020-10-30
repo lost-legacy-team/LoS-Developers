@@ -54,6 +54,6 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  SetGlobalFlag(_ARG_0_, 6026, 1)
+  SetGlobalFlag(_ARG_0_, 1220, 1)
   Result(_ARG_0_, "g_result_dtd")
 end

@@ -1,0 +1,126 @@
+CrisisCity.OmegaF = inherits_from(ActionArea)
+function CrisisCity.OmegaF.constructor(_ARG_0_)
+  ActionArea.constructor(_ARG_0_)
+  Game.Log("construct CrisisCity.OmegaF")
+end
+function CrisisCity.OmegaF.Setup(_ARG_0_)
+  ActionArea.Setup(_ARG_0_)
+  Game.Log("CrisisCity.OmegaF.Setup")
+  _ARG_0_:AddComponent({
+    Game.LoadRenderScript("scripts/render/stage/render_csc_f.lua"),
+    Game.LoadTerrain("stage/csc/f/"),
+    Game.LoadStageSet("scripts/mission/0201/set_cscF1_silver.XML"),
+    Game.LoadStageSet("placement/csc/csc_mapF_effects.xml", "particle"),
+    Game.LoadStageSet("placement/csc/set_cscF2_silver_area.xml", "area"),
+    Game.LoadSceneParams("scripts/stage/csc/scene_csc_f.lua"),
+    Game.LoadCameraSet("placement/csc/set_cscF_silver.XML"),
+    Game.LoadSoundBank("sound/stage_csc"),
+    Game.LoadVoiceBank("sound/voice_csc_e"),
+    Game.PlayBGM("stg_csc_a")
+  })
+  Game.SetPlayer(17255, 0, -1173, -60, "omega.lua")
+end
+function CrisisCity.OmegaF.call_enemy01(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("GroupHelper02")
+end
+function CrisisCity.OmegaF.call_enemy01(_ARG_0_, _ARG_1_)
+  Game.StartEntityByName("GroupHelper23")
+end
+function CrisisCity.OmegaF.StartPlaying(_ARG_0_)
+end
+function CrisisCity.OmegaF.t001(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Log("SilverF:t001")
+  Game.ProcessMessage("area:csctornado01", "TornadoShoot", {shootindex = 1, target = _ARG_1_})
+end
+function CrisisCity.OmegaF.t002(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Log("SilverF:t002")
+  Game.ProcessMessage("area:csctornado01", "TornadoShoot", {shootindex = 11, target = _ARG_1_})
+end
+function CrisisCity.OmegaF.t003(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Log("SilverF:t003")
+  Game.ProcessMessage("area:csctornado01", "TornadoShoot", {shootindex = 2, target = _ARG_1_})
+end
+function CrisisCity.OmegaF.t005(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Log("SilverF:t005")
+  Game.ProcessMessage("area:csctornado01", "TornadoShoot", {shootindex = 2, target = _ARG_1_})
+end
+function CrisisCity.OmegaF.t006(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Log("SilverF:t006")
+  Game.ProcessMessage("area:csctornado01", "TornadoShoot", {shootindex = 1, target = _ARG_1_})
+end
+function CrisisCity.OmegaF.esp01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("physicspath01")
+  Game.ProcessMessage("physicspath01", "PsiEffect", {effect = true})
+  Game.Signal("physicspath02")
+  Game.ProcessMessage("physicspath02", "PsiEffect", {effect = true})
+  Game.Signal("physicspath03")
+  Game.ProcessMessage("physicspath03", "PsiEffect", {effect = true})
+end
+function CrisisCity.OmegaF.esp02(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("physicspath05")
+  Game.ProcessMessage("physicspath05", "PsiEffect", {effect = true})
+  Game.Signal("physicspath04")
+  Game.ProcessMessage("physicspath04", "PsiEffect", {effect = true})
+  Game.Signal("physicspath06")
+  Game.ProcessMessage("physicspath06", "PsiEffect", {effect = true})
+end
+function CrisisCity.OmegaF.esp03(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("physicspath07")
+  Game.ProcessMessage("physicspath07", "PsiEffect", {effect = true})
+  Game.Signal("physicspath08")
+  Game.ProcessMessage("physicspath08", "PsiEffect", {effect = true})
+  Game.Signal("physicspath09")
+  Game.ProcessMessage("physicspath09", "PsiEffect", {effect = true})
+  Game.Signal("physicspath10")
+  Game.ProcessMessage("physicspath10", "PsiEffect", {effect = true})
+  Game.Signal("physicspath11")
+  Game.ProcessMessage("physicspath11", "PsiEffect", {effect = true})
+end
+function CrisisCity.OmegaF.esp04(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("physicspath12")
+  Game.ProcessMessage("physicspath12", "PsiEffect", {effect = true})
+  Game.Signal("physicspath13")
+  Game.ProcessMessage("physicspath13", "PsiEffect", {effect = true})
+  Game.Signal("physicspath14")
+  Game.ProcessMessage("physicspath14", "PsiEffect", {effect = true})
+  Game.Signal("physicspath15")
+  Game.ProcessMessage("physicspath15", "PsiEffect", {effect = true})
+end
+function CrisisCity.OmegaF.glassbreak001(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("objectphysics88")
+  Game.Signal("impulsesphere01")
+end
+function CrisisCity.OmegaF.glassbreak002(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("objectphysics89")
+  Game.Signal("objectphysics90")
+  Game.Signal("impulsesphere02")
+end
+function CrisisCity.OmegaF.glassbreak003(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("impulsesphere03")
+end
+function CrisisCity.OmegaF.glassbreak004(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("impulsesphere04")
+end
+function CrisisCity.OmegaF.glassbreak005(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("objectphysics91")
+  Game.Signal("objectphysics92")
+  Game.Signal("objectphysics93")
+  Game.Signal("impulsesphere05")
+end
+function CrisisCity.OmegaF.F1toB(_ARG_0_)
+  _ARG_0_:ChangeArea("Area B")
+end

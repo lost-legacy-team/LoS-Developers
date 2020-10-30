@@ -29,12 +29,7 @@ g_result_wvo = {
 function main(_ARG_0_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "wvo/sonic/a" then
-    g_mission_information.mission_terrain = "stage/wvo/b/"
-    g_mission_information.mission_area = "wvo/sonic/b"
-    g_mission_information.mission_set_default = "placement/wvo/set_wvoB_sonic.XML"
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "result_wvo_end" then
+  if _ARG_1_ == "result_wvo_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end

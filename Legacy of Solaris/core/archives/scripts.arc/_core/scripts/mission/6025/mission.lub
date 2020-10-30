@@ -45,14 +45,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "goto_b" then
-    g_mission_information.mission_terrain = "stage/wap/b"
-    g_mission_information.mission_area = "wap/sonic/b"
-    g_mission_information.mission_set_default = "scripts/mission/6025/set_wap_b_sonic.XML"
-    g_mission_information.mission_path_default = "scripts/mission/6025/path_wapB_sonic"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "result_wap_end" then
+  if _ARG_1_ == "result_wap_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end

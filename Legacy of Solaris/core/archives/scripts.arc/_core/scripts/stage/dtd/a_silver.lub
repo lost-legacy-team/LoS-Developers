@@ -17,7 +17,6 @@ function DustyDesert.SilverA.Setup(_ARG_0_)
     Game.LoadStageSet("placement/dtd/dset_dtd_a_sonic.XML", "pathobj"),
     Game.LoadPath("placement/dtd/dtd_s_a_guide", "guide"),
     Game.LoadCameraSet("placement/dtd/set_dtd_a_sonic.xml"),
-    Game.LoadEvent("e0004"),
     Game.LoadSoundBank("sound/stage_dtd"),
     Game.LoadVoiceBank("sound/voice_dtd_e"),
     Game.PlayBGM("stg_dtd_a")

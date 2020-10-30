@@ -45,14 +45,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "BtoA" then
-    g_mission_information.mission_terrain = "stage/flc/a/"
-    g_mission_information.mission_area = "flc/shadow/a"
-    g_mission_information.mission_set_default = "scripts/mission/4068/set_flc_a_shadow_vh.XML"
-    g_mission_information.mission_path_default = "scripts/mission/4068/path_flcA_shadow_vh"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "result_flc_end" then
+  if _ARG_1_ == "result_flc_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end
