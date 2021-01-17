@@ -16,6 +16,7 @@ function FlameCore.BlazeA.Setup(_ARG_0_)
     Game.LoadPath("scripts/mission/0102/path_flcA_shadow"),
     Game.LoadPath("scripts/mission/0102/guide_flcA_shadow", "guide"),
     Game.LoadSoundBank("sound/stage_flc"),
+	Game.LoadVoiceBank("sound/voice_mefiress_e"),
     Game.LoadVoiceBank("sound/voice_flc_e")
   })
   Game.SetPlayer(-9352.521, 799.532, 38599.273, 180, "blaze.lua")

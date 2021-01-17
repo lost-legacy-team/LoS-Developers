@@ -1,8 +1,8 @@
 g_mission_information = {
   mission_string = "sonic_stg_csc",
-  mission_area = "csc/blaze/b",
+  mission_area = "csc/knuckles/b",
   mission_terrain = "stage/csc/b/",
-  mission_set_default = "scripts/mission/8017/set_cscB_knuckles.XML",
+  mission_set_default = "scripts/mission/8017/set_csc_b_knuckles.XML",
   mission_event_start = "e0009",
   mission_startup = "e0009_end",
   mission_text = "text/msg_twn_sonic.mst",
@@ -146,7 +146,7 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "csc/knuckles/f" then
+  if g_mission_information.mission_area == "csc/knuckles/b" then
     g_mission_information.mission_progress = 40
     SetGlobalFlag(_ARG_0_, 4015, 1)
     SetGlobalFlag(_ARG_0_, 51, 1)

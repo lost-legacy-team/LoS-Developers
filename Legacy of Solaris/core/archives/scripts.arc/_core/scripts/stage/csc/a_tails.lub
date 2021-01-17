@@ -12,7 +12,7 @@ function CrisisCity.TailsA.Setup(_ARG_0_)
     Game.LoadStageSet("placement/csc/set_cscA_sonic.xml"),
     Game.LoadStageSet("placement/csc/csc_mapA_effects.xml", "particle"),
     Game.LoadSceneParams("scripts/stage/csc/scene_csc_a.lua"),
-    Game.LoadPath("placement/csc/path_cscA_sonic"),
+    Game.LoadPath("scripts/mission/6014/path_cscA_sonic_vh"),
     Game.LoadPath("placement/csc/grind_cscA_sonic", "grind"),
     Game.LoadPath("placement/csc/guide_cscA_sonic", "guide"),
     Game.LoadSoundBank("sound/stage_csc"),

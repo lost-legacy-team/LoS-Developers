@@ -1,13 +1,13 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "wap/blaze/b",
+  mission_area = "wap/amy/b",
   mission_terrain = "stage/wap/b",
-  mission_set_default = "scripts/mission/6025/set_wap_b_sonic.XML",
+  mission_set_default = "scripts/mission/6025/set_wap_b_amy.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = "scripts/mission/6025/path_wapB_sonic"
+  mission_path_default = ""
 }
 g_message_setuped = ""
 c_flag_start = 0

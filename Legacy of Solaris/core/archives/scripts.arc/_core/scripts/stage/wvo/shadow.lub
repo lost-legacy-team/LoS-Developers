@@ -2,7 +2,10 @@ WaveOcean.Shadow = inherits_from(ActionStage)
 WaveOcean.Shadow.scripts = {
   "scripts/stage/wvo/a_shadow.lua",
   "scripts/stage/wvo/b_shadow.lua",
-  "scripts/stage/wvo/a_omega.lua"
+  "scripts/stage/wvo/a_omega.lua",
+  "scripts/stage/wvo/a_mephiles.lua",
+  "scripts/stage/wvo/a1_shadow.lua",
+  "scripts/stage/wvo/b1_shadow.lua"
 }
 function WaveOcean.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -10,7 +13,10 @@ function WaveOcean.Shadow.constructor(_ARG_0_)
   _ARG_0_.areas = {
     ["Area A"] = WaveOcean.ShadowA,
     ["Area B"] = WaveOcean.ShadowB,
-	["Area A(Omega)"] = WaveOcean.OmegaA
+	["Area A1"] = WaveOcean.ShadowA1,
+	["Area B1"] = WaveOcean.ShadowB1,
+	["Area A(Omega)"] = WaveOcean.OmegaA,
+	["Area A(Mephiles)"] = WaveOcean.MephilesA
   }
   _ARG_0_.area = "Area A"
 end

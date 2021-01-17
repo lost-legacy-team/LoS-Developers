@@ -144,7 +144,7 @@ end
 function on_talk_close(_ARG_0_, _ARG_1_)
 end
 function on_goal(_ARG_0_)
-  if g_mission_information.mission_area == "csc/tails/f" then
+  if g_mission_information.mission_area == "csc/tails/a" then
     g_mission_information.mission_progress = 40
     SetGlobalFlag(_ARG_0_, 4015, 1)
     SetGlobalFlag(_ARG_0_, 51, 1)

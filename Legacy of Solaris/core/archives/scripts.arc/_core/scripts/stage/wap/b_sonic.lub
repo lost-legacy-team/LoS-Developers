@@ -92,3 +92,8 @@ end
 function WhiteAcropolis.SonicB.enemy12(_ARG_0_, _ARG_1_)
   Game.StartEntityByName("GroupHelper16")
 end
+function WhiteAcropolis.SonicB.haikai01(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.ProcessMessage("common_laser25", "GateOpen")
+  Game.ProcessMessage("common_laser26", "GateOpen")
+end

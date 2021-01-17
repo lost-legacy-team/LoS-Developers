@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act35",
+  mission_string = "msg_act12",
   mission_area = "dtd/shadow/a",
   mission_terrain = "stage/dtd/a/",
   mission_set_default = "scripts/mission/SH08/set_dtd_a_shadow_h.XML",
@@ -50,15 +50,6 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_set_default = "scripts/mission/SH08/set_dtd_b_shadow_h.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-	elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 480, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/dtd/a/"
-    g_mission_information.mission_area = "dtd/shadow/a"
-    g_mission_information.mission_set_default = "scripts/mission/SH08/set_dtd_a_shadow_h.XML"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
   elseif _ARG_1_ == "result_dtd_end" then
     MissionClear(_ARG_0_, "complete")
   end

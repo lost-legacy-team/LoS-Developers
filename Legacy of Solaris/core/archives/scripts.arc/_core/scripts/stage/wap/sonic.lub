@@ -3,7 +3,7 @@ WhiteAcropolis.Sonic.scripts = {
   "scripts/stage/wap/a_sonic.lua",
   "scripts/stage/wap/a1_sonic.lua",
   "scripts/stage/wap/b_sonic.lua",
-  "scripts/stage/wap/c_sonic.lua",
+  "scripts/stage/wap/b1_sonic.lua",
   "scripts/stage/wap/b_tag.lua",
   "scripts/stage/wap/b_knuckles.lua",
   "scripts/stage/wap/b_tails.lua"
@@ -15,7 +15,7 @@ function WhiteAcropolis.Sonic.constructor(_ARG_0_)
     ["Area A"] = WhiteAcropolis.SonicA,
 	["Area A1"] = WhiteAcropolis.SonicA1,
     ["Area B"] = WhiteAcropolis.SonicB,
-    ["Area C"] = WhiteAcropolis.SonicC,
+	["Area B1"] = WhiteAcropolis.SonicB1,
     ["Area B(Tag)"] = WhiteAcropolis.TagB,
 	["Area B(Knuckles)"] = WhiteAcropolis.KnucklesB,
 	["Area B(Tails)"] = WhiteAcropolis.TailsB

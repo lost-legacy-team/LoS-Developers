@@ -1,12 +1,13 @@
 g_mission_information = {
-  mission_string = "msg_act35",
+  mission_string = "msg_act12",
   mission_area = "aqa/silver/a",
   mission_terrain = "stage/aqa/a/",
-  mission_set_default = "scripts/mission/SV06/set_aqaA_silver_h.XML",
+  mission_set_default = "scripts/mission/SV06/set_aqaA_silver_ex.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
-  mission_event_end = ""
+  mission_event_end = "",
+  mission_path_default = "scripts/mission/4124/path_aqaA_silver_vh"
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -20,7 +21,7 @@ c_icon_goal = 4
 g_result_aqa = {
   id = 479,
   stagename = "TOWN",
-  timebonus_base = 54000,
+  timebonus_base = 35000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
   rank_s = 50000,
@@ -44,22 +45,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "goto_b" then
-    g_mission_information.mission_terrain = "stage/aqa/b/"
-    g_mission_information.mission_area = "aqa/silver/b"
-    g_mission_information.mission_set_default = "scripts/mission/SV06/set_aqaB_silver_h.XML"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-	elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 480, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/aqa/a/"
-    g_mission_information.mission_area = "aqa/silver/a"
-    g_mission_information.mission_set_default = "scripts/mission/SV06/set_aqaA_silver_h.XML"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
-  elseif _ARG_1_ == "result_aqa_end" then
+  if _ARG_1_ == "result_aqa_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end

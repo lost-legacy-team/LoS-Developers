@@ -2,11 +2,15 @@ CrisisCity.Shadow = inherits_from(ActionStage)
 CrisisCity.Shadow.scripts = {
   "scripts/stage/csc/a_shadow.lua",
   "scripts/stage/csc/b_shadow.lua",
+  "scripts/stage/csc/b_mephiles.lua",
   "scripts/stage/csc/c_shadow.lua",
+  "scripts/stage/csc/c1_shadow.lua",
   "scripts/stage/csc/e_shadow.lua",
   "scripts/stage/csc/f_shadow.lua",
+  "scripts/stage/csc/f_mephiles.lua",
+  "scripts/stage/csc/f1_shadow.lua",
   "scripts/stage/csc/f_omega.lua",
-  "scripts/stage/csc/f_rouge.lua",
+  "scripts/stage/csc/f_rouge.lua"
 }
 function CrisisCity.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -15,8 +19,12 @@ function CrisisCity.Shadow.constructor(_ARG_0_)
     ["Area A"] = CrisisCity.ShadowA,
     ["Area B"] = CrisisCity.ShadowB,
     ["Area C"] = CrisisCity.ShadowC,
+	["Area C1"] = CrisisCity.ShadowC1,
 	["Area E"] = CrisisCity.ShadowE,
     ["Area F"] = CrisisCity.ShadowF,
+	["Area F1"] = CrisisCity.ShadowF1,
+	["Area B(Mephiles)"] = CrisisCity.MephilesB,
+	["Area F(Mephiles)"] = CrisisCity.MephilesF,
 	["Area F(Omega)"] = CrisisCity.OmegaF,
 	["Area F(Rouge)"] = CrisisCity.RougeF
   }

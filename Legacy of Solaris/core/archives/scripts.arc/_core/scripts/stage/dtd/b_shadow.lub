@@ -134,3 +134,7 @@ function DustyDesert.ShadowB.door14(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("dtd_door15")
 end
+function DustyDesert.ShadowB.Wind_Start(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.Signal("common_windcollision_box06")
+end

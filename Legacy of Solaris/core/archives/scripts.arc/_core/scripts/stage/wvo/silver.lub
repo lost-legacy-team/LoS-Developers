@@ -1,12 +1,14 @@
 WaveOcean.Silver = inherits_from(ActionStage)
 WaveOcean.Silver.scripts = {
-  "scripts/stage/wvo/a_silver.lua"
+  "scripts/stage/wvo/a_silver.lua",
+  "scripts/stage/wvo/a_amy.lua"
 }
 function WaveOcean.Silver.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
   Game.Log("construct WaveOcean.Silver")
   _ARG_0_.areas = {
-    ["Area A"] = WaveOcean.SilverA
+    ["Area A"] = WaveOcean.SilverA,
+	["Area A(Amy)"] = WaveOcean.AmyA
   }
   _ARG_0_.area = "Area A"
 end

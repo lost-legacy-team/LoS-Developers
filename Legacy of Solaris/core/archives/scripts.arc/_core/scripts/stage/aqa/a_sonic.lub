@@ -9,6 +9,7 @@ function AquaticBase.SonicA.Setup(_ARG_0_)
     Game.LoadRenderScript("scripts/render/stage/render_test002.lua"),
     Game.LoadTerrain("stage/aqa/a/"),
     Game.LoadStageSet("placement/aqa/set_aqaA_sonic.XML"),
+	Game.LoadStageSet("placement/aqa/set_aqaA_sonic_area.XML", "area"),
     Game.LoadStageSet("placement/aqa/aqa_mapA_effects.xml", "particle"),
     Game.LoadParticle("particle/map_aqa.plc"),
     Game.LoadSceneParams("scripts/stage/aqa/scene_aqa_a.lua"),

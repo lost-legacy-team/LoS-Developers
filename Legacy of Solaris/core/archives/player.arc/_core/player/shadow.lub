@@ -6,6 +6,7 @@ function SetupModuleSub(_ARG_0_)
   OpenVehicle(_ARG_0_)
   OpenLightDash(_ARG_0_)
   OpenLockOn(_ARG_0_, "lockon_lightdash", stepable_inter)
+  OpenOther(_ARG_0_, other_module_waterslider)
   OpenGauge(_ARG_0_, gauge_module_shadow)
   OpenWeapons(_ARG_0_, other_module_shadow_weapons)
   OpenLockOn(_ARG_0_, "lockon_chaos_spear", stepable_inter)
@@ -27,7 +28,7 @@ c_player_name = "shadow"
 debug = not_use
 c_module_state = state_module_shadow
 c_module_model = model_module_sonic_new
-c_system_model = model_system_standard
+c_system_model = model_system_sonic
 c_posture_control = posture_control_normal
 c_input_system = input_system_normal
 c_module_gravity = use

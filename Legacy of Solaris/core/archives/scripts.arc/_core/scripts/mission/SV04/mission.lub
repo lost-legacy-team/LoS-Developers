@@ -1,8 +1,8 @@
 g_mission_information = {
-  mission_string = "msg_act32",
-  mission_area = "wap/silver/a",
-  mission_terrain = "stage/wap/a",
-  mission_set_default = "scripts/mission/SV04/set_wap_a_silver_h.XML",
+  mission_string = "msg_act12",
+  mission_area = "wap/silver/b",
+  mission_terrain = "stage/wap/b/",
+  mission_set_default = "scripts/mission/SV04/set_wap_b_silver_ex.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
@@ -20,12 +20,12 @@ c_icon_goal = 4
 g_result_wap = {
   id = 477,
   stagename = "TOWN",
-  timebonus_base = 41000,
+  timebonus_base = 29000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
-  rank_s = 50000,
-  rank_a = 45000,
-  rank_b = 25000,
+  rank_s = 30000,
+  rank_a = 25000,
+  rank_b = 20000,
   rank_c = 5000,
   rank_d = 0,
   ringbonus_s = 4000,
@@ -44,23 +44,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "goto_b" then
-    g_mission_information.mission_terrain = "stage/wap/b"
-    g_mission_information.mission_area = "wap/silver/b"
-    g_mission_information.mission_set_default = "scripts/mission/SV04/set_wap_b_silver_h.XML"
-    g_mission_information.mission_path_default = ""
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-	elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 300, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/wap/a/"
-    g_mission_information.mission_area = "wap/silver/a"
-    g_mission_information.mission_set_default = "scripts/mission/SV04/set_wap_a_silver_h.XML"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
-  elseif _ARG_1_ == "result_wap_end" then
+if _ARG_1_ == "result_wap_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end

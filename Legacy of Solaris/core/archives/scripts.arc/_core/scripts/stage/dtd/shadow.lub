@@ -5,6 +5,7 @@ DustyDesert.Shadow.scripts = {
   "scripts/stage/dtd/a_omega.lua",
   "scripts/stage/dtd/a_rouge.lua",
   "scripts/stage/dtd/b_omega.lua",
+  "scripts/stage/dtd/b_mephiles.lua",
 }
 function DustyDesert.Shadow.constructor(_ARG_0_)
   ActionStage.constructor(_ARG_0_)
@@ -14,7 +15,8 @@ function DustyDesert.Shadow.constructor(_ARG_0_)
     ["Area B"] = DustyDesert.ShadowB,
 	["Area A(Omega)"] = DustyDesert.OmegaA,
 	["Area A(Rouge)"] = DustyDesert.RougeA,
-	["Area B(Omega)"] = DustyDesert.OmegaB
+	["Area B(Omega)"] = DustyDesert.OmegaB,
+	["Area B(Mephiles)"] = DustyDesert.MephilesB
   }
   _ARG_0_.area = "Area A"
 end

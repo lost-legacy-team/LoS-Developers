@@ -13,36 +13,35 @@ function KingdomValley.ShadowB1.Setup(_ARG_0_)
     Game.LoadSceneParams("scripts/stage/kdv/scene_kdv_b.lua"),
     Game.LoadStageSet("placement/kdv/dset_kdv_b_sonic.XML", "pathobj"),
     Game.LoadPath("placement/kdv/kdv_s_b"),
-	Game.LoadPath("placement/kdv/kdv_s_b_guide", "guide"),
     Game.LoadCameraSet("placement/kdv/set_kdv_b_sonic.XML"),
     Game.LoadSoundBank("sound/stage_kdv"),
     Game.LoadVoiceBank("sound/voice_kdv_e"),
-    Game.PlayBGM("stg_kdv_c")
+    Game.PlayBGM("stg_kdv_b")
   })
-  Game.SetPlayer(-22612, 12458, -26085, 300, "shadow.lua")
+  Game.SetPlayer(-22612, 12458, -26085, 300, "sonic_new.lua")
 end
 function KingdomValley.ShadowB1.goto_c(_ARG_0_, _ARG_1_)
   _ARG_0_:ChangeArea("Area C")
 end
 function KingdomValley.ShadowB1.brake01(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics126")
-  Game.Signal("impulsesphere11")
+  Game.Signal("objectphysics43")
+  Game.Signal("impulsesphere01")
 end
 function KingdomValley.ShadowB1.brake02(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics127")
-  Game.Signal("impulsesphere12")
+  Game.Signal("objectphysics52")
+  Game.Signal("impulsesphere02")
 end
 function KingdomValley.ShadowB1.brake03(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics57")
-  Game.Signal("objectphysics56")
+  Game.Signal("objectphysics03")
+  Game.Signal("objectphysics02")
 end
 function KingdomValley.ShadowB1.brake04(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics60")
-  Game.Signal("objectphysics61")
+  Game.Signal("objectphysics87")
+  Game.Signal("objectphysics88")
 end
 function KingdomValley.ShadowB1.brake05(_ARG_0_, _ARG_1_)
   Game.Debug()
@@ -55,7 +54,7 @@ function KingdomValley.ShadowB1.brake06(_ARG_0_, _ARG_1_)
 end
 function KingdomValley.ShadowB1.brake07(_ARG_0_, _ARG_1_)
   Game.Debug()
-  Game.Signal("objectphysics128")
+  Game.Signal("inclinedbridge02")
 end
 function KingdomValley.ShadowB1.door01(_ARG_0_, _ARG_1_)
   Game.Debug()
@@ -77,4 +76,8 @@ function KingdomValley.ShadowB1.brake05(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("objectphysics51")
   Game.Signal("impulsesphere03")
+end  
+function KingdomValley.ShadowB1.Wind(_ARG_0_, _ARG_1_)
+Game.Debug()
+Game.Signal("common_windcollision_box01")
 end

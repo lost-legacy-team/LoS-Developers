@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act32",
+  mission_string = "msg_act12",
   mission_area = "wap/shadow/a",
   mission_terrain = "stage/wap/a/",
   mission_set_default = "scripts/mission/SH01/set_wap_a_shadow.XML",
@@ -51,15 +51,6 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_path_default = ""
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 300, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/wap/a/"
-    g_mission_information.mission_area = "wap/shadow/a"
-    g_mission_information.mission_set_default = "scripts/mission/SH01/set_wap_a_shadow.XML"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
   elseif _ARG_1_ == "result_wap_end" then
     MissionClear(_ARG_0_, "complete")
   end

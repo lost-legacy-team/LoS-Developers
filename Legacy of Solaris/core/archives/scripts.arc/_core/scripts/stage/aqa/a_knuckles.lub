@@ -13,7 +13,7 @@ function AquaticBase.KnucklesA.Setup(_ARG_0_)
     Game.LoadParticle("particle/map_aqa.plc"),
     Game.LoadSceneParams("scripts/stage/aqa/scene_aqa_a.lua"),
     Game.LoadPath("placement/aqa/aqa_s_a_grind", "grind"),
-    Game.LoadPath("placement/aqa/aqa_shadow_a"),
+    Game.LoadPath("scripts/mission/4124/path_aqaA_silver_vh"),
     Game.LoadCameraSet("placement/aqa/set_aqaA_shadow.XML"),
     Game.LoadSoundBank("sound/stage_aqa"),
     Game.LoadVoiceBank("sound/voice_aqa_e"),
@@ -68,4 +68,11 @@ end
 function AquaticBase.KnucklesA.kakushi01(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door16")
+end
+function AquaticBase.KnucklesA.laser25(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.ProcessMessage("common_laser01", "GateOpen")
+  Game.ProcessMessage("common_laser02", "GateOpen")
+  Game.ProcessMessage("common_laser03", "GateOpen")
+  Game.ProcessMessage("common_laser04", "GateOpen")
 end

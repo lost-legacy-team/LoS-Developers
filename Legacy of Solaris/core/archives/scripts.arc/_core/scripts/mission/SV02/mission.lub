@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act32",
+  mission_string = "msg_act12",
   mission_area = "tpj/silver/c",
   mission_terrain = "stage/tpj/c/",
   mission_set_default = "scripts/mission/SV02/set_tpjC_silver_h.XML",
@@ -22,7 +22,7 @@ c_icon_goal = 4
 g_result_tpj = {
   id = 475,
   stagename = "TOWN",
-  timebonus_base = 54480,
+  timebonus_base = 29480,
   timebonus_rate = 40,
   ringbonus_rate = 100,
   rank_s = 50000,
@@ -46,16 +46,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 300, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/tpj/c/"
-    g_mission_information.mission_area = "tpj/silver/c"
-    g_mission_information.mission_set_default = "scripts/mission/SV02/set_tpjC_silver_h.XML"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
-  elseif _ARG_1_ == "result_tpj_end" then
+  if _ARG_1_ == "result_tpj_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end

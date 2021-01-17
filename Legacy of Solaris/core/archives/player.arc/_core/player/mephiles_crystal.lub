@@ -1,0 +1,2 @@
+script.reload("player/mephiles.lua")
+c_model_package = "player/mephiles_crystal"

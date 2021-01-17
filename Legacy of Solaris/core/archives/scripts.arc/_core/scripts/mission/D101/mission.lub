@@ -346,7 +346,7 @@ function on_event(_ARG_0_, _ARG_1_)
   elseif _ARG_1_ == "e0207_end" then
     g_mission_information.mission_string = "amy_stg_dtd"
     g_mission_information.mission_terrain = "stage/dtd/b/"
-    g_mission_information.mission_area = "dtd/omega/b"
+    g_mission_information.mission_area = "dtd/mephiles/b"
     g_mission_information.mission_set_default = "scripts/mission/6026/set_dtd_b_amy.XML"
     g_mission_information.mission_path_default = "scripts/mission/D101/dtd_s_b"
     g_mission_information.mission_is_battle = true
@@ -393,12 +393,12 @@ end
 function on_goal(_ARG_0_)
   if g_mission_information.mission_area == "dtd/silver/a" then
     g_mission_information.mission_terrain = "stage/dtd/b/"
-    g_mission_information.mission_area = "dtd/omega/b"
+    g_mission_information.mission_area = "dtd/mephiles/b"
     g_mission_information.mission_set_default = "scripts/mission/6026/set_dtd_b_amy.XML"
     g_mission_information.mission_path_default = "scripts/mission/D101/dtd_s_b"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif g_mission_information.mission_area == "dtd/omega/b" then
+  elseif g_mission_information.mission_area == "dtd/mephiles/b" then
     g_mission_information.mission_area_text = "msg_solleanna_a"
     g_mission_information.mission_progress = 32
     SetGlobalFlag(_ARG_0_, 4107, 1)

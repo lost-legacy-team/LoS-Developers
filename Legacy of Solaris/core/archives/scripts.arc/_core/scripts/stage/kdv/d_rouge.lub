@@ -95,6 +95,6 @@ function KingdomValley.RougeD.close01(_ARG_0_, _ARG_1_)
 end
 function KingdomValley.RougeD.Wind(_ARG_0_, _ARG_1_)
 Game.Debug()
-Game.Signal("common_windcollision_box06")
-Game.Signal("common_windcollision_box12")
+Game.Signal("common_windcollision_box01")
+Game.Signal("common_windcollision_box02")
 end

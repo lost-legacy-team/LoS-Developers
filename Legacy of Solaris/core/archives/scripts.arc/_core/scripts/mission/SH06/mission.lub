@@ -1,8 +1,8 @@
 g_mission_information = {
-  mission_string = "msg_act32",
-  mission_area = "wvo/shadow/b",
-  mission_terrain = "stage/wvo/b/",
-  mission_set_default = "scripts/mission/SH06/set_wvoB_shadow_h.XML",
+  mission_string = "msg_act12",
+  mission_area = "wvo/shadow/a1",
+  mission_terrain = "stage/wvo/a/",
+  mission_set_default = "scripts/mission/SH06/set_wvoA_shadow_ex.XML",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
@@ -20,10 +20,10 @@ c_icon_goal = 4
 g_result_wvo = {
   id = 472,
   stagename = "TOWN",
-  timebonus_base = 49000,
+  timebonus_base = 39000,
   timebonus_rate = 40,
   ringbonus_rate = 100,
-  rank_s = 50000,
+  rank_s = 80000,
   rank_a = 45000,
   rank_b = 25000,
   rank_c = 5000,
@@ -44,21 +44,12 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "goto_a" then
-    g_mission_information.mission_terrain = "stage/wvo/a/"
-    g_mission_information.mission_area = "wvo/shadow/a"
-    g_mission_information.mission_set_default = "scripts/mission/SH06/set_wvoA_shadow_h.XML"
+  if _ARG_1_ == "goto_b" then
+    g_mission_information.mission_terrain = "stage/wvo/b/"
+    g_mission_information.mission_area = "wvo/shadow/b1"
+    g_mission_information.mission_set_default = "scripts/mission/SH06/set_wvoB_shadow_ex.XML"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
-	elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 300, "__miss")
-  elseif _ARG_1_ == "__miss" then
-    g_mission_information.mission_terrain = "stage/wvo/b/"
-    g_mission_information.mission_area = "wvo/shadow/b"
-    g_mission_information.mission_set_default = "scripts/mission/SH06/set_wvoB_shadow_h.XML"
-    g_mission_information.mission_is_battle = true
-	ChangeArea(_ARG_0_, g_mission_information.mission_area)
-    StartCountdown(_ARG_0_, 0, "")
   elseif _ARG_1_ == "result_wvo_end" then
     MissionClear(_ARG_0_, "complete")
   end

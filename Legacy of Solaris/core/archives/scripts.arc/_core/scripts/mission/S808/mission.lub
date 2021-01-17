@@ -1,5 +1,5 @@
 g_mission_information = {
-  mission_string = "msg_act35",
+  mission_string = "msg_act37",
   mission_area = "aqa/sonic/a",
   mission_terrain = "stage/aqa/a/",
   mission_set_default = "scripts/mission/S808/set_aqaA_sonic.XML",
@@ -48,10 +48,11 @@ function on_event(_ARG_0_, _ARG_1_)
     g_mission_information.mission_terrain = "stage/aqa/b/"
     g_mission_information.mission_area = "aqa/sonic/b"
     g_mission_information.mission_set_default = "scripts/mission/S808/set_aqaB_sonic.xml"
+	g_mission_information.mission_path_default = "scripts/mission/S808/path_aqaB_sonic"
     g_mission_information.mission_is_battle = true
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
 	elseif _ARG_1_ == "start_timer" then
-    StartCountdown(_ARG_0_, 480, "__miss")
+    StartCountdown(_ARG_0_, 360, "__miss")
   elseif _ARG_1_ == "__miss" then
     g_mission_information.mission_terrain = "stage/aqa/a/"
     g_mission_information.mission_area = "aqa/sonic/a"

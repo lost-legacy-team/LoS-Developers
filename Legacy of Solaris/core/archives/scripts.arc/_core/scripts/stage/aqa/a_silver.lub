@@ -71,3 +71,10 @@ function AquaticBase.SilverA.door12(_ARG_0_, _ARG_1_)
   Game.Debug()
   Game.Signal("aqa_door25")
 end
+function AquaticBase.SilverA.laser25(_ARG_0_, _ARG_1_)
+  Game.Debug()
+  Game.ProcessMessage("common_laser01", "GateOpen")
+  Game.ProcessMessage("common_laser02", "GateOpen")
+  Game.ProcessMessage("common_laser03", "GateOpen")
+  Game.ProcessMessage("common_laser04", "GateOpen")
+end

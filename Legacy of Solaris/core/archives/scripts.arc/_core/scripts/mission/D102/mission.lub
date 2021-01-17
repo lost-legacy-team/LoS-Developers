@@ -218,7 +218,7 @@ function on_goto(_ARG_0_, _ARG_1_)
   elseif g_mission_information.mission_area == "wap/shadow/a" then
     g_mission_information.mission_terrain = "stage/wap/b/"
     g_mission_information.mission_area = "wap/sonic/b"
-    g_mission_information.mission_set_default = "scripts/mission/6025/set_wap_b_sonic.XML"
+    g_mission_information.mission_set_default = "scripts/mission/6025/set_wap_b_amy.XML"
     ChangeArea(_ARG_0_, g_mission_information.mission_area)
   end
 end
@@ -252,8 +252,8 @@ function on_event(_ARG_0_, _ARG_1_)
     if GetTemporaryFlag(_ARG_0_, c_flag_0322) == 1 then
       g_mission_information.mission_string = "silver_stg_wap"
       g_mission_information.mission_terrain = "stage/wap/b/"
-      g_mission_information.mission_area = "wap/blaze/b"
-      g_mission_information.mission_set_default = "scripts/mission/6025/set_wap_b_sonic.XML"
+      g_mission_information.mission_area = "wap/amy/b"
+      g_mission_information.mission_set_default = "scripts/mission/6025/set_wap_b_amy.XML"
       g_mission_information.mission_is_battle = true
       ChangeArea(_ARG_0_, g_mission_information.mission_area)
       g_mission_information.mission_area_text = "whiteacropolis"

@@ -1,13 +1,13 @@
 g_mission_information = {
   mission_string = "msg_act01",
-  mission_area = "csc/blaze/b",
+  mission_area = "csc/knuckles/b",
   mission_terrain = "stage/csc/b",
-  mission_set_default = "scripts/mission/8017/set_cscB_knuckles.xml",
+  mission_set_default = "scripts/mission/8017/set_csc_b_knuckles.xml",
   mission_is_battle = true,
   mission_text = "text/msg_twn_sonic.mst",
   mission_event_start = "",
   mission_event_end = "",
-  mission_path_default = "scripts/mission/8017/path_cscB_knuckles"
+  mission_path_default = ""
 }
 g_message_setuped = ""
 c_flag_start = 0
@@ -25,9 +25,9 @@ g_result_csc = {
   timebonus_base = 42200,
   timebonus_rate = 40,
   ringbonus_rate = 100,
-  rank_s = 40000,
-  rank_a = 25000,
-  rank_b = 20000,
+  rank_s = 50000,
+  rank_a = 35000,
+  rank_b = 25000,
   rank_c = 5000,
   rank_d = 0,
   ringbonus_s = 3000,
@@ -46,14 +46,7 @@ end
 function on_goto(_ARG_0_, _ARG_1_)
 end
 function on_event(_ARG_0_, _ARG_1_)
-  if _ARG_1_ == "BtoF2" then
-    g_mission_information.mission_terrain = "stage/csc/f/"
-    g_mission_information.mission_area = "csc/knuckles/f"
-    g_mission_information.mission_set_default = "scripts/mission/8017/set_cscF2_knuckles.xml"
-    g_mission_information.mission_path_default = "scripts/mission/8017/path_cscF2_knuckles"
-    g_mission_information.mission_is_battle = true
-    ChangeArea(_ARG_0_, g_mission_information.mission_area)
-  elseif _ARG_1_ == "result_csc_end" then
+  if _ARG_1_ == "result_csc_end" then
     MissionClear(_ARG_0_, "complete")
   end
 end
